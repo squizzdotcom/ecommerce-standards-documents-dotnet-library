@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48A8710C-1ABC-4AC8-BD0D-F98D55175FCB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EcommerceStandardsDocuments</RootNamespace>
+    <AssemblyName>EcommerceStandardsDocuments</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\EcommerceStandardsDocuments.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ThirdPartyLibraries\Json_net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ESDocumentCustomerAccountContract.cs" />
+    <Compile Include="ESDocumentCustomerAccountEnquiry.cs" />
+    <Compile Include="ESDocumentDownload.cs" />
+    <Compile Include="ESDocumentLabour.cs" />
+    <Compile Include="ESDocumentOrderPurchase.cs" />
+    <Compile Include="ESDocumentOrderSale.cs" />
+    <Compile Include="ESDocumentProductCombination.cs" />
+    <Compile Include="ESDocumentPurchaser.cs" />
+    <Compile Include="ESDocumentSellUnit.cs" />
+    <Compile Include="ESDocumentSupplierAccount.cs" />
+    <Compile Include="ESDocumentSupplierAccountAddress.cs" />
+    <Compile Include="ESDRecordCustomerAccountContract.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryBackOrder.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryBackOrderLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryCredit.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryCreditLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryInvoice.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryInvoiceLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryOrderSale.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryOrderSaleLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryPayment.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryPaymentLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryTransaction.cs" />
+    <Compile Include="ESDRecordCustomerAccountPayment.cs" />
+    <Compile Include="ESDRecordCustomerAccountPaymentRecord.cs" />
+    <Compile Include="ESDRecordDownload.cs" />
+    <Compile Include="ESDRecordFlagMapping.cs" />
+    <Compile Include="ESDRecordLabour.cs" />
+    <Compile Include="ESDRecordOrderPurchase.cs" />
+    <Compile Include="ESDRecordOrderPurchaseLine.cs" />
+    <Compile Include="ESDRecordOrderLineAttribute.cs" />
+    <Compile Include="ESDRecordOrderLineAttributeProfile.cs" />
+    <Compile Include="ESDRecordOrderLineTax.cs" />
+    <Compile Include="ESDRecordOrderPayment.cs" />
+    <Compile Include="ESDRecordOrderSurcharge.cs" />
+    <Compile Include="ESDRecordProductCombination.cs" />
+    <Compile Include="ESDRecordProductCombinationParent.cs" />
+    <Compile Include="ESDRecordProductCombinationProfile.cs" />
+    <Compile Include="ESDRecordProductCombinationProfileField.cs" />
+    <Compile Include="ESDRecordPrice.cs" />
+    <Compile Include="ESDRecordPurchaser.cs" />
+    <Compile Include="ESDRecordSellUnit.cs" />
+    <Compile Include="ESDRecordSupplierAccount.cs" />
+    <Compile Include="ESDRecordSupplierAccountAddress.cs" />
+    <Compile Include="ESDRecordFlag.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryProductPrice.cs" />
+    <Compile Include="ESDRecordOrderSale.cs" />
+    <Compile Include="ESDRecordOrderSaleLine.cs" />
+    <Compile Include="ESDRecordOrderProductDelivery.cs" />
+    <Compile Include="ESDRecordPriceLevel.cs" />
+    <Compile Include="ESDRecordProduct.cs" />
+    <Compile Include="ESDRecordProductAlternateCode.cs" />
+    <Compile Include="ESDRecordProductAttachment.cs" />
+    <Compile Include="ESDRecordProductAttribute.cs" />
+    <Compile Include="ESDRecordProductAttributeProfile.cs" />
+    <Compile Include="ESDRecordProductAttributeValue.cs" />
+    <Compile Include="ESDRecordCategory.cs" />
+    <Compile Include="ESDRecordProductImage.cs" />
+    <Compile Include="ESDRecordProductKitComponent.cs" />
+    <Compile Include="ESDRecordSalesRep.cs" />
+    <Compile Include="ESDRecordProductStockLevel.cs" />
+    <Compile Include="ESDRecordTaxcode.cs" />
+    <Compile Include="ESDRecordCustomerAccount.cs" />
+    <Compile Include="ESDRecordCustomerAccountAddress.cs" />
+    <Compile Include="ESDRecordLocation.cs" />
+    <Compile Include="ESDocument.cs" />
+    <Compile Include="ESDocumentConstants.cs" />
+    <Compile Include="ESDocumentCustomerAccountEnquiryProductPrice.cs" />
+    <Compile Include="ESDocumentPriceLevel.cs" />
+    <Compile Include="ESDocumentProduct.cs" />
+    <Compile Include="ESDocumentProductAlternateCode.cs" />
+    <Compile Include="ESDocumentProductAttachment.cs" />
+    <Compile Include="ESDocumentProductAttribute.cs" />
+    <Compile Include="ESDocumentCategory.cs" />
+    <Compile Include="ESDocumentFlag.cs" />
+    <Compile Include="ESDocumentProductImage.cs" />
+    <Compile Include="ESDocumentProductKit.cs" />
+    <Compile Include="ESDocumentPrice.cs" />
+    <Compile Include="ESDocumentSalesRep.cs" />
+    <Compile Include="ESDocumentProductStockLevel.cs" />
+    <Compile Include="ESDocumentTaxcode.cs" />
+    <Compile Include="ESDocumentCustomerAccount.cs" />
+    <Compile Include="ESDocumentCustomerAccountAddress.cs" />
+    <Compile Include="ESDocumentLocation.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
