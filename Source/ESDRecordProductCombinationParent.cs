@@ -21,7 +21,7 @@ namespace EcommerceStandardsDocuments
         public string keyProductID { get; set; }
         /// <summary>Key of the product combination profile that links the profile to the combination</summary>
         [DataMember]
-        public string keyProductComboProfileID { get; set; }
+        public string keyComboProfileID { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

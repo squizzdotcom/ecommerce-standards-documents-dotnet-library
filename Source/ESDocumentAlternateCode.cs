@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that contains a list of alternate code records associated with products
+    /// Ecommerce standards document that contains a list of alternate code records associated with products, downloads, or labour
     /// </summary>
     /// <example>
-    /// An example of the Product Alternate Code Ecommerce Standards document in its JSON serialised form
+    /// An example of the Alternate Code Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -49,25 +49,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductAlternateCode : ESDocument
+    public class ESDocumentAlternateCode : ESDocument
     {
-        /// <summary>List of alternate product code records</summary>
+        /// <summary>List of alternate code records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductAlternateCode[] dataRecords;
+        public ESDRecordAlternateCode[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product alternate code data</param>
+        /// <param name="resultStatus">status of obtaining the alternate code data</param>
         /// <param name="message">message describing the status of obtaining the data for the document</param>
-        /// <param name="productAlternateCodeRecords">list of product alternate code records</param>
+        /// <param name="alternateCodeRecords">list of alternate code records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product alternate code record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the alternate code record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductAlternateCode(int resultStatus, string message, ESDRecordProductAlternateCode[] productAlternateCodeRecords, Dictionary<string, string> configs)
+        public ESDocumentAlternateCode(int resultStatus, string message, ESDRecordAlternateCode[] alternateCodeRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productAlternateCodeRecords;
+            this.dataRecords = alternateCodeRecords;
             this.configs = configs;
         }
     }

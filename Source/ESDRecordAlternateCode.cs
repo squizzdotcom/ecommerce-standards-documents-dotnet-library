@@ -12,24 +12,30 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single alternate code for a product. An alternate code is a different code that could be used to identify a product.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single alternate code for a product, download, or labour. An alternate code is a different code that could be used to identify a product, download, or labour.</summary>
     [DataContract]
-    public class ESDRecordProductAlternateCode
+    public class ESDRecordAlternateCode
     {
         /// <summary>Key of the product record that the alternate code is assigned to.</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
+        /// <summary>Key of the download record that the alternate code is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyDownloadID { get; set; }
+        /// <summary>Key of the labour record that the alternate code is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyLabourID { get; set; }
         /// <summary>Alternate code. May or may not be a unique identifier</summary>
         [DataMember]
         public string alternateCode { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
-        /// If 'Y' then indicates that the alternate code may be used to directly link to the product.</summary>
+        /// If 'Y' then indicates that the alternate code may be used to directly link to the product, download, or labour.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string isUseCode { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
-        /// If 'Y' then indicates that the alternate code has been defined by another entity who supplies the product.</summary>
+        /// If 'Y' then indicates that the alternate code has been defined by another entity who supplies the product, download, or labour.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string isSupplierCode { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 

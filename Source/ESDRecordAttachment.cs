@@ -12,31 +12,34 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data associated with a single product image.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single attachment file associated to a product, download, or labour.</summary>
     [DataContract]
-    public class ESDRecordProductImage
+    public class ESDRecordAttachment
     {
-        /// <summary>Key that allows the product image record to be uniquely identified and linked to.</summary>
+        /// <summary>Key that allows the attachment record to be uniquely identified and linked to.</summary>
         [DataMember]
-        public string keyProductImageID { get; set; }
-        /// <summary>Key of the product record that the image is set for.</summary>
-        [DataMember]
+        public string keyAttachmentID { get; set; }
+        /// <summary>Key of the product record that the attachment record is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
-        /// <summary>Full file path to locate the image, including the image file name and extension. The file path may be a URL, or could be a path to the file in a local machine, or network file store.</summary>
+        /// <summary>Key of the download record that the attachment record is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string imageFullFilePath { get; set; }
-        /// <summary>Name of the image file excluding its extension. The name should match the name in the imageFullFilePath property if set.</summary>
+        public string keyDownloadID { get; set; }
+        /// <summary>Key of the labour record that the attachment record is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string imageFileName { get; set; }
-        /// <summary>Extension of the image file. The extension should match the extension in the imageFullFilePath property if set.</summary>
+        public string keyLabourID { get; set; }
+        /// <summary>name of the attachment's file</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string imageFileExtension { get; set; }
-        /// <summary>Title to label the image.</summary>
+        public string fileName { get; set; }
+        /// <summary>extension of the attachment's file</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string fileExtension { get; set; }
+        /// <summary>full file path to location where the attachment file is located</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string fullFilePath { get; set; }
+        /// <summary>Title that allows the attachment to be labelled.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string title { get; set; }
-        /// <summary>Text to decribe details about the image</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string description { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

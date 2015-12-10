@@ -12,28 +12,26 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record for storing the field data associated to a product combination profile. Each field can contain any number of field-values, which allows products to be assigned to.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single attribute associated with products, downloads, or labour. Attributes define the fields that can have values set for products, downloads, or labour.</summary>
     [DataContract]
-    public class ESDRecordProductCombinationProfileField
+    public class ESDRecordAttribute
     {
-        /// <summary>Key that allows the product combination profile field record to be uniquely identified and linked to.</summary>
+        /// <summary>Key that allows the attribute record to be uniquely identified and linked to.</summary>
         [DataMember]
-        public string keyProductComboProfileFieldID { get; set; }
-        /// <summary>Name of the field</summary>
+        public string keyAttributeID { get; set; }
+        /// <summary>name of the attribute</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string fieldName {get; set;}
-        /// <summary>Numeric value to order the field by. This ordering may be used when multiple fields are assigned to same product combination profile</summary>
+        public string name { get; set; }
+        /// <summary>The type of data that can be set as values for the attribute. Set to one the DATA_TYPE constants in the class </summary>
         [DataMember(EmitDefaultValue = false)]
-        public int ordering {get; set;}
+        public string dataType { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
-        /// <summary>List of field value labels. Each label can contain any text to label the field. Ensure that the length of the list matches the fieldValueIDs array</summary>
-        [DataMember]
-        public string[] fieldValues{get; set;}
-        /// <summary>List of field value IDs. Each value ID uniquely identifies the field value. Ensure that the length of the list matches the fieldValues array</summary>
-        [DataMember]
-        public string[] fieldValueIDs { get; set; }
+        /// <summary>Attribute Data Type - String</summary>
+        public static readonly string DATA_TYPE_STRING = "STRING";
+        /// <summary>Attribute Data Type - Number</summary>
+        public static readonly string DATA_TYPE_NUMBER = "NUMBER";
     }
 }

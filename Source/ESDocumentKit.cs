@@ -13,9 +13,9 @@ using Newtonsoft.Json;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce standards document that contains a list of product kit records</summary>
+    /// <summary>Ecommerce standards document that contains a list of kit records</summary>
     /// <example>
-    /// An example of the Product Kit Ecommerce Standards document in its JSON serialised form
+    /// An example of the Kit Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -53,25 +53,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductKit : ESDocument
+    public class ESDocumentKit : ESDocument
     {
-        /// <summary>List of product kit records</summary>
+        /// <summary>List of kit records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductKitComponent[] dataRecords;
+        public ESDRecordKitComponent[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product kit data</param>
+        /// <param name="resultStatus">status of obtaining the kit data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productKitComponentRecords">list of product kit component records</param>
+        /// <param name="kitComponentRecords">list of kit component records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product kit component record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the kit component record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductKit(int resultStatus, string message, ESDRecordProductKitComponent[] productKitComponentRecords, Dictionary<string, string> configs)
+        public ESDocumentKit(int resultStatus, string message, ESDRecordKitComponent[] kitComponentRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productKitComponentRecords;
+            this.dataRecords = kitComponentRecords;
             this.configs = configs;
         }
     }

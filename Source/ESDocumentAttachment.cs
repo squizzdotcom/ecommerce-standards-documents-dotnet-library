@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that contains a list of attachment file records associated with products
+    /// Ecommerce standards document that contains a list of attachment file records associated with products, downloads or labour
     /// </summary>
     /// <example>
-    /// An example of the Product Attachment Ecommerce Standards document in its JSON serialised form
+    /// An example of the Attachment Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -54,25 +54,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductAttachment : ESDocument
+    public class ESDocumentAttachment : ESDocument
     {
-        /// <summary>List of product attachment records</summary>
+        /// <summary>List of attachment records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductAttachment[] dataRecords;
+        public ESDRecordAttachment[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product attachment data</param>
+        /// <param name="resultStatus">status of obtaining the attachment data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productAttachmentRecords">list of product records</param>
+        /// <param name="attachmentRecords">list of attachment records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product attachment record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the attachment record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductAttachment(int resultStatus, string message, ESDRecordProductAttachment[] productAttachmentRecords, Dictionary<string, string> configs)
+        public ESDocumentAttachment(int resultStatus, string message, ESDRecordAttachment[] attachmentRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productAttachmentRecords;
+            this.dataRecords = attachmentRecords;
             this.configs = configs;
         }
     }

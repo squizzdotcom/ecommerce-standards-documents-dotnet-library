@@ -12,28 +12,25 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single product attribute value.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single combination profile. Each profile defines the fields and field-values that are available for any number of combination products, downloads, or labour.</summary>
     [DataContract]
-    public class ESDRecordProductAttributeValue
+    public class ESDRecordCombinationProfile
     {
-        /// <summary>Key of the product record that the attribute value is set for.</summary>
+        /// <summary>Key that allows the combination profile record to be uniquely identified and linked to.</summary>
         [DataMember]
-        public string keyProductID { get; set; }
-        /// <summary>Key of the product attribute profile record that the attribute assigned to the value is set to.</summary>
-        [DataMember]
-        public string keyAttributeProfileID { get; set; }
-        /// <summary>Key of the product attribute record that the value is set to.</summary>
-        [DataMember]
-        public string keyAttributeID { get; set; }
-        /// <summary>text of the attribute value, if its attribute data type is set to string.</summary>
+        public string keyComboProfileID { get; set; }
+        /// <summary>Name of the profile</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string stringValue { get; set; }
-        /// <summary>number of the attribute value, if its attribute data type is set to number.</summary>
+        public string profileName { get; set; }
+        /// <summary>Description of the profile</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal numberValue { get; set; }
+        public string description { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+        /// <summary>list of fields assigned to the combination profile</summary>
+        [DataMember]
+        public ESDRecordCombinationProfileField[] combinationFields { get; set; }
     }
 }

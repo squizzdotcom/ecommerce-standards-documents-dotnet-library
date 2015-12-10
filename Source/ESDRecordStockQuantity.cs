@@ -12,13 +12,19 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a stock level unit quantity of a product. This record typically stores stock level quantity data that can updated on a frequent basis.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a stock unit quantity of a product, download or labour. This record typically stores stock quantity data that can updated on a frequent basis.</summary>
     [DataContract]
-    public class ESDRecordProductStockQuantity
+    public class ESDRecordStockQuantity
     {
         /// <summary>Key of the product record that the stock level quantity is set for</summary>
         [DataMember]
         public string keyProductID { get; set; }
+        /// <summary>Key of the download record that the stock level quantity is set for</summary>
+        [DataMember]
+        public string keyDownloadID { get; set; }
+        /// <summary>Key of the labour record that the stock level quantity is set for</summary>
+        [DataMember]
+        public string keyLabourID { get; set; }
         /// <summary>Unit quantity of stock available to be purchased</summary>
         [DataMember]
         public decimal qtyAvailable { get; set; }

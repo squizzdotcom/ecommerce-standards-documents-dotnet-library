@@ -107,7 +107,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of product combination profile records</summary>
         [JsonProperty(Order = -3, Required = Required.Always)]
         [DataMember(IsRequired = true, Order = 1)]
-        public ESDRecordProductCombinationProfile[] productCombinationProfiles;
+        public ESDRecordCombinationProfile[] combinationProfiles;
         /// <summary>List of product combination records</summary>
         [JsonProperty(Order = -2, Required = Required.Always)]
         [DataMember(IsRequired = true, Order = 2)]
@@ -117,17 +117,17 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the product combination data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="productCombinationParentRecords">list of product combination parent records</param>
-        /// <param name="productCombinationProfileRecords">list of product combination profile records</param>
+        /// <param name="combinationProfileRecords">list of product combination profile records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product combination record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductCombination(int resultStatus, string message, ESDRecordProductCombinationParent[] productCombinationParentRecords, ESDRecordProductCombinationProfile[] productCombinationProfileRecords, Dictionary<string, string> configs)
+        public ESDocumentProductCombination(int resultStatus, string message, ESDRecordProductCombinationParent[] productCombinationParentRecords, ESDRecordCombinationProfile[] combinationProfileRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
             this.dataRecords = productCombinationParentRecords;
             this.configs = configs;
-            this.productCombinationProfiles = productCombinationProfileRecords;
+            this.combinationProfiles = combinationProfileRecords;
         }
     }
 }

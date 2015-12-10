@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that contains a list of image file records associated with products
+    /// Ecommerce standards document that contains a list of image file records associated with products, downloads, or labour
     /// </summary>
     /// <example>
-    /// An example of the Product Images Ecommerce Standards document in its JSON serialised form
+    /// An example of the Images Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -46,25 +46,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductImage : ESDocument
+    public class ESDocumentImage : ESDocument
     {
-        /// <summary>List of product image records</summary>
+        /// <summary>List of image records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductImage[] dataRecords;
+        public ESDRecordImage[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product image data</param>
+        /// <param name="resultStatus">status of obtaining the image data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productImageRecords">list of product image records</param>
+        /// <param name="imageRecords">list of image records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product image record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the image record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductImage(int resultStatus, string message, ESDRecordProductImage[] productImageRecords, Dictionary<string, string> configs)
+        public ESDocumentImage(int resultStatus, string message, ESDRecordImage[] imageRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productImageRecords;
+            this.dataRecords = imageRecords;
             this.configs = configs;
         }
     }

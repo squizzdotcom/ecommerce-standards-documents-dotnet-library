@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that contains a list of attribute records associated with products, as well as a list of attribute profile records
+    /// Ecommerce standards document that contains a list of attribute records associated with products, download, and labour, as well as a list of attribute profile records
     /// </summary>
     /// <example>
-    /// An example of the Product Attribute Ecommerce Standards document in its JSON serialised form
+    /// An example of the Attribute Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -26,7 +26,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 0.5,
     ///     "totalDataRecords": 4,
-    ///     "productAttributeProfiles":
+    ///     "attributeProfiles":
     ///     [
     ///         {
     ///             "keyAttributeProfileID":"PAP-001"
@@ -35,22 +35,22 @@ namespace EcommerceStandardsDocuments
     ///             "keyAttributeProfileID":"PAP002",
     ///             "name":"Clothing Styling",
     ///             "description":"View the styling details of clothes",
-    ///             "productAttributes":
+    ///             "attributes":
     ///             [
     ///                 {
-    ///                     "keyProductAttributeID":"PAP002-0"
+    ///                     "keyAttributeID":"PAP002-0"
     ///                 },
     ///                 {
-    ///                     "keyProductAttributeID":"PAP002-1",
+    ///                     "keyAttributeID":"PAP002-1",
     ///                     "name":"Colour"
     ///                 },
     ///                 {
-    ///                     "keyProductAttributeID":"PAP002-2",
+    ///                     "keyAttributeID":"PAP002-2",
     ///                     "name":"Size",
     ///                     "dataType":"NUMBER"
     ///                 },
     ///                 {
-    ///                     "keyProductAttributeID":"PAP002-3",
+    ///                     "keyAttributeID":"PAP002-3",
     ///                     "name":"Texture",
     ///                     "dataType":"STRING"
     ///                 }
@@ -87,31 +87,31 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductAttribute : ESDocument
+    public class ESDocumentAttribute : ESDocument
     {
-        /// <summary>List of product attribute profile records</summary>
+        /// <summary>List of attribute profile records</summary>
         [JsonProperty(Order = -3, Required = Required.Always)]
         [DataMember(IsRequired = true, Order=1)]
-        public ESDRecordProductAttributeProfile[] productAttributeProfiles;
-        /// <summary>List of product attribute value records</summary>
+        public ESDRecordAttributeProfile[] attributeProfiles;
+        /// <summary>List of attribute value records</summary>
         [JsonProperty(Order = -2, Required = Required.Always)]
         [DataMember(IsRequired = true, Order=2)]
-        public ESDRecordProductAttributeValue[] dataRecords;
+        public ESDRecordAttributeValue[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product attribute data</param>
+        /// <param name="resultStatus">status of obtaining the attribute data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productAttributeProfileRecords">list of product attribute profile records</param>
-        /// <param name="productAttributeValueRecords">list of product attribute value records that assign attribute values to products</param>
+        /// <param name="attributeProfileRecords">list of attribute profile records</param>
+        /// <param name="attributeValueRecords">list of attribute value records that assign attribute values to products, downloads, and labour</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product attribute record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the attribute record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductAttribute(int resultStatus, string message, ESDRecordProductAttributeProfile[] productAttributeProfileRecords, ESDRecordProductAttributeValue[] productAttributeValueRecords, Dictionary<string, string> configs)
+        public ESDocumentAttribute(int resultStatus, string message, ESDRecordAttributeProfile[] attributeProfileRecords, ESDRecordAttributeValue[] attributeValueRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.productAttributeProfiles = productAttributeProfileRecords;
-            this.dataRecords = productAttributeValueRecords;
+            this.attributeProfiles = attributeProfileRecords;
+            this.dataRecords = attributeValueRecords;
             this.configs = configs;
         }
     }

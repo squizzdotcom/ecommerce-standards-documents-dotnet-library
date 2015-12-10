@@ -13,9 +13,9 @@ using Newtonsoft.Json;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce standards document that contains a list of product stock quantity records</summary>
+    /// <summary>Ecommerce standards document that contains a list of stock quantity records</summary>
     /// <example>
-    /// An example of the Product Stock Quantity Ecommerce Standards document in its JSON serialised form
+    /// An example of the Stock Quantity Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
@@ -50,25 +50,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductStockQuantity : ESDocument
+    public class ESDocumentStockQuantity : ESDocument
     {
-        /// <summary>List of product stock quantity records</summary>
+        /// <summary>List of stock quantity records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductStockQuantity[] dataRecords;
+        public ESDRecordStockQuantity[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product stock quantity data</param>
+        /// <param name="resultStatus">status of obtaining the stock quantity data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productStockQuantityRecords">list of product stock quantity records</param>
+        /// <param name="stockQuantityRecords">list of stock quantity records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product stock quantity record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the stock quantity record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductStockQuantity(int resultStatus, string message, ESDRecordProductStockQuantity[] productStockQuantityRecords, Dictionary<string, string> configs)
+        public ESDocumentStockQuantity(int resultStatus, string message, ESDRecordStockQuantity[] stockQuantityRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productStockQuantityRecords;
+            this.dataRecords = stockQuantityRecords;
             this.configs = configs;
         }
     }
