@@ -14,7 +14,7 @@ namespace EcommerceStandardsDocuments
 {
     /// <summary>Ecommerce Standards Record that holds data for a stock level unit quantity of a product. This record typically stores stock level quantity data that can updated on a frequent basis.</summary>
     [DataContract]
-    public class ESDRecordProductStockLevel
+    public class ESDRecordProductStockQuantity
     {
         /// <summary>Key of the product record that the stock level quantity is set for</summary>
         [DataMember]

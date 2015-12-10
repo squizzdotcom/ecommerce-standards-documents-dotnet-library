@@ -106,7 +106,7 @@
     <Compile Include="ESDRecordProductImage.cs" />
     <Compile Include="ESDRecordProductKitComponent.cs" />
     <Compile Include="ESDRecordSalesRep.cs" />
-    <Compile Include="ESDRecordProductStockLevel.cs" />
+    <Compile Include="ESDRecordProductStockQuantity.cs" />
     <Compile Include="ESDRecordTaxcode.cs" />
     <Compile Include="ESDRecordCustomerAccount.cs" />
     <Compile Include="ESDRecordCustomerAccountAddress.cs" />
@@ -125,7 +125,7 @@
     <Compile Include="ESDocumentProductKit.cs" />
     <Compile Include="ESDocumentPrice.cs" />
     <Compile Include="ESDocumentSalesRep.cs" />
-    <Compile Include="ESDocumentProductStockLevel.cs" />
+    <Compile Include="ESDocumentProductStockQuantity.cs" />
     <Compile Include="ESDocumentTaxcode.cs" />
     <Compile Include="ESDocumentCustomerAccount.cs" />
     <Compile Include="ESDocumentCustomerAccountAddress.cs" />

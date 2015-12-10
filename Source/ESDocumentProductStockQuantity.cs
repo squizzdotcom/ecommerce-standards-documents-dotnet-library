@@ -13,13 +13,13 @@ using Newtonsoft.Json;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce standards document that contains a list of product stock level records</summary>
+    /// <summary>Ecommerce standards document that contains a list of product stock quantity records</summary>
     /// <example>
-    /// An example of the Product Stock Level Ecommerce Standards document in its JSON serialised form
+    /// An example of the Product Stock Quantity Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product stock level data has been successfully obtained.",
+    ///     "message":"The product stock quantity data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,qtyAvailable,qtyOnHand,qtyOrdered,qtyOrdered,qtyBackordered,qtyReserved,qtyConsigned"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 0.5,
@@ -50,25 +50,25 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentProductStockLevel : ESDocument
+    public class ESDocumentProductStockQuantity : ESDocument
     {
-        /// <summary>List of product stock level records</summary>
+        /// <summary>List of product stock quantity records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProductStockLevel[] dataRecords;
+        public ESDRecordProductStockQuantity[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the product stock level data</param>
+        /// <param name="resultStatus">status of obtaining the product stock quantity data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="productStockLevelRecords">list of product stock level records</param>
+        /// <param name="productStockQuantityRecords">list of product stock quantity records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
-        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product stock level record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product stock quantity record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentProductStockLevel(int resultStatus, string message, ESDRecordProductStockLevel[] productStockLevelRecords, Dictionary<string, string> configs)
+        public ESDocumentProductStockQuantity(int resultStatus, string message, ESDRecordProductStockQuantity[] productStockQuantityRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
-            this.dataRecords = productStockLevelRecords;
+            this.dataRecords = productStockQuantityRecords;
             this.configs = configs;
         }
     }

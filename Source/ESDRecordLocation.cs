@@ -82,6 +82,6 @@ namespace EcommerceStandardsDocuments
         public int drop { get; set; }
         /// <summary>list of products stock level records that denote the products assigned to the location, and the quantity of product stock available for each</summary>
         [DataMember(EmitDefaultValue = false)]
-        public ESDRecordProductStockLevel[] productStock { get; set; }
+        public ESDRecordProductStockQuantity[] productStock { get; set; }
     }
 }
