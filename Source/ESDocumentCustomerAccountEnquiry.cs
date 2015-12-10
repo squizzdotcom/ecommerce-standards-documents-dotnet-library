@@ -115,9 +115,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry invoice data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "invoiceRecords":
     ///      [
@@ -191,9 +191,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry invoice detail data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
     ///     "invoiceRecords":
     ///      [
@@ -291,9 +291,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry sales order data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "orderSaleRecords":
     ///      [
@@ -367,9 +367,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry sales order detail data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
     ///     "invoiceRecords":
     ///      [
@@ -467,9 +467,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry credit data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "creditRecords":
     ///      [
@@ -527,9 +527,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry credit detail data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
     ///     "creditRecords":
     ///      [
@@ -604,9 +604,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry payment data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "paymentRecords":
     ///      [
@@ -644,9 +644,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry payment detail data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
     ///     "paymentRecords":
     ///      [
@@ -696,9 +696,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry back order data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "backOrderRecords":
     ///      [
@@ -772,9 +772,9 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The customer account enquiry back order detail data has been successfully obtained.",
-    ///     "configs":"",
+    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
     ///     "backOrderRecords":
     ///      [
