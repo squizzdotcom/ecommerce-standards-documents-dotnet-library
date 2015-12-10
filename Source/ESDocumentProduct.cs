@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,productCode,keyTaxcodeID,productSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,productClass,keySellUnitID,unit,weight,width,height,depth,averageCost,warehouse,supplier,deliveryTimeNoStock,deliveryTimeInStock,stockQuantity,stockNoneQuantity,stockLowQuantity,stockLowQuantity,isPriceTaxInclusive,isKitted,kitProductsSetPrice"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [

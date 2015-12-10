@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The sell unit data has been successfully obtained.",
     ///     "configs":{"dataFields":"keySellUnitID,sellUnitCode,sellUnitLabel,isBaseUnit,baseQuantity,parentQuantity,keySellUnitParentID"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

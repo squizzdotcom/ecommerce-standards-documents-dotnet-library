@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The customer account contract data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyContractID,contractCode,description,forceContractPrice,type,expireDate"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

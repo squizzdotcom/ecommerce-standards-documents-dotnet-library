@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The customer account enquiry transaction data has been successfully obtained.",
     ///     "configs": {},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 5,
     ///     "invoiceRecords":
     ///      [

@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product stock quantity data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,qtyAvailable,qtyOnHand,qtyOrdered,qtyOrdered,qtyBackordered,qtyReserved,qtyConsigned"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

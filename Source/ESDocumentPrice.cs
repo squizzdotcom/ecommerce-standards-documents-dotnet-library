@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,price"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -62,7 +62,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,price,quantity"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -100,7 +100,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyAccountID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -143,7 +143,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceGroupID,keySellUnitID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "priceGroups":
     ///     [
@@ -184,7 +184,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,drop"},
     ///     "dataTransferMode": "INCREMENT",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 5,
     ///     "dataRecords":
     ///      [

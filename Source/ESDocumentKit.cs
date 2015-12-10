@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product kit data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyKitProductID,keyComponentProductID,quantity,ordering"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///     [

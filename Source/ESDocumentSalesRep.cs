@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The sales representative data has been successfully obtained.",
     ///     "configs":{"dataFields":"keySalesRepID,name,salesRepCode,contact,isIndividual"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

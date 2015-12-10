@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product attribute data has been successfully obtained.",
     ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "attributeProfiles":
     ///     [

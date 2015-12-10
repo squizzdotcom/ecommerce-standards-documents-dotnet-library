@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The location data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyLocationID,locationCode,locationName,address1,address2,address3,region,country,postcode,contact,phone,fax,isActive,isGeographic,latitude,longitude"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
 ///         [

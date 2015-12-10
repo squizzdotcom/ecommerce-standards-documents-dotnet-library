@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The download data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyDownloadID,downloadCode,keyTaxcodeID,downloadSearchCode,downloadLocation,downloadKey,downloadSize,brand,name,description1,description2,description3,description4,downloadClass,averageCost,supplier,deliveryTimeNoStock,deliveryTimeInStock,downloadQuantity,downloadNoneQuantity,downloadLowQuantity,isPriceTaxInclusive,isKitted,kitSetPrice"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 0.5,
+    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [
