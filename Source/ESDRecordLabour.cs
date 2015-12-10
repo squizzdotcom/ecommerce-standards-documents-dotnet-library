@@ -46,6 +46,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Class of the labour. A class may contain any text that can be set for multiple labour records as a classifier of the type of labour.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string labourClass { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Key of the sell unit record that denotes the default unit that the labour is sold in.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySellUnitID { get; set; }

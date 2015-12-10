@@ -31,6 +31,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>text to describe any details of the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string description { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Language that all text is described in. Set it to one of the LANG constants in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string language { get; set; }

@@ -55,6 +55,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Class of the product. A class may contain any text that can be set for multiple products as a classifier of the type of product.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string productClass { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Key of the sell unit record that denotes the default unit that the product is sold in.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySellUnitID { get; set; }

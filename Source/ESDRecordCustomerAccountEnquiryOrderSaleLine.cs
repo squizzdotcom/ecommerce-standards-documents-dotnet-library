@@ -37,6 +37,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>label of the unit that any quantities set to the line represent.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string unit { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Quantity ordered for the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal quantityOrdered { get; set; }

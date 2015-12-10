@@ -55,6 +55,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Class of the download. A class may contain any text that can be set for multiple downloads as a classifier of the type of download.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string downloadClass { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Size of the download, in bytes.</summary>
         [DataMember(EmitDefaultValue = false)]
         public long downloadSize { get; set; }

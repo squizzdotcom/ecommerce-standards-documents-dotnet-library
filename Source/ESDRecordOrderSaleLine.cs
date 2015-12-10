@@ -45,6 +45,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the location record that the order line is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
+        /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string UNSPSC { get; set; }
         /// <summary>Language that the descriptive text of the line is set in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string language { get; set; }
