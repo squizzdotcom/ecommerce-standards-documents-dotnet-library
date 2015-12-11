@@ -24,32 +24,32 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
     ///     "totalDataRecords": 2,
-    ///     "productCombinationProfiles":
+    ///     "combinationProfiles":
     ///     [
     ///         {
-    ///             "keyProductComboProfileID":"PROF-123",
+    ///             "keyComboProfileID":"PROF-123",
     ///             "combinationFields":[]
     ///         },
     ///         {
-    ///             "keyProductComboProfileID":"PROF-456",
+    ///             "keyComboProfileID":"PROF-456",
     ///             "profileName":"Furniture Styling",
     ///             "description":"Styling of Furniture Products",
     ///             "combinationFields":
     ///             [
     ///                 {
-    ///                     "keyProductComboProfileFieldID":"PROF-456-1",
+    ///                     "keyComboProfileFieldID":"PROF-456-1",
     ///                     "fieldValues":[],
     ///                     "fieldValueIDs":[]
     ///                 },
     ///                 {
-    ///                     "keyProductComboProfileFieldID":"PROF-456-2",
+    ///                     "keyComboProfileFieldID":"PROF-456-2",
     ///                     "fieldName":"Size",
     ///                     "ordering": 2,
     ///                     "fieldValues": ["Small","Medium","Large","Jumbo"],
     ///                     "fieldValueIDs": ["PROF-456-2-SM","PROF-456-2-MED","PROF-456-2-LARG","PROF-456-2-JUM"]
     ///                 },
     ///                 {
-    ///                     "keyProductComboProfileFieldID":"PROF-456-4",
+    ///                     "keyComboProfileFieldID":"PROF-456-4",
     ///                     "fieldName":"Style",
     ///                     "ordering": 1,
     ///                     "fieldValues": ["Classic","Modern","Vintage","Minimalist"],
@@ -62,17 +62,17 @@ namespace EcommerceStandardsDocuments
     ///      [
     ///         {
     ///             "keyProductID":"678",
-    ///             "keyProductComboProfileID":"PROF-123",
+    ///             "keyComboProfileID":"PROF-123",
     ///             "productCombinations":[]
     ///         },
     ///         {
     ///             "keyProductID": "679",
-    ///             "keyProductComboProfileID": "PROF-456",
+    ///             "keyComboProfileID": "PROF-456",
     ///             "productCombinations": 
     ///             [
     ///                 {
     ///                     "keyProductID":"SOFTA-123",
-    ///                     "keyProductComboProfileID":"PROF-456",
+    ///                     "keyComboProfileID":"PROF-456",
     ///                     "fieldValueCombinations"[
     ///                         ["PROF-456-2","PROF-456-2-SM"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]
@@ -80,7 +80,7 @@ namespace EcommerceStandardsDocuments
     ///                 },
     ///                 {
     ///                     "keyProductID":"SOFTA-456",
-    ///                     "keyProductComboProfileID":"PROF-456",
+    ///                     "keyComboProfileID":"PROF-456",
     ///                     "fieldValueCombinations"[
     ///                         ["PROF-456-2","PROF-456-2-SM"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]
@@ -88,7 +88,7 @@ namespace EcommerceStandardsDocuments
     ///                 },
     ///                 {
     ///                     "keyProductID":"SOFTA-098",
-    ///                     "keyProductComboProfileID":"PROF-456",
+    ///                     "keyComboProfileID":"PROF-456",
     ///                     "fieldValueCombinations"[
     ///                         ["PROF-456-2","PROF-456-2-MED"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]

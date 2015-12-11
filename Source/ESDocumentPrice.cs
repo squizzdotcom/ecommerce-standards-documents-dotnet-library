@@ -21,7 +21,7 @@ namespace EcommerceStandardsDocuments
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product price-level data has been successfully obtained.",
+    ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,price"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
@@ -59,7 +59,7 @@ namespace EcommerceStandardsDocuments
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product price-level quantity break data has been successfully obtained.",
+    ///     "message":"The product price-level quantity break pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,price,quantity"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
@@ -97,7 +97,7 @@ namespace EcommerceStandardsDocuments
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product price-level quantity break data has been successfully obtained.",
+    ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyAccountID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
@@ -140,7 +140,7 @@ namespace EcommerceStandardsDocuments
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product price-level quantity break data has been successfully obtained.",
+    ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceGroupID,keySellUnitID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
@@ -181,7 +181,7 @@ namespace EcommerceStandardsDocuments
     /// <code>
     /// {
     ///     "resultStatus":"1",
-    ///     "message":"The product price-level data has been successfully obtained.",
+    ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,drop"},
     ///     "dataTransferMode": "INCREMENT",
     ///     "version": 1.0,
