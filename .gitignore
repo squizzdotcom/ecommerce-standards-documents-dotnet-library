@@ -1,0 +1,4 @@
+Source/packages/
+Source/obj/
+*.suo
+Source/bin/
