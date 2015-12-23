@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ESDocumentCustomerAccountContact.cs" />
     <Compile Include="ESDocumentCustomerAccountContract.cs" />
     <Compile Include="ESDocumentCustomerAccountEnquiry.cs" />
     <Compile Include="ESDocumentDownload.cs" />
@@ -57,6 +58,8 @@
     <Compile Include="ESDocumentSellUnit.cs" />
     <Compile Include="ESDocumentSupplierAccount.cs" />
     <Compile Include="ESDocumentSupplierAccountAddress.cs" />
+    <Compile Include="ESDocumentSupplierAccountContact.cs" />
+    <Compile Include="ESDRecordContact.cs" />
     <Compile Include="ESDRecordCustomerAccountContract.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryBackOrder.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryBackOrderLine.cs" />
