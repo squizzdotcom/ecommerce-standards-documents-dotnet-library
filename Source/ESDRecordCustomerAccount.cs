@@ -106,7 +106,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is On Hold. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is On Hold. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string onHoldAction { get; set; }
 
@@ -114,7 +114,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is Outside Terms. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is Outside Terms. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string outTermsAction { get; set; }
 
@@ -122,7 +122,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is Outside Its Credit balance. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is Outside Its Credit balance. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string outCreditAction { get; set; }
 

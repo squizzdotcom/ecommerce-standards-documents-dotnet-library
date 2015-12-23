@@ -88,7 +88,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Date that the order was created. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember]
         public long createdDate { get; set; }
-        /// <summary>ID of the user in the associated Ecommerce system where the order was created. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        /// <summary>ID of the user in the associated Ecommerce system where the order was created.</summary>
         [DataMember]
         public string eCommerceUserID { get; set; }
         /// <summary>ID of the associated Ecommerce system where the order was created.</summary>
@@ -372,7 +372,7 @@ namespace EcommerceStandardsDocuments
         public string totalWeightMeasureCode { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
 
