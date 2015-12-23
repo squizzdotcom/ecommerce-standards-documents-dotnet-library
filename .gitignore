@@ -1,0 +1,6 @@
+Source/packages/
+Source/obj/
+*.suo
+Source/bin/
+NuGet/*.nupkg
+NuGet/EcommerceStandardsDocuments/
