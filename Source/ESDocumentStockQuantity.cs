@@ -70,6 +70,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = stockQuantityRecords;
             this.configs = configs;
+            this.totalDataRecords = stockQuantityRecords.Length;
         }
     }
 }

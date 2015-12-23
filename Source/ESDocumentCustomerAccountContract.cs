@@ -74,6 +74,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = customerAccountContractRecords;
             this.configs = configs;
+            this.totalDataRecords = customerAccountContractRecords.Length;
         }
     }
 }

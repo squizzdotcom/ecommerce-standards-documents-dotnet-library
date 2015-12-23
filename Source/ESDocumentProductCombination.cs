@@ -128,6 +128,7 @@ namespace EcommerceStandardsDocuments
             this.dataRecords = productCombinationParentRecords;
             this.configs = configs;
             this.combinationProfiles = combinationProfileRecords;
+            this.totalDataRecords = productCombinationParentRecords.Length;
         }
     }
 }

@@ -97,7 +97,7 @@ namespace EcommerceStandardsDocuments
         public ESDRecordLocation[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">result of the import</param>
+        /// <param name="resultStatus">status of obtaining the location data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="locations">array of warehouses mapped to stock levels</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
@@ -109,6 +109,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = locations;
             this.configs = configs;
+            this.totalDataRecords = locations.Length;
         }
     }
 }

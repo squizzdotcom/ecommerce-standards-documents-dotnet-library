@@ -80,16 +80,18 @@ namespace EcommerceStandardsDocuments
         public ESDRecordCustomerAccountAddress[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">result of the import</param>
+        /// <param name="resultStatus">status of obtaining the customer account address record data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="customerAccountAddresses">array of user account addressses</param>
-        /// <param name="configs">dictionary containing any configurable information for the import</param>
+        /// <param name="customerAccountAddresses">list of customer account address records</param>
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the customer account address record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.</param>
         public ESDocumentCustomerAccountAddress(int resultStatus, string message, ESDRecordCustomerAccountAddress[] customerAccountAddresses, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
             this.dataRecords = customerAccountAddresses;
             this.configs = configs;
+            this.totalDataRecords = customerAccountAddresses.Length;
         }
     }
 }

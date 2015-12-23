@@ -90,6 +90,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = sellUnitRecords;
             this.configs = configs;
+            this.totalDataRecords = sellUnitRecords.Length;
         }
     }
 }

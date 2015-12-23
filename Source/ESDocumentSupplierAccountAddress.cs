@@ -91,6 +91,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = supplierAccountAddresses;
             this.configs = configs;
+            this.totalDataRecords = supplierAccountAddresses.Length;
         }
     }
 }

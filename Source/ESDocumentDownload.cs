@@ -94,6 +94,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = downloadRecords;
             this.configs = configs;
+            this.totalDataRecords = downloadRecords.Length;
         }
     }
 }

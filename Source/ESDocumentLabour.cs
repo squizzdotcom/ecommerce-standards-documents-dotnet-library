@@ -87,6 +87,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = labourRecords;
             this.configs = configs;
+            this.totalDataRecords = labourRecords.Length;
         }
     }
 }

@@ -23,16 +23,17 @@ namespace EcommerceStandardsDocuments
         public ESDRecordCustomerAccountEnquiryProductPrice[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">result of the import</param>
+        /// <param name="resultStatus">status of obtaining the customer account enquiry product price record data</param>
         /// <param name="message">message to accompany the result status</param>
-        /// <param name="accountProductPrices">array of product kit components</param>
-        /// <param name="configs">dictionary containing any configurable information for the import</param>
+        /// <param name="accountProductPrices">list of customer account product pricing records</param>
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.</param>
         public ESDocumentCustomerAccountEnquiryProductPrice(int resultStatus, string message, ESDRecordCustomerAccountEnquiryProductPrice[] accountProductPrices, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
             this.dataRecords = accountProductPrices;
             this.configs = configs;
+            this.totalDataRecords = accountProductPrices.Length;
         }
     }
 }

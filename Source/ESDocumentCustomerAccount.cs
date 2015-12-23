@@ -106,9 +106,9 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the customer account record data</param>
-        /// <param name="message">message describing the status of obtaining the data for the document</param>
+        /// <param name="message">message to accompany the result status</param>
         /// <param name="customerAccountRecords">list of customer account records</param>
-        /// <param name="configs">A list of key value pairs that contain additionally information about the document.
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the customer account record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
         public ESDocumentCustomerAccount(int resultStatus, string message, ESDRecordCustomerAccount[] customerAccountRecords, Dictionary<string, string> configs)
@@ -117,6 +117,7 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = customerAccountRecords;
             this.configs = configs;
+            this.totalDataRecords = customerAccountRecords.Length;
         }
     }
 }

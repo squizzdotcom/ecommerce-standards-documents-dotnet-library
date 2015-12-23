@@ -891,9 +891,9 @@ namespace EcommerceStandardsDocuments
         public ESDRecordCustomerAccountEnquiryCredit[] creditRecords { get; set; }
        
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus"></param>
-        /// <param name="message"></param>
-        /// <param name="configs"></param>
+        /// <param name="resultStatus">status of obtaining the customer account record data</param>
+        /// <param name="message">message to accompany the result status</param>
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.</param>
         public ESDocumentCustomerAccountEnquiry(int resultStatus, string message, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
