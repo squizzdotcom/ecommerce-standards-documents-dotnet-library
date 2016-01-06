@@ -59,7 +59,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = flagMappingRecords;
             this.configs = configs;
-            this.totalDataRecords = flagMappingRecords.Length;
+            if (flagMappingRecords != null)
+            {
+                this.totalDataRecords = flagMappingRecords.Length;
+            }
         }
     }
 }

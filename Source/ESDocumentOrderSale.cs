@@ -336,7 +336,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = salesOrderRecords;
             this.configs = configs;
-            this.totalDataRecords = salesOrderRecords.Length;
+            if (salesOrderRecords != null)
+            {
+                this.totalDataRecords = salesOrderRecords.Length;
+            }
         }
     }
 }

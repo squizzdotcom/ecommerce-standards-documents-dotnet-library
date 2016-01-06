@@ -75,7 +75,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of sell unit records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProduct[] dataRecords;
+        public ESDRecordSellUnit[] dataRecords;
 
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the product data</param>
@@ -84,13 +84,16 @@ namespace EcommerceStandardsDocuments
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the sell unit record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentSellUnit(int resultStatus, string message, ESDRecordProduct[] sellUnitRecords, Dictionary<string, string> configs)
+        public ESDocumentSellUnit(int resultStatus, string message, ESDRecordSellUnit[] sellUnitRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
             this.dataRecords = sellUnitRecords;
             this.configs = configs;
-            this.totalDataRecords = sellUnitRecords.Length;
+            if (sellUnitRecords != null)
+            {
+                this.totalDataRecords = sellUnitRecords.Length;
+            }
         }
     }
 }

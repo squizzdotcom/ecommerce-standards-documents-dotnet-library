@@ -89,7 +89,9 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = taxcodeRecords;
             this.configs = configs;
-            this.totalDataRecords = taxcodeRecords.Length;
+            if (taxcodeRecords != null){
+                this.totalDataRecords = taxcodeRecords.Length;
+            }
         }
     }
 }

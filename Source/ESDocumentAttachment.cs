@@ -74,7 +74,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = attachmentRecords;
             this.configs = configs;
-            this.totalDataRecords = attachmentRecords.Length;
+            if (attachmentRecords != null)
+            {
+                this.totalDataRecords = attachmentRecords.Length;
+            }
         }
     }
 }

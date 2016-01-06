@@ -73,7 +73,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = contactRecords;
             this.configs = configs;
-            this.totalDataRecords = contactRecords.Length;
+            if (contactRecords != null)
+            {
+                this.totalDataRecords = contactRecords.Length;
+            }
         }
     }
 }

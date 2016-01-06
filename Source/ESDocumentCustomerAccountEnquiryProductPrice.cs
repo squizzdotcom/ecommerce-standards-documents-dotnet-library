@@ -33,7 +33,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = accountProductPrices;
             this.configs = configs;
-            this.totalDataRecords = accountProductPrices.Length;
+            if (accountProductPrices != null)
+            {
+                this.totalDataRecords = accountProductPrices.Length;
+            }
         }
     }
 }

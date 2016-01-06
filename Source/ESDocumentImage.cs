@@ -66,7 +66,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = imageRecords;
             this.configs = configs;
-            this.totalDataRecords = imageRecords.Length;
+            if (imageRecords != null)
+            {
+                this.totalDataRecords = imageRecords.Length;
+            }
         }
     }
 }

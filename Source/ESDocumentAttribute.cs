@@ -113,7 +113,10 @@ namespace EcommerceStandardsDocuments
             this.attributeProfiles = attributeProfileRecords;
             this.dataRecords = attributeValueRecords;
             this.configs = configs;
-            this.totalDataRecords = attributeValueRecords.Length;
+            if (attributeValueRecords != null)
+            {
+                this.totalDataRecords = attributeValueRecords.Length;
+            }
         }
     }
 }

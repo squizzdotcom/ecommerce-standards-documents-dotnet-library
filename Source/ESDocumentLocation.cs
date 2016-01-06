@@ -109,7 +109,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = locations;
             this.configs = configs;
-            this.totalDataRecords = locations.Length;
+            if (locations != null)
+            {
+                this.totalDataRecords = locations.Length;
+            }
         }
     }
 }
