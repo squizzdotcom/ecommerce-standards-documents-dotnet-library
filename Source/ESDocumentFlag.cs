@@ -24,7 +24,22 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
     ///     "totalDataRecords": 5,
-    ///     "flags": 
+    ///     "flagRecords": 
+    ///     [
+    ///         {"keyFlagID":"FLAG-123"},
+    ///         {
+    ///             "keyFlagID":"FLAG-456",
+    ///             "flagCode":"DIS",
+    ///             "flagName":"Discounted",
+    ///             "description":"Denotes products that are marked as having a discounted price."
+    ///         },
+    ///         {
+    ///             "keyFlagID":"FLAG-789",
+    ///             "flagCode":"ENV",
+    ///             "flagName":"Environmentally Friendly",
+    ///             "description":"Denotes products that are marked as being manufacturered using environmentally friendly materials and methods."
+    ///         }
+    ///     ],
     ///     "dataRecords":
     ///     [
     ///         {"keyProductID":"PROD-123","keyFlagID":"FLAG-123"},
@@ -41,8 +56,13 @@ namespace EcommerceStandardsDocuments
     [DataContract]
     public class ESDocumentFlag : ESDocument
     {
-        /// <summary>list of flag mapping records that assign flags to products, downloads, or labour</summary>
+        /// <summary>list of flag records</summary>
         [JsonProperty(Order = -4)]
+        [DataMember]
+        public ESDRecordFlag[] flagRecords;
+
+        /// <summary>list of flag mapping records that assign flags to products, downloads, or labour</summary>
+        [JsonProperty(Order = -3)]
         [DataMember]
         public ESDRecordFlagMapping[] dataRecords;
 
@@ -63,6 +83,28 @@ namespace EcommerceStandardsDocuments
             {
                 this.totalDataRecords = flagMappingRecords.Length;
             }
+            this.flagRecords = new ESDRecordFlag[]{};
+        }
+
+        /// <summary>Constructor</summary>
+        /// <param name="resultStatus">status of obtaining the flag data</param>
+        /// <param name="message">message to accompany the result status</param>
+        /// <param name="flagRecords">list of flag records</param>
+        /// <param name="flagMappingRecords">list of flag mapping records</param>
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the product flag record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// </param>
+        public ESDocumentFlag(int resultStatus, string message, ESDRecordFlag[] flagRecords, ESDRecordFlagMapping[] flagMappingRecords, Dictionary<string, string> configs)
+        {
+            this.resultStatus = resultStatus;
+            this.message = message;
+            this.dataRecords = flagMappingRecords;
+            this.configs = configs;
+            if (flagMappingRecords != null)
+            {
+                this.totalDataRecords = flagMappingRecords.Length;
+            }
+            this.flagRecords = flagRecords;
         }
     }
 }
