@@ -20,71 +20,74 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The location data has been successfully obtained.",
-    ///     "configs":{"dataFields":"keyLocationID,locationCode,locationName,address1,address2,address3,region,country,postcode,contact,phone,fax,isActive,isGeographic,latitude,longitude"},
+    ///     "configs":{
+    ///         "dataFieldsLocation":"keyLocationID,locationCode,locationName,address1,address2,address3,region,country,postcode,contact,phone,fax,isActive,isGeographic,latitude,longitude",
+    ///         "dataFieldsLocationStock":"keyProductID,qtyAvailable,qtyOnHand,qtyOrdered,qtyBackordered,qtyReserved,qtyConsigned"
+    ///      },
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
-///         [
-///             {
-///                 "keyLocationID":"111",
-///                 "locationCode":"LOC-111",
-///                 "locationName":"Local Store"
-///             },
-///             {
-///                 "keyLocationID":"123",
-///                 "locationCode":"LOC-123",
-///                 "locationName":"Head Office",
-///                 "address1":"234",
-///                 "address2":"Bourke Street",
-///                 "address3":"Melbourne",
-///                 "region":"Victoria",
-///                 "country":"Australia",
-///                 "postcode":"3000",
-///                 "contact":"John Doe",
-///                 "phone":"+614001112222",
-///                 "fax":"+614002223333",
-///                 "isActive":"Y",
-///                 "isGeographic":"Y",
-///                 "latitude":45.123,
-///                 "longitude":-72.123,
-///                 "productStock":[]
-///             },
-///             {
-///                 "keyLocationID":"456",
-///                 "locationCode":"LCT-456",
-///                 "locationName":"Warehouse",
-///                 "address1":"237",
-///                 "address2":"Bourke Street",
-///                 "address3":"Melbourne",
-///                 "region":"Victoria",
-///                 "country":"Australia",
-///                 "postcode":"3000",
-///                 "contact":"Max Smith",
-///                 "phone":"+614003334444",
-///                 "fax":"+614005556666",
-///                 "isActive":"Y",
-///                 "isGeographic":"Y",
-///                 "latitude":45.423,
-///                 "longitude":-72.823,
-///                 "productStock":
-///                 [
-///                     {
-///                         "keyProductID":"ABC",
-///                         "qtyAvailable":432
-///                     },
-///                     {
-///                         "keyProductID":"DEF",
-///                         "qtyAvailable":0,
-///                         "qtyOnHand":0,
-///                         "qtyOrdered":5,
-///                         "qtyBackordered":10,
-///                         "qtyReserved":11,
-///                         "qtyConsigned":3
-///                     }
-///                 }
-///             }
-///         ]
+    ///         [
+    ///             {
+    ///                 "keyLocationID":"111",
+    ///                 "locationCode":"LOC-111",
+    ///                 "locationName":"Local Store"
+    ///             },
+    ///             {
+    ///                 "keyLocationID":"123",
+    ///                 "locationCode":"LOC-123",
+    ///                 "locationName":"Head Office",
+    ///                 "address1":"234",
+    ///                 "address2":"Bourke Street",
+    ///                 "address3":"Melbourne",
+    ///                 "region":"Victoria",
+    ///                 "country":"Australia",
+    ///                 "postcode":"3000",
+    ///                 "contact":"John Doe",
+    ///                 "phone":"+614001112222",
+    ///                 "fax":"+614002223333",
+    ///                 "isActive":"Y",
+    ///                 "isGeographic":"Y",
+    ///                 "latitude":45.123,
+    ///                 "longitude":-72.123,
+    ///                 "productStock":[]
+    ///             },
+    ///             {
+    ///                 "keyLocationID":"456",
+    ///                 "locationCode":"LCT-456",
+    ///                 "locationName":"Warehouse",
+    ///                 "address1":"237",
+    ///                 "address2":"Bourke Street",
+    ///                 "address3":"Melbourne",
+    ///                 "region":"Victoria",
+    ///                 "country":"Australia",
+    ///                 "postcode":"3000",
+    ///                 "contact":"Max Smith",
+    ///                 "phone":"+614003334444",
+    ///                 "fax":"+614005556666",
+    ///                 "isActive":"Y",
+    ///                 "isGeographic":"Y",
+    ///                 "latitude":45.423,
+    ///                 "longitude":-72.823,
+    ///                 "productStock":
+    ///                 [
+    ///                     {
+    ///                         "keyProductID":"ABC",
+    ///                         "qtyAvailable":432
+    ///                     },
+    ///                     {
+    ///                         "keyProductID":"DEF",
+    ///                         "qtyAvailable":0,
+    ///                         "qtyOnHand":0,
+    ///                         "qtyOrdered":5,
+    ///                         "qtyBackordered":10,
+    ///                         "qtyReserved":11,
+    ///                         "qtyConsigned":3
+    ///                     }
+    ///                 }
+    ///             }
+    ///         ]
     /// }
     /// </code>
     /// </example>
