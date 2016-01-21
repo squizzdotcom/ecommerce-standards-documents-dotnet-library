@@ -307,9 +307,17 @@ namespace EcommerceStandardsDocuments
     ///                     "priceExTax": 20.00,
     ///                     "priceIncTax": 22.00,
     ///                     "priceTax": 2.00,
-    ///                     "keyTaxcodeID": "456",
-    ///                     "taxcode": "GST",
-    ///                     "taxcodeDescription": "Australian Goods And Services Tax"
+    ///                     "taxes":
+    ///                     [
+    ///                         "keyTaxcodeID":"456",
+    ///                         "taxcode":"GST",
+    ///                         "taxcodeLabel":"Goods And Services Tax",
+    ///                         "taxRate": 10.00,
+    ///                         "language": "EN_AU",
+    ///                         "quantity": 1,
+    ///                         "priceTax": 2.00,
+    ///                         "priceTotalTax": 2.00
+    ///                     ]
     ///                 }
     ///             ]
     ///         }
