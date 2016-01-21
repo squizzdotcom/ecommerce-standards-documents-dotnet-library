@@ -51,6 +51,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of surcharge lines set to the order</summary>
         [DataMember(EmitDefaultValue = false)]
         public List<ESDRecordOrderSurcharge> surcharges { get; set; }
+        /// <summary>List of payments set to the order</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public List<ESDRecordOrderPayment> payments { get; set; }
 
         /// <summary>Key that allows the sale order record to be uniquely identified and linked to.</summary>
         [DataMember]
@@ -91,7 +94,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>ID of the user in the associated Ecommerce system where the order was created.</summary>
         [DataMember]
         public string eCommerceUserID { get; set; }
-        /// <summary>ID of the associated Ecommerce system where the order was created.</summary>
+        /// <summary>Name of the user in the associated Ecommerce system where the order was created. Ideally this is set to a label of the user, and not the credentials used for a user to login (since that could be a security issue passing around such information).</summary>
+        [DataMember]
+        public string eCommerceUserName { get; set; }
+        /// <summary>ID of the associated Ecommerce system where the order was created. Ideally each system sets its own unique identifier, formatted such as ORG_NAME.SYSTEM_NAME</summary>
         [DataMember]
         public string eCommerceSystemID { get; set; }
         /// <summary>Key of the sales representative record linked to the order.</summary>
@@ -330,7 +336,7 @@ namespace EcommerceStandardsDocuments
         public string freightCarrierAccountCode { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
-        /// If 'Y' then indicates that the is being supplied by a different entity from supplier assigned to the order.
+        /// If 'Y' then indicates that the order is being supplied by a different entity from supplier assigned to the order.
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string isDropship { get; set; }
@@ -352,7 +358,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Method that the order is being shipped by</summary>
         [DataMember(EmitDefaultValue = false)]
         public string shippingMethod { get; set; }
-        /// <summary>Percentage rate discounted off the order monetary total.</summary>
+        /// <summary>Percentage rate discounted off the order monetary total based on the discount assigned to the order's customer account.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal accountDiscountRate { get; set; }
         /// <summary>Territory associated with the customer account</summary>
@@ -384,6 +390,7 @@ namespace EcommerceStandardsDocuments
         {
             lines = new List<ESDRecordOrderSaleLine>();
             surcharges = new List<ESDRecordOrderSurcharge>();
+            payments = new List<ESDRecordOrderPayment>();
         }
 
         /// <summary>sets default values for members that have no values set</summary>
@@ -396,6 +403,10 @@ namespace EcommerceStandardsDocuments
 
             if (surcharges == null){
                 surcharges = new List<ESDRecordOrderSurcharge>();
+            }
+
+            if (payments == null){
+                payments = new List<ESDRecordOrderPayment>();
             }
 
             if (billingDescription == null){
