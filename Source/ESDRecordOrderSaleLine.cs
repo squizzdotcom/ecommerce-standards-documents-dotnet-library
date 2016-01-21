@@ -102,6 +102,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Sets which system or person set the pricing of the line. Set it to a constant prefixed with ENTITY_SET_PRICE_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string entitySetPrice { get; set; }
+        /// <summary>Key of the sell unit that the line is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySellUnitID { get; set; }
         /// <summary>Name of the unit set for the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string unitName { get; set; }
