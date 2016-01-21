@@ -66,6 +66,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the labour data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="labourRecords">list of labour records</param>
+        [JsonConstructor]
         public ESDocumentLabour(int resultStatus, string message, ESDRecordProduct[] labourRecords)
         {
             this.resultStatus = resultStatus;

@@ -130,6 +130,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the product data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="productRecords">list of product records</param>
+        [JsonConstructor]
         public ESDocumentProduct(int resultStatus, string message, ESDRecordProduct[] productRecords)
         {
             this.resultStatus = resultStatus;
