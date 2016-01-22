@@ -35,35 +35,55 @@ namespace EcommerceStandardsDocuments
     ///             "keySellUnitID":"2",
     ///             "sellUnitCode":"EA",
     ///             "sellUnitLabel":"EACH",
-    ///             "isBaseUnit":"Y",
-    ///             "baseQuantity": 1
+    ///             "isBaseUnit":"Y"
     ///         },
     ///         {
     ///             "keySellUnitID":"3",
-    ///             "sellUnitCode":"PK6",
-    ///             "sellUnitLabel":"Pack Of 6",
+    ///             "sellUnitCode":"PK",
+    ///             "sellUnitLabel":"Pack",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 6,
-    ///             "parentQuantity": 6,
     ///             "keySellUnitParentID":"2"
     ///         },
     ///         {
     ///             "keySellUnitID":"4",
-    ///             "sellUnitCode":"CT-4-6",
-    ///             "sellUnitLabel":"Carton (4 packs of 6)",
+    ///             "sellUnitCode":"CT",
+    ///             "sellUnitLabel":"Carton",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 24,
-    ///             "parentQuantity": 4,
     ///             "keySellUnitParentID":"3"
     ///         },
     ///         {
     ///             "keySellUnitID":"5",
-    ///             "sellUnitCode":"CN-50",
-    ///             "sellUnitLabel":"Container (50 Cartons)",
+    ///             "sellUnitCode":"CN",
+    ///             "sellUnitLabel":"Container",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 1200,
-    ///             "parentQuantity": 50,
     ///             "keySellUnitParentID":"4"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"6",
+    ///             "sellUnitCode":"SHIP",
+    ///             "sellUnitLabel":"Ship Load",
+    ///             "isBaseUnit":"N",
+    ///             "keySellUnitParentID":"5"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"7",
+    ///             "sellUnitCode":"TRAIN",
+    ///             "sellUnitLabel":"Train Load",
+    ///             "isBaseUnit":"N",
+    ///             "keySellUnitParentID":"5"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"8",
+    ///             "sellUnitCode":"HOUR",
+    ///             "sellUnitLabel":"Hour",
+    ///             "isBaseUnit":"Y"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"9",
+    ///             "sellUnitCode":"LABOUR PACK",
+    ///             "sellUnitLabel":"Pack Of Labour Hours",
+    ///             "keySellUnitParentID":"8",
+    ///             "isBaseUnit":"N"
     ///         }
     ///     ]
     /// }

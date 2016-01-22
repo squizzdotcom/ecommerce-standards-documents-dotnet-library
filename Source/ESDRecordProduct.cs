@@ -130,5 +130,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
+
+        /// <summary>Stores a list of sell units that denote different quantities the the product can be sold in</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordSellUnit[] sellUnits { get; set; }
     }
 }

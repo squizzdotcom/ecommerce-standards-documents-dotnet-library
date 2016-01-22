@@ -81,5 +81,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
+
+        /// <summary>Stores a list of sell units that different units of labour can be sold in. Eg labour could be sold by the hour, or in packs</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordSellUnit[] sellUnits { get; set; }
     }
 }

@@ -47,7 +47,6 @@ namespace EcommerceStandardsDocuments
     ///             "description3":"Recommended to be used with dark inks.",
     ///             "description4":"",
     ///             "productClass":"paper",
-    ///             "keySellUnitID": 2,
     ///             "unit":"REAM",
     ///             "weight": 20.1,
     ///             "width":"21,
@@ -63,7 +62,24 @@ namespace EcommerceStandardsDocuments
     ///             "stockLowQuantity": 10,
     ///             "isPriceTaxInclusive": "N",
     ///             "isKitted":"N",
-    ///             "kitProductsSetPrice":"N"
+    ///             "kitProductsSetPrice":"N",
+    ///             "keySellUnitID": 2,
+    ///             "sellUnits":[
+    ///                 {
+    ///                     "keySellUnitID":"2"
+    ///                 },
+    ///                 {
+    ///                     "keySellUnitID":"3",
+    ///                     "keySellUnitParentID":"2",
+    ///                     "baseQuantity": "6"
+    ///                 },
+    ///                 {
+    ///                     "keySellUnitID":"4",
+    ///                     "keySellUnitParentID":"3",
+    ///                     "baseQuantity": "24",
+    ///                     "parentQuantity": "4"
+    ///                 }
+    ///             ]
     ///         }
     ///     ]
     /// }
