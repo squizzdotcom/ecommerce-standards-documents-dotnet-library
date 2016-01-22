@@ -17,16 +17,16 @@ namespace EcommerceStandardsDocuments
     public class ESDRecordStockQuantity
     {
         /// <summary>Key of the product record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
         /// <summary>Key of the download record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Key of the labour record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
         /// <summary>Unit quantity of stock available to be purchased</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public decimal qtyAvailable { get; set; }
         /// <summary>Unit quantity of stock on hand at its location</summary>
         [DataMember(EmitDefaultValue = false)]
