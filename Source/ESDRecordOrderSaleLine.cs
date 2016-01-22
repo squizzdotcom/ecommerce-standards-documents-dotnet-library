@@ -105,6 +105,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the sell unit that the line is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySellUnitID { get; set; }
+        /// <summary>Sets the unit quantity of the ordered line that makes up the base quantity. Eg. if the line was bought as a pack, this would indicate that a pack sell unit type consists of "6" individual units.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string sellUnitBaseQuantity { get; set; }
         /// <summary>Name of the unit set for the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string unitName { get; set; }
