@@ -106,7 +106,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is On Hold. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is On Hold. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string onHoldAction { get; set; }
 
@@ -114,7 +114,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is Outside Terms. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is Outside Terms. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string outTermsAction { get; set; }
 
@@ -122,7 +122,7 @@ namespace EcommerceStandardsDocuments
         /// 'BLOCK'
         /// 'WARN'
         /// 'WARNCC'
-        /// Sets the action to take if the customer account is being used while it is Outside Its Credit balance. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or not actions are taken (OFF)</summary>
+        /// Sets the action to take if the customer account is being used while it is Outside Its Credit balance. Either it's blocked from further use (BLOCK), or is allowed to be used but a warning is displayed (WARN), or is allowed to be used but a warning is displayed and only new debts may be created when paid with credit card (WARNCC), or no actions need to be taken (OFF)</summary>
         [DataMember(EmitDefaultValue = false)]
         public string outCreditAction { get; set; }
 
@@ -158,9 +158,13 @@ namespace EcommerceStandardsDocuments
         public string termsValue2 { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+
+        /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string internalID { get; set; }
 
         /// <summary>Payment Terms - Given Number of Days</summary>
         public static readonly string ACCOUNT_PAYMENT_TERMS_GIVEN_NO_DAYS = "GND";

@@ -65,6 +65,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = priceLevelRecords;
             this.configs = configs;
+            if (priceLevelRecords != null)
+            {
+                this.totalDataRecords = priceLevelRecords.Length;
+            }
         }
     }
 }

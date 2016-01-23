@@ -105,6 +105,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the unit set for the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string unitName { get; set; }
+        /// <summary>Key of the sell unit that the line is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySellUnitID { get; set; }
+        /// <summary>Sets the unit quantity of the ordered line that makes up the base quantity. Eg. if the line was bought as a pack, this would indicate that a pack sell unit type consists of "6" individual units.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string sellUnitBaseQuantity { get; set; }
         /// <summary>Code that the pricing references.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string priceReferenceCode { get; set; }
@@ -222,9 +228,12 @@ namespace EcommerceStandardsDocuments
         public string salesOrderLabourCode { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+        /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string internalID { get; set; }
 
         /// <summary>sets default values for members that have no values set</summary>
         public void setDefaultValuesForNullMembers()

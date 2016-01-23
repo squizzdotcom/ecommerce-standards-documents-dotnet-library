@@ -29,9 +29,12 @@ namespace EcommerceStandardsDocuments
         [DataMember]
         public List<ESDRecordOrderLineAttribute> values { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+        /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string internalID { get; set; }
 
         /// <summary>sets default values for members that have no values set</summary>
         public void setDefaultValuesForNullMembers()

@@ -35,35 +35,55 @@ namespace EcommerceStandardsDocuments
     ///             "keySellUnitID":"2",
     ///             "sellUnitCode":"EA",
     ///             "sellUnitLabel":"EACH",
-    ///             "isBaseUnit":"Y",
-    ///             "baseQuantity": 1
+    ///             "isBaseUnit":"Y"
     ///         },
     ///         {
     ///             "keySellUnitID":"3",
-    ///             "sellUnitCode":"PK6",
-    ///             "sellUnitLabel":"Pack Of 6",
+    ///             "sellUnitCode":"PK",
+    ///             "sellUnitLabel":"Pack",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 6,
-    ///             "parentQuantity": 6,
     ///             "keySellUnitParentID":"2"
     ///         },
     ///         {
     ///             "keySellUnitID":"4",
-    ///             "sellUnitCode":"CT-4-6",
-    ///             "sellUnitLabel":"Carton (4 packs of 6)",
+    ///             "sellUnitCode":"CT",
+    ///             "sellUnitLabel":"Carton",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 24,
-    ///             "parentQuantity": 4,
     ///             "keySellUnitParentID":"3"
     ///         },
     ///         {
     ///             "keySellUnitID":"5",
-    ///             "sellUnitCode":"CN-50",
-    ///             "sellUnitLabel":"Container (50 Cartons)",
+    ///             "sellUnitCode":"CN",
+    ///             "sellUnitLabel":"Container",
     ///             "isBaseUnit":"N",
-    ///             "baseQuantity": 1200,
-    ///             "parentQuantity": 50,
     ///             "keySellUnitParentID":"4"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"6",
+    ///             "sellUnitCode":"SHIP",
+    ///             "sellUnitLabel":"Ship Load",
+    ///             "isBaseUnit":"N",
+    ///             "keySellUnitParentID":"5"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"7",
+    ///             "sellUnitCode":"TRAIN",
+    ///             "sellUnitLabel":"Train Load",
+    ///             "isBaseUnit":"N",
+    ///             "keySellUnitParentID":"5"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"8",
+    ///             "sellUnitCode":"HOUR",
+    ///             "sellUnitLabel":"Hour",
+    ///             "isBaseUnit":"Y"
+    ///         },
+    ///         {
+    ///             "keySellUnitID":"9",
+    ///             "sellUnitCode":"LABOUR PACK",
+    ///             "sellUnitLabel":"Pack Of Labour Hours",
+    ///             "keySellUnitParentID":"8",
+    ///             "isBaseUnit":"N"
     ///         }
     ///     ]
     /// }
@@ -75,7 +95,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of sell unit records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProduct[] dataRecords;
+        public ESDRecordSellUnit[] dataRecords;
 
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the product data</param>
@@ -84,12 +104,16 @@ namespace EcommerceStandardsDocuments
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the sell unit record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentSellUnit(int resultStatus, string message, ESDRecordProduct[] sellUnitRecords, Dictionary<string, string> configs)
+        public ESDocumentSellUnit(int resultStatus, string message, ESDRecordSellUnit[] sellUnitRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
             this.dataRecords = sellUnitRecords;
             this.configs = configs;
+            if (sellUnitRecords != null)
+            {
+                this.totalDataRecords = sellUnitRecords.Length;
+            }
         }
     }
 }

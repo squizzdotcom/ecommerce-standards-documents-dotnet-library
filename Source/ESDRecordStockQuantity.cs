@@ -17,16 +17,16 @@ namespace EcommerceStandardsDocuments
     public class ESDRecordStockQuantity
     {
         /// <summary>Key of the product record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
         /// <summary>Key of the download record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Key of the labour record that the stock level quantity is set for</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
         /// <summary>Unit quantity of stock available to be purchased</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public decimal qtyAvailable { get; set; }
         /// <summary>Unit quantity of stock on hand at its location</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -44,8 +44,11 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyConsigned { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+        /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string internalID { get; set; }
     }
 }

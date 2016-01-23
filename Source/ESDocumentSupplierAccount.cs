@@ -108,6 +108,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = supplierAccountRecords;
             this.configs = configs;
+            if (supplierAccountRecords != null)
+            {
+                this.totalDataRecords = supplierAccountRecords.Length;
+            }
         }
     }
 }

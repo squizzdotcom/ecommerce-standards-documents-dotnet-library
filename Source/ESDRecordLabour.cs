@@ -74,8 +74,16 @@ namespace EcommerceStandardsDocuments
         public string isPriceTaxInclusive { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
-        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the price to be inserted, updated, deleted, or ignored.</summary>
+        /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+
+        /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string internalID { get; set; }
+
+        /// <summary>Stores a list of sell units that different units of labour can be sold in. Eg labour could be sold by the hour, or in packs</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordSellUnit[] sellUnits { get; set; }
     }
 }

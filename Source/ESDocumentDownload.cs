@@ -73,6 +73,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the download data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="downloadRecords">list of download records</param>
+        [JsonConstructor]
         public ESDocumentDownload(int resultStatus, string message, ESDRecordProduct[] downloadRecords)
         {
             this.resultStatus = resultStatus;
@@ -94,6 +95,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = downloadRecords;
             this.configs = configs;
+            if (downloadRecords != null)
+            {
+                this.totalDataRecords = downloadRecords.Length;
+            }
         }
     }
 }

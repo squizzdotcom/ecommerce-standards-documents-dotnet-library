@@ -47,7 +47,6 @@ namespace EcommerceStandardsDocuments
     ///             "description3":"Recommended to be used with dark inks.",
     ///             "description4":"",
     ///             "productClass":"paper",
-    ///             "keySellUnitID": 2,
     ///             "unit":"REAM",
     ///             "weight": 20.1,
     ///             "width":"21,
@@ -63,7 +62,24 @@ namespace EcommerceStandardsDocuments
     ///             "stockLowQuantity": 10,
     ///             "isPriceTaxInclusive": "N",
     ///             "isKitted":"N",
-    ///             "kitProductsSetPrice":"N"
+    ///             "kitProductsSetPrice":"N",
+    ///             "keySellUnitID": 2,
+    ///             "sellUnits":[
+    ///                 {
+    ///                     "keySellUnitID":"2"
+    ///                 },
+    ///                 {
+    ///                     "keySellUnitID":"3",
+    ///                     "keySellUnitParentID":"2",
+    ///                     "baseQuantity": "6"
+    ///                 },
+    ///                 {
+    ///                     "keySellUnitID":"4",
+    ///                     "keySellUnitParentID":"3",
+    ///                     "baseQuantity": "24",
+    ///                     "parentQuantity": "4"
+    ///                 }
+    ///             ]
     ///         }
     ///     ]
     /// }
@@ -130,6 +146,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the product data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="productRecords">list of product records</param>
+        [JsonConstructor]
         public ESDocumentProduct(int resultStatus, string message, ESDRecordProduct[] productRecords)
         {
             this.resultStatus = resultStatus;
@@ -151,6 +168,9 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = productRecords;
             this.configs = configs;
+            if (productRecords != null){
+                this.totalDataRecords = productRecords.Length;
+            }
         }
     }
 }

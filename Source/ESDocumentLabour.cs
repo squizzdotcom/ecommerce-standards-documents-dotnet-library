@@ -48,7 +48,17 @@ namespace EcommerceStandardsDocuments
     ///             "labourQuantity": 200,
     ///             "labourNoneQuantity": 0,
     ///             "labourLowQuantity": 10,
-    ///             "isPriceTaxInclusive": "N"
+    ///             "isPriceTaxInclusive": "N",
+    ///             "sellUnits":[
+    ///                 {
+    ///                     "keySellUnitID":"8"
+    ///                 },
+    ///                 {
+    ///                     "keySellUnitID":"9",
+    ///                     "keySellUnitParentID":"8",
+    ///                     "baseQuantity": 20
+    ///                 }
+    ///             ]
     ///         }
     ///     ]
     /// }
@@ -66,6 +76,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="resultStatus">status of obtaining the labour data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="labourRecords">list of labour records</param>
+        [JsonConstructor]
         public ESDocumentLabour(int resultStatus, string message, ESDRecordProduct[] labourRecords)
         {
             this.resultStatus = resultStatus;
@@ -87,6 +98,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = labourRecords;
             this.configs = configs;
+            if (labourRecords != null)
+            {
+                this.totalDataRecords = labourRecords.Length;
+            }
         }
     }
 }

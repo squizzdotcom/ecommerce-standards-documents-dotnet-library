@@ -69,6 +69,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = alternateCodeRecords;
             this.configs = configs;
+            if (alternateCodeRecords != null)
+            {
+                this.totalDataRecords = alternateCodeRecords.Length;
+            }
         }
     }
 }

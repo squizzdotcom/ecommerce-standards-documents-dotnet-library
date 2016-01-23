@@ -244,6 +244,10 @@ namespace EcommerceStandardsDocuments
             this.message = message;
             this.dataRecords = productPriceRecords;
             this.configs = configs;
+            if (productPriceRecords != null)
+            {
+                this.totalDataRecords = productPriceRecords.Length;
+            }
         }
     }
 }
