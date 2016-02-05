@@ -94,6 +94,10 @@ namespace EcommerceStandardsDocuments
             if (language == null){
                 language = "";
             }
+
+            if (internalID == null){
+                internalID = "";
+            }
         }
     }
 }

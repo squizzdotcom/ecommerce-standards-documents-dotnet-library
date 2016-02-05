@@ -65,6 +65,11 @@ namespace EcommerceStandardsDocuments
             {
                 deliveryLineCode = "";
             }
+
+            if (internalID == null)
+            {
+                internalID = "";
+            }
         }
     }
 }

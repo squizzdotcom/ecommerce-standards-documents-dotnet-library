@@ -50,6 +50,10 @@ namespace EcommerceStandardsDocuments
             if (paymentProprietaryCode == null){
                 paymentProprietaryCode = "";
             }
+
+            if (internalID == null){
+                internalID = "";
+            }
         }
     }
 }

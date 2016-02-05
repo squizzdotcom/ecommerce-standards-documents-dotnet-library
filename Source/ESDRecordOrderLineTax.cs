@@ -70,6 +70,11 @@ namespace EcommerceStandardsDocuments
             {
                 language = "";
             }
+
+            if (internalID == null)
+            {
+                internalID = "";
+            }
         }
     }
 }

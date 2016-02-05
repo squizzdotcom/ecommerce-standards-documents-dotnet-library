@@ -59,6 +59,10 @@ namespace EcommerceStandardsDocuments
             {
                 keyAttributeProfileID = "";
             }
+
+            if (internalID == null){
+                internalID = "";
+            }
         }
     }
 }

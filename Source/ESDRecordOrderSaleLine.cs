@@ -212,7 +212,7 @@ namespace EcommerceStandardsDocuments
         // labour fields
         /// <summary>Key of the labour record associated to the line. Only relevent when the lineType has been set to labour</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string keylabourID { get; set; }
+        public string keyLabourID { get; set; }
         /// <summary>Code the labour in the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string labourCode { get; set; }
@@ -282,79 +282,164 @@ namespace EcommerceStandardsDocuments
             }
             
 
-            if (lineType == null)
-            {
+            if (lineType == null){
                 lineType = "";
             }
 
-            if (productCode == null)
-            {
+            if (productCode == null){
                 productCode = "";
             }
 
-            if (keyProductID == null)
-            {
+            if (keyProductID == null){
                 keyProductID = "";
             }
 
-            if (isKitted == null)
-            {
+            if (isKitted == null){
                 isKitted = "N";
             }
 
-            if (kittedProductSetPrice == null)
-            {
+            if (kittedProductSetPrice == null){
                 kittedProductSetPrice = "N";
             }
 
-            if (isReserved == null)
-            {
+            if (isReserved == null){
                 isReserved = "N";
             }
 
-            if (productCode == null)
-            {
+            if (productCode == null){
                 productCode = "";
             }
 
-            if (productName == null)
-            {
+            if (productName == null){
                 productName = "";
             }
 
-            if (productDescription == null)
-            {
+            if (productDescription == null){
                 productDescription = "";
             }
 
-            if (widthUnitMeasureCode == null)
-            {
+            if (widthUnitMeasureCode == null){
                 widthUnitMeasureCode = "";
             }
 
-            if (heightUnitMeasureCode == null)
-            {
+            if (heightUnitMeasureCode == null){
                 heightUnitMeasureCode = "";
             }
 
-            if (depthUnitMeasureCode == null)
-            {
+            if (depthUnitMeasureCode == null){
                 depthUnitMeasureCode = "";
             }
 
-            if (volumeUnitMeasureCode == null)
-            {
+            if (volumeUnitMeasureCode == null){
                 volumeUnitMeasureCode = "";
             }
 
-            if (weightUnitMeasureCode == null)
-            {
+            if (weightUnitMeasureCode == null){
                 weightUnitMeasureCode = "";
             }
 
-            if (downloadCode == null)
-            {
+            if (downloadCode == null){
                 downloadCode = "";
+            }
+
+            if (purchaseOrderLineCode == null){
+                purchaseOrderLineCode = "";
+            }
+
+            if (purchaseOrderLineNumber == null){
+                purchaseOrderLineNumber = "";
+            }
+
+            if (locationCode == null){
+                locationCode = "";
+            }
+
+            if (locationName == null){
+                locationName = "";
+            }
+
+            if (keyLocationID == null){
+                keyLocationID = "";
+            }
+
+            if (UNSPSC == null){
+                UNSPSC = "";
+            }
+
+            if (language == null){
+                language = ESDocumentConstants.LANG_EN_AU;
+            }
+
+            if (isPriceFree == null){
+                isPriceFree = "N";
+            }
+            
+            if(entitySetPrice == null){
+                entitySetPrice = "N";
+            }
+
+            if (keySellUnitID == null){
+                keySellUnitID = "";
+            }
+
+            if (sellUnitBaseQuantity == null){
+                sellUnitBaseQuantity = "";
+            }
+
+            if (unitName == null){
+                unitName = "";
+            }
+
+            if (priceReferenceCode == null){
+                priceReferenceCode = "";
+            }
+
+            if (priceReferenceType == null){
+                priceReferenceType = "";
+            }
+
+            if (purchaseOrderProductCode == null){
+                purchaseOrderProductCode = "";
+            }
+
+            if (keyDownloadID == null){
+                keyDownloadID = "";
+            }
+
+            if (downloadName == null){
+                downloadName = "";
+            }
+
+            if (downloadDescription == null){
+                downloadDescription = "";
+            }
+
+            if (purchaseOrderDownloadCode == null){
+                purchaseOrderDownloadCode = "";
+            }
+
+            if (keyLabourID == null){
+                keyLabourID = "";
+            }
+
+            if (labourCode == null){
+                labourCode = "";
+            }
+
+            if (labourName == null){
+                labourName = "";
+            }
+
+            if (labourDescription == null){
+                labourDescription = "";
+            }
+
+            if (purchaseOrderLabourCode == null){
+                purchaseOrderLabourCode = "";
+            }
+
+            if (internalID == null){
+                internalID = "";
             }
         }
     }

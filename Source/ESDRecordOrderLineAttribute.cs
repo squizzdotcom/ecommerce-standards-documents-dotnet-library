@@ -55,6 +55,10 @@ namespace EcommerceStandardsDocuments
             if (attributeValue == null){
                 attributeValue = "";
             }
+
+            if (internalID == null){
+                internalID = "";
+            }
         }
     }
 }

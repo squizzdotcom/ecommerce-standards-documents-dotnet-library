@@ -409,6 +409,10 @@ namespace EcommerceStandardsDocuments
                 payments = new List<ESDRecordOrderPayment>();
             }
 
+            if(keySalesOrderID == null){
+                keySalesOrderID = "";
+            }
+
             if (billingDescription == null){
                 billingDescription = "";
             }
@@ -558,7 +562,11 @@ namespace EcommerceStandardsDocuments
                 eCommerceUserID="";
             }
 
-            if(eCommerceSystemID == null){
+            if (eCommerceUserName == null){
+                eCommerceUserName = "";
+            }
+
+            if (eCommerceSystemID == null){
                 eCommerceSystemID="";
             }
 
@@ -578,6 +586,18 @@ namespace EcommerceStandardsDocuments
                 salesRepIndividual = "";
             }
 
+            if (customerEntity == null){
+                customerEntity = "";
+            }
+
+            if (customerPersonName == null){
+                customerPersonName = "";
+            }
+
+            if (customerOrgName == null){
+                customerOrgName = "";
+            }
+
             if (currencyISOCode == null){
                 currencyISOCode = "";
             }    
@@ -589,8 +609,32 @@ namespace EcommerceStandardsDocuments
             if(purchaseOrderNumber == null){
                 purchaseOrderNumber="";
             }
-                            
-            if(invoiceNumbers == null){
+
+            if (purchaserSystemID == null){
+                purchaserSystemID = "";
+            }
+
+            if (purchaserSystemName == null){
+                purchaserSystemName = "";
+            }
+
+            if(purchaserSystemCode == null){
+                purchaserSystemCode = "";
+            }
+
+            if (sellerSystemID == null){
+                sellerSystemID = "";
+            }
+
+            if(sellerSystemName == null){
+                sellerSystemName = "";
+            }
+
+            if (sellerSystemCode == null){
+                sellerSystemCode = "";
+            }
+
+            if (invoiceNumbers == null){
                 invoiceNumbers=new string[0];
             }
 
@@ -604,6 +648,10 @@ namespace EcommerceStandardsDocuments
             
             if(paymentMethod == null){
                 paymentMethod="";
+            }
+
+            if(paymentProprietaryCode==null){
+                paymentProprietaryCode = "";
             }
                                     
             if(paymentReceipt == null){
@@ -639,7 +687,7 @@ namespace EcommerceStandardsDocuments
             }
 
             if(isDropship == null){
-                isDropship="";
+                isDropship="N";
             }
 
             if(keyLocationID == null){
@@ -668,6 +716,18 @@ namespace EcommerceStandardsDocuments
 
             if (isProductsDelivered == null){
                 isProductsDelivered = "N";
+            }
+
+            if (totalVolumeMeasureCode == null){
+                totalVolumeMeasureCode = "";
+            }
+
+            if (totalWeightMeasureCode == null){
+                totalWeightMeasureCode = "";
+            }
+
+            if (internalID == null){
+                internalID = "";
             }
         }
     }
