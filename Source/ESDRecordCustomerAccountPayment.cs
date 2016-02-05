@@ -48,6 +48,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Method on how the order is being paid for. The field must be set to one of the class's constants prefixed by PAYMENT_METHOD_</summary>
         [DataMember(EmitDefaultValue = false)]
         public string paymentMethod { get; set; }
+        /// <summary>Name of the user in the associated Ecommerce system where the payment was created. Ideally this is set to a label of the user, and not the credentials used for a user to login (since that could be a security issue passing around such information).</summary>
+        [DataMember]
+        public string eCommerceUserName { get; set; }
         /// <summary>Monetary amount of the payment</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal paymentAmount { get; set; }
@@ -140,6 +143,11 @@ namespace EcommerceStandardsDocuments
             if (eCommerceSystemID == null)
             {
                 eCommerceSystemID = "";
+            }
+
+            if (eCommerceUserName == null)
+            {
+                eCommerceUserName = "";
             }
 
             if (referenceNumber == null)

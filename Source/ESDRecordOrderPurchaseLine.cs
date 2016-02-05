@@ -149,7 +149,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the product record associated to the line. Only relevent when the lineType has been set to product</summary>
         
         [DataMember(EmitDefaultValue = false)]
-        public string productKey { get; set; }
+        public string keyProductID { get; set; }
         /// <summary>Code the product in the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string productCode { get; set; }
@@ -196,7 +196,7 @@ namespace EcommerceStandardsDocuments
         // download fields
         /// <summary>Key of the download record associated to the line. Only relevent when the lineType has been set to download</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string downloadKey { get; set; }
+        public string keyDownloadID { get; set; }
         /// <summary>Code the download in the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string downloadCode { get; set; }
@@ -213,7 +213,7 @@ namespace EcommerceStandardsDocuments
         // labour fields
         /// <summary>Key of the labour record associated to the line. Only relevent when the lineType has been set to labour</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string labourKey { get; set; }
+        public string keyLabourID { get; set; }
         /// <summary>Code the labour in the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string labourCode { get; set; }
@@ -321,8 +321,8 @@ namespace EcommerceStandardsDocuments
                 productName = "";
             }
 
-            if (productKey == null){
-                productKey = "";
+            if (keyProductID == null){
+                keyProductID = "";
             }
 
             if (productDescription == null){
@@ -357,8 +357,8 @@ namespace EcommerceStandardsDocuments
                 downloadCode = "";
             }
 
-            if (downloadKey == null){
-                downloadKey = "";
+            if (keyDownloadID == null){
+                keyDownloadID = "";
             }
 
             if (downloadName == null){
@@ -377,8 +377,8 @@ namespace EcommerceStandardsDocuments
                 labourCode = "";
             }
 
-            if (labourKey == null){
-                labourKey = "";
+            if (keyLabourID == null){
+                keyLabourID = "";
             }
 
             if (labourName == null){

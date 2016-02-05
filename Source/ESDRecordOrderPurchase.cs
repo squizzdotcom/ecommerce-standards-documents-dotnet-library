@@ -94,6 +94,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Date that the order was created. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public long createdDate { get; set; }
+        /// <summary>ID of the user in the associated Ecommerce system where the order was created.</summary>
+        [DataMember]
+        public string eCommerceUserID { get; set; }
+        /// <summary>Name of the user in the associated Ecommerce system where the order was created. Ideally this is set to a label of the user, and not the credentials used for a user to login (since that could be a security issue passing around such information).</summary>
+        [DataMember]
+        public string eCommerceUserName { get; set; }
+        /// <summary>ID of the associated Ecommerce system where the order was created. Ideally each system sets its own unique identifier, formatted such as ORG_NAME.SYSTEM_NAME</summary>
+        [DataMember]
+        public string eCommerceSystemID { get; set; }
         /// <summary>Key of the purchaser record linked to the order. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyPurchaserID { get; set; }
@@ -103,6 +112,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the purchaser.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaserName { get; set; }
+        /// <summary>Either 'N'-No or 
+        /// 'Y'-Yes
+        /// If 'Y' then indicates that the purchaser is an individual person.
+        /// </summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaserIndividual { get; set; }
+        /// <summary>List of the invoice numbers linked to this purchase order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] invoiceNumbers = new string[0];
         /// <summary>Supplier entity supplying the order. Set it to one of the constants in the ESDocumentConstants class prefixed with ENTITY_TYPE_</summary>
         [DataMember(EmitDefaultValue = false)]
         public string supplierEntity { get; set; }
@@ -163,6 +181,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Description of the address that the ordered goods are being delivered to</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryDescription { get; set; }
+        /// <summary>Name of the organisation at the address that the ordered goods are being delivered to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryOrgName { get; set; }
         /// <summary>Name of the contact person at the address that the ordered goods are being delivered to</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryContact { get; set; }
@@ -264,7 +285,7 @@ namespace EcommerceStandardsDocuments
         public decimal totalPriceIncTax { get; set; }
         /// <summary>Total monetary amount of taxes applied to the order</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal totalPriceTax { get; set; }
+        public decimal totalTax { get; set; }
         /// <summary>Total volume of the ordered goods</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal totalVolume { get; set; }
@@ -276,13 +297,13 @@ namespace EcommerceStandardsDocuments
         public int totalSurchargeItems { get; set; }
         /// <summary>Total monetary amount of surcharges applied to the order exclusive of taxes</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal totalPriceSurchargeExTax { get; set; }
+        public decimal totalSurchargeExTax { get; set; }
         /// <summary>Total monetary amount of surcharges applied to the order inclusive of taxes</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal totalPriceSurchargeIncTax { get; set; }
+        public decimal totalSurchargeIncTax { get; set; }
         /// <summary>Total monetary amount of taxes applied to surcharges in the order</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal totalPriceSurchargeTax { get; set; }
+        public decimal totalSurchargeTax { get; set; }
         /// <summary>Total monetary amount of the order before discounts were applied, exclusive of taxes. This amount may be useful when showing discounts applied to an order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal totalPriceUndiscountedExTax { get; set; }
@@ -294,7 +315,7 @@ namespace EcommerceStandardsDocuments
         public decimal totalPriceUndiscountedTax { get; set; }
         /// <summary>Text describing instructions on how to handle the order.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string instruction { get; set; }
+        public string instructions { get; set; }
         /// <summary>Code of the freight carrier delivering the ordered goods</summary>
         [DataMember(EmitDefaultValue = false)]
         public string freightCarrierCode { get; set; }
@@ -463,8 +484,8 @@ namespace EcommerceStandardsDocuments
                 paymentReceipt="";
             }
             
-            if(instruction == null){
-                instruction="";
+            if(instructions == null){
+                instructions="";
             }
             
             if(salesOrderNumber == null){
