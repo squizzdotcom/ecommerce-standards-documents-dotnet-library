@@ -49,6 +49,8 @@
     <Compile Include="ESDocumentCustomerAccountContact.cs" />
     <Compile Include="ESDocumentCustomerAccountContract.cs" />
     <Compile Include="ESDocumentCustomerAccountEnquiry.cs" />
+    <Compile Include="ESDocumentCustomerAccountEnquiryLine.cs" />
+    <Compile Include="ESDocumentCustomerAccountPayment.cs" />
     <Compile Include="ESDocumentDownload.cs" />
     <Compile Include="ESDocumentLabour.cs" />
     <Compile Include="ESDocumentOrderPurchase.cs" />
