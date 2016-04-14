@@ -110,7 +110,7 @@ namespace EcommerceStandardsDocuments
         public string keySellUnitID { get; set; }
         /// <summary>Sets the unit quantity of the ordered line that makes up the base quantity. Eg. if the line was bought as a pack, this would indicate that a pack sell unit type consists of "6" individual units.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string sellUnitBaseQuantity { get; set; }
+        public decimal sellUnitBaseQuantity { get; set; }
         /// <summary>Code that the pricing references.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string priceReferenceCode { get; set; }
@@ -277,6 +277,14 @@ namespace EcommerceStandardsDocuments
                 locationName = "";
             }
 
+            if (keyLocationID == null){
+                keyLocationID = "";
+            }
+
+            if (UNSPSC == null){
+                UNSPSC = "";
+            }
+
             if (language == null){
                 language = "";
             }
@@ -309,8 +317,8 @@ namespace EcommerceStandardsDocuments
                 priceReferenceType = "";
             }
 
-            if (unitName == null){
-                unitName = "";
+            if (keySellUnitID == null){
+                keySellUnitID = "";
             }
 
             if (productCode == null){
@@ -403,6 +411,10 @@ namespace EcommerceStandardsDocuments
 
             if (isReserved == null){
                 isReserved = "N";
+            }
+
+            if (internalID == null){
+                internalID = "";
             }
         }
     }
