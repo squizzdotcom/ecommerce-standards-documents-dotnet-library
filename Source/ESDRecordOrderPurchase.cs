@@ -73,9 +73,6 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the supplier account</summary>
         [DataMember(EmitDefaultValue = false)]
         public string supplierAccountName { get; set; }
-        /// <summary>To do</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string orderStatus { get; set; }
         /// <summary>Date that the order was sent</summary>
         [DataMember(EmitDefaultValue = false)]
         public long sentDate { get; set; }
@@ -392,6 +389,7 @@ namespace EcommerceStandardsDocuments
         {
             lines = new List<ESDRecordOrderPurchaseLine>();
             surcharges = new List<ESDRecordOrderSurcharge>();
+            payments = new List<ESDRecordOrderPayment>();
         }
 
         /// <summary>sets default values for members that have no values set</summary>
@@ -411,6 +409,11 @@ namespace EcommerceStandardsDocuments
                     payment.setDefaultValuesForNullMembers();
                 }
             }
+            
+            if (keyPurchaseOrderID == null)
+            {
+                keyPurchaseOrderID = "";
+            }
 
             if (purchaseOrderCode == null){
                 purchaseOrderCode = "";
@@ -419,13 +422,13 @@ namespace EcommerceStandardsDocuments
             if (purchaseOrderNumber == null){
                 purchaseOrderNumber = "";
             }
-    
-            if(currencyISOCode == null){
-                currencyISOCode="";
+
+            if (purchaserIndividual == null){
+                purchaserIndividual = "";
             }
 
-            if(supplierOrgName == null){
-                supplierOrgName="";
+            if (currencyISOCode == null){
+                currencyISOCode="";
             }
 
             if (supplierAuthorityNumbers == null){
@@ -440,15 +443,63 @@ namespace EcommerceStandardsDocuments
                 supplierAccountCode = "";
             }
 
+            if (supplierAccountName == null){
+                supplierAccountName = "";
+            }
+
             if (keyPurchaserID == null){
                 keyPurchaserID = "";
-            }    
+            }
 
             if(purchaserCode == null){
                 purchaserCode="";
             }
-                            
-            if(supplierEntity == null){
+
+            if (purchaserName == null){
+                purchaserName = "";
+            }
+
+            if (purchaserSystemID == null){
+                purchaserSystemID = "";
+            }
+
+            if (purchaserSystemName == null){
+                purchaserSystemName = "";
+            }
+
+            if (purchaserSystemCode == null){
+                purchaserSystemCode = "";
+            }
+
+            if (sellerSystemID == null){
+                sellerSystemID = "";
+            }
+
+            if (sellerSystemName == null){
+                sellerSystemName = "";
+            }
+
+            if (sellerSystemCode == null){
+                sellerSystemCode = "";
+            }
+
+            if (invoiceNumbers == null){
+                invoiceNumbers = new string[0];
+            }
+
+            if (eCommerceUserID == null){
+                eCommerceUserID = "";
+            }
+
+            if (eCommerceUserName == null){
+                eCommerceUserName = "";
+            }
+
+            if (eCommerceSystemID == null){
+                eCommerceSystemID = "";
+            }
+
+            if (supplierEntity == null){
                 supplierEntity="";
             }
 
@@ -480,7 +531,11 @@ namespace EcommerceStandardsDocuments
                 paymentMethod=PAYMENT_METHOD_UNPAID;
             }
 
-            if(paymentReceipt == null){
+            if (paymentProprietaryCode == null){
+                paymentProprietaryCode = "";
+            }
+
+            if (paymentReceipt == null){
                 paymentReceipt="";
             }
             
@@ -536,7 +591,11 @@ namespace EcommerceStandardsDocuments
                 deliveryDescription = "";
             }
 
-            if(deliveryContact == null){
+            if (deliveryOrgName == null){
+                deliveryOrgName = "";
+            }
+
+            if (deliveryContact == null){
                 deliveryContact="";
             }
 
@@ -552,8 +611,8 @@ namespace EcommerceStandardsDocuments
                 deliveryFax = "";
             }
 
-            if (deliveryEmail == null){
-                deliveryEmail = "";
+            if (email == null){
+                email = "";
             }
 
             if (deliveryAddress1 == null){
@@ -596,7 +655,11 @@ namespace EcommerceStandardsDocuments
                 billingDescription = "";
             }
 
-            if(billingContact == null){
+            if (billingOrgName == null){
+                billingOrgName = "";
+            }
+
+            if (billingContact == null){
                 billingContact="";
             }
 
@@ -658,6 +721,30 @@ namespace EcommerceStandardsDocuments
 
             if (isProductsDelivered == null){
                 isProductsDelivered = "N";
+            }
+
+            if (isDropship == null){
+                isDropship = "N";
+            }
+
+            if (isMultiLocation == null){
+                isMultiLocation = "N";
+            }
+
+            if (shippingMethod == null){
+                shippingMethod = "";
+            }
+
+            if (accountTerritory == null){
+                accountTerritory = "";
+            }
+
+            if (isProductsDelivered == null){
+                isProductsDelivered = "N";
+            }
+
+            if (internalID == null){
+                internalID = "";
             }
         }
     }
