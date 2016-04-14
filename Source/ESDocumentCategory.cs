@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The category data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyCategoryID,categoryCode,keyCategoryParentID,name,description1,description2,description3,description4,metaTitle,metaKeywords,metaDescription,ordering"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

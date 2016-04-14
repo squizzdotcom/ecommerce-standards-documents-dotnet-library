@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The taxcode data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyTaxcodeID,taxcode,taxcodeLabel,description,taxcodePercentageRate"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [

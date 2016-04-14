@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account contact data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyContactID,keySupplierAccountID,contactCode,title,name1,name2,name3,email,phone1,phone2,phone3,fax,website,orgName,orgPosition"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [

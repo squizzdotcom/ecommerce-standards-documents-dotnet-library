@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The surcharge data has been successfully obtained.",
     ///     "configs":{"dataFields":"keySurchargeID,surchargeCode,surchargeLabel,description,surchargeType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [

@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account data has been successfully obtained.",
     ///     "configs":{"dataFields":"keySupplierAccountID,keyPriceLevelID,supplierAccountCode,accountName,contactName,orgName,authorityNumbers,authorityNumberLabels,authorityNumberTypes,email,accountClass,paymentTypes,territory,shippingMethod,isOnHold,isOutsideBalance,isOutsideTerms,balance,limit,termsType,termsDescription,termsValue1,termsValue2"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

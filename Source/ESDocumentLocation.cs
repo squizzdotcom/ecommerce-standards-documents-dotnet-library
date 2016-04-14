@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///         "dataFieldsLocationStock":"keyProductID,qtyAvailable,qtyOnHand,qtyOrdered,qtyBackordered,qtyReserved,qtyConsigned"
     ///      },
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///         [

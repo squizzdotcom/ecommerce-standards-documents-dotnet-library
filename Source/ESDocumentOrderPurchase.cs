@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The purchase order data has been successfully obtained.",
     ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [

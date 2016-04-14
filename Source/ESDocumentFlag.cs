@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The flag data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyDownloadID,keyLabourID,keyFlagID"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 5,
     ///     "flagRecords": 
     ///     [

@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product image data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductImageID,keyProductID,imageFullFilePath,imageFileName,imageFileExtension,title,description"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///     [

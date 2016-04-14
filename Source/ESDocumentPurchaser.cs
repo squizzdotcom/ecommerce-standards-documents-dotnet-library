@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The purchaser data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyPurchaserID,salesRepCode,contact,isIndividual"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

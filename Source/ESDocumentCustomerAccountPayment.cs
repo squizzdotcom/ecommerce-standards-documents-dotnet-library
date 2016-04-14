@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The customer account payment data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyCustomerAccountPaymentID,paymentID,paymentCode,referenceNumber,keyCustomerAccountID,customerAccountCode,eCommerceUserID,eCommerceSystemID,paymentMethod,eCommerceUserName,paymentAmount,paymentReceipt,paymentDate,creationDate,currencyCode"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [

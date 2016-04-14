@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The price level data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyPriceLevelID,label"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

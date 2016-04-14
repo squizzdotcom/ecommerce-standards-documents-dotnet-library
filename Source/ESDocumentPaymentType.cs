@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The payment type data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyPaymentTypeID,paymentTypeCode,paymentTypeLabel,description,paymentMethod"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [

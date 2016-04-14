@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The item relation data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyDownloadID,keyLabourID,keyRelatedDownloadID,keyRelatedProductID,keyRelatedLabourID"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [

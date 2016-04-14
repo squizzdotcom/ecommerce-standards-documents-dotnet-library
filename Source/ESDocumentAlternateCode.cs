@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product alternate code data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,alternateCode,isUseCode,isSupplierCode"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

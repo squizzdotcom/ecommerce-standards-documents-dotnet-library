@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The labour data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyLabourID,labourCode,keyTaxcodeID,labourSearchCode,brand,name,description1,description2,description3,description4,labourClass,averageCost,supplier,labourQuantity,labourNoneQuantity,labourLowQuantity,isPriceTaxInclusive"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 2,
     ///     "dataRecords":
     ///      [

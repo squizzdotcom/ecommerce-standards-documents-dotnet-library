@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account address data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyAddressID,keySupplierAccountID,description,orgName,contact,phone,fax,address1,address2,address3,region,country,postcode,freightCode,isPrimary,isDelivery"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product attachment data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductAttachmentID,keyProductID,fileName,fileExtension,fullFilePath"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 3,
     ///     "dataRecords":
     ///      [

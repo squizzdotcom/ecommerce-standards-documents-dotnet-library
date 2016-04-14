@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,price"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.1,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
