@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that holds a list of customer account records
+    /// Ecommerce standards document that holds a list of customer account contact records
     /// </summary>
     /// <example>
     /// An example of the Customer Account Ecommerce Standards document in its JSON serialised form

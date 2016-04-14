@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
     ///     "totalDataRecords": 5,
-    ///     "invoiceRecords":
+    ///     "transactionRecords":
     ///      [
     ///         {
     ///             "keyTransactionID":"",
@@ -371,7 +371,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.0,
     ///     "totalDataRecords": 1,
-    ///     "invoiceRecords":
+    ///     "orderSaleRecords":
     ///      [
     ///         {
     ///             "keyOrderSaleID":"112",
