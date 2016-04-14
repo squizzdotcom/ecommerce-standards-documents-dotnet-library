@@ -109,7 +109,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
         /// If 'Y' then indicates that any pricing set for the product is inclusive of tax applied to the price, based the rate of taxcode assigned to the product.</summary>
-        /// [DataMember(EmitDefaultValue = false)]
+        [DataMember(EmitDefaultValue = false)]
         public string isPriceTaxInclusive { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes

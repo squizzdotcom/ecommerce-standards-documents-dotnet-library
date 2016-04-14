@@ -70,7 +70,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
         /// If 'Y' then indicates that any pricing set for the labour is inclusive of tax applied to the price, based the rate of taxcode assigned to the labour.</summary>
-        /// [DataMember(EmitDefaultValue = false)]
+        [DataMember(EmitDefaultValue = false)]
         public string isPriceTaxInclusive { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
