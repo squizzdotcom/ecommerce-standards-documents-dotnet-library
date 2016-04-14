@@ -57,6 +57,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>text that contains a receipt number associated with the payment</summary>
         [DataMember(EmitDefaultValue = false)]
         public string paymentReceipt { get; set; }
+        /// <summary>Key of the payment type record that is associated to the payment. The payment type record indicates how the payment was made.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyPaymentTypeID { get; set; }
         /// <summary>Date of the payment record. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public long paymentDate { get; set; }

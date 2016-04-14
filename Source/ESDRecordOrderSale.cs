@@ -151,6 +151,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Monetary amount already paid for the order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal paymentAmount { get; set; }
+        /// <summary>Key of the payment type record that is associated to the payment. The payment type record indicates how the payment was made for the order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyPaymentTypeID { get; set; }
         /// <summary>Number of the purchase order that may be associated to the sales order. This may be used for referencing purposes.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderNumber { get; set; }

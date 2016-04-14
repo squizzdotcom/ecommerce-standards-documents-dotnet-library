@@ -115,5 +115,30 @@ namespace EcommerceStandardsDocuments
         /// <summary>Entity Set Price - price set by an employee</summary>
         public static readonly string ENTITY_SET_PRICE_EMPLOYEE = "EMPLOYEE";
 
+        /// <summary>Surcharge Type - Freight</summary>
+        public static readonly string SURCHARGE_TYPE_FREIGHT = "FREIGHT";
+        /// <summary>Surcharge Type - Credit Card</summary>
+        public static readonly string SURCHARGE_TYPE_CREDIT_CARD = "CREDITCARD";
+        /// <summary>Surcharge Type - Minimum Order Total</summary>
+        public static readonly string SURCHARGE_TYPE_MIN_ORDER = "MINORDER";
+        /// <summary>Surcharge Type - Other</summary>
+        public static readonly string SURCHARGE_TYPE_OTHER = "OTHER";
+
+        /// <summary>Payment method - UNPAID - No payment was received as yet</summary>
+        public static readonly string PAYMENT_METHOD_UNPAID = "UNPAID";
+        /// <summary>Payment method - CREDIT - A payment was made with a credit card</summary>
+        public static readonly string PAYMENT_METHOD_CREDIT = "CREDITCARD";
+        /// <summary>Payment method - COD - Payment will be made with cash when the goods are delivered to the delivery location</summary>
+        public static readonly string PAYMENT_METHOD_CASHONDELIVERY = "COD";
+        /// <summary>Payment method - DIRECTDEPOSIT - Payment has been made with a direct bank transfer</summary>
+        public static readonly string PAYMENT_METHOD_DIRECTDEPOSIT = "DIRECTDEPOSIT";
+        /// <summary>Payment method - QUOTE - No payment was made as a quote was only required</summary>
+        public static readonly string PAYMENT_METHOD_QUOTE = "QUOTE";
+        /// <summary>Payment method - NONE - No payment was made or needed</summary>
+        public static readonly string PAYMENT_METHOD_NONE = "NONE";
+        /// <summary>Payment method - PROPRIETARY - A payment was made using a proprietary payment system. PayPal could be one example of this.</summary>
+        public static readonly string PAYMENT_METHOD_PROPRIETARY = "PROPRIETARY";
+        /// <summary>Payment method - ACCOUNT - A payment will be assigned to a customer account and paid based on the agreed payment terms</summary>
+        public static readonly string PAYMENT_METHOD_ACCOUNT = "ACCOUNT";
     }
 }

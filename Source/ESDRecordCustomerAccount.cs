@@ -68,6 +68,9 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string paymentTypes { get; set; }
 
+        /// <summary>A list of payment types that may be used to pay for the customer account's debts. Each key relates to a ESDRecordPaymentType record</summary>
+        public string[] keyPaymentTypeIDs { get; set; }
+
         /// <summary>Key of the Sales Representative record that links a sales representative to the customer account. The assigned sales representative typically services the account.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySalesRepID { get; set; }

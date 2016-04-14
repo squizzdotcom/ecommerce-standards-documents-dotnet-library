@@ -12,25 +12,25 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single payment associated to an order.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single payment type. Each payment type defines a way to purchase goods and services, or the way that goods and servies were paid for.</summary>
     [DataContract]
-    public class ESDRecordOrderPayment
+    public class ESDRecordPaymentType
     {
-        /// <summary>Method on how the payment was made. The field must be set to one of the class's constants prefixed by PAYMENT_METHOD_</summary>
+        /// <summary>Key of the payment type record to be uniquely identified and linked to.</summary>
         [DataMember]
-        public string paymentMethod;
-        /// <summary>Monetary amount the payment applies to</summary>
-        [DataMember]
-        public decimal paymentAmount;
-        /// <summary>Receipt number associated to the payment.</summary>
-        [DataMember]
-        public string paymentReceipt;
-        /// <summary>Code the proprietary system that is used as the payment method.</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string paymentProprietaryCode { get; set; }
-        /// <summary>Key of the payment type record that is assigned to the payment. The payment type record indicates how the payment was made.</summary>
-        [DataMember(EmitDefaultValue = false)]
         public string keyPaymentTypeID { get; set; }
+        /// <summary>Code of the payment type.  May or may not be a unique identifier</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string paymentTypeCode { get; set; }
+        /// <summary>Label of the payment type</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string paymentTypeLabel { get; set; }
+        /// <summary>Text to describe the payment type</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string description { get; set; }
+        /// <summary>Method that the payment type relates to. Set null, or set it to ine of the PAYMENT_METHOD constants in the ESDocumentConstants class.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string paymentMethod { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -38,29 +38,5 @@ namespace EcommerceStandardsDocuments
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
-
-        /// <summary>sets default values for members that have no values set</summary>
-        public void setDefaultValuesForNullMembers()
-        {
-            if (paymentMethod == null){
-                paymentMethod = "";
-            }
-
-            if (paymentReceipt == null){
-                paymentReceipt = "";
-            }
-
-            if (paymentProprietaryCode == null){
-                paymentProprietaryCode = "";
-            }
-
-            if (keyPaymentTypeID == null){
-                keyPaymentTypeID = "";
-            }
-
-            if (internalID == null){
-                internalID = "";
-            }
-        }
     }
 }
