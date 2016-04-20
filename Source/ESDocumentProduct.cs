@@ -49,7 +49,7 @@ namespace EcommerceStandardsDocuments
     ///             "productClass":"paper",
     ///             "unit":"REAM",
     ///             "weight": 20.1,
-    ///             "width":"21,
+    ///             "width": 21,
     ///             "height": 29.7,
     ///             "depth": 10,
     ///             "averageCost": 10.00,

@@ -110,7 +110,7 @@ namespace EcommerceStandardsDocuments
     ///             "price": 70.00,
     ///             "quantity": 5,
     ///             "referenceID": "FORCED-CONTRACT-1",
-    ///             "referenceType: "CF"
+    ///             "referenceType": "CF"
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
@@ -118,7 +118,7 @@ namespace EcommerceStandardsDocuments
     ///             "price": 1.00,
     ///             "quantity": 20,
     ///             "referenceID": "FORCED-CONTRACT-1",
-    ///             "referenceType: "CF"
+    ///             "referenceType": "CF"
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
@@ -126,7 +126,7 @@ namespace EcommerceStandardsDocuments
     ///             "price": 7.30,
     ///             "quantity": 1,
     ///             "referenceID": "CONTRACT-222",
-    ///             "referenceType: "C"
+    ///             "referenceType": "C"
     ///         },
     ///         {
     ///             "keyProductID":"PROD-456",
@@ -165,7 +165,7 @@ namespace EcommerceStandardsDocuments
     ///             "price": 2.90,
     ///             "quantity": 1,
     ///             "referenceID": "FORCED-CONTRACT-1",
-    ///             "referenceType: "CF"
+    ///             "referenceType": "CF"
     ///         },
     ///         {
     ///             "keyProductID":"PROD-456",

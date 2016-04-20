@@ -667,7 +667,7 @@ namespace EcommerceStandardsDocuments
     ///             "currencyCode": "AUD",
     ///             "description": "",
     ///             "language": "EN_AU",
-    ///             "comment": "Payment applied against invoice #1234123"
+    ///             "comment": "Payment applied against invoice #1234123",
     ///             "lines":
     ///             [
     ///                 {

@@ -85,7 +85,7 @@ namespace EcommerceStandardsDocuments
     ///                         "qtyReserved":11,
     ///                         "qtyConsigned":3
     ///                     }
-    ///                 }
+    ///                 ]
     ///             }
     ///         ]
     /// }

@@ -29,7 +29,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataRecords":
     ///      [
     ///         {
-    ///             "keyContactID":"CON1",
+    ///             "keyContactID":"CON1"
     ///         },
     ///         {
     ///             "keyContactID":"2",

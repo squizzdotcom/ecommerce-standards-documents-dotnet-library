@@ -30,7 +30,7 @@ namespace EcommerceStandardsDocuments
     ///      [
     ///         {
     ///             "keyContractID":"CNT-003",
-    ///             "contractCode":"CONTRACT-003",
+    ///             "contractCode":"CONTRACT-003"
     ///         },
     ///         {
     ///             "keyContractID":"34",

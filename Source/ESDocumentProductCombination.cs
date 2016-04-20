@@ -73,7 +73,7 @@ namespace EcommerceStandardsDocuments
     ///                 {
     ///                     "keyProductID":"SOFTA-123",
     ///                     "keyComboProfileID":"PROF-456",
-    ///                     "fieldValueCombinations"[
+    ///                     "fieldValueCombinations":[
     ///                         ["PROF-456-2","PROF-456-2-SM"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]
     ///                     ]
@@ -81,7 +81,7 @@ namespace EcommerceStandardsDocuments
     ///                 {
     ///                     "keyProductID":"SOFTA-456",
     ///                     "keyComboProfileID":"PROF-456",
-    ///                     "fieldValueCombinations"[
+    ///                     "fieldValueCombinations":[
     ///                         ["PROF-456-2","PROF-456-2-SM"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]
     ///                     ]
@@ -89,7 +89,7 @@ namespace EcommerceStandardsDocuments
     ///                 {
     ///                     "keyProductID":"SOFTA-098",
     ///                     "keyComboProfileID":"PROF-456",
-    ///                     "fieldValueCombinations"[
+    ///                     "fieldValueCombinations":[
     ///                         ["PROF-456-2","PROF-456-2-MED"],
     ///                         ["PROF-456-4","COMBO-VAL-CL"]
     ///                     ]

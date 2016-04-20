@@ -29,7 +29,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataRecords":
     ///      [
     ///         {
-    ///             "keyCustomerAccountPaymentID":"PAY1",
+    ///             "keyCustomerAccountPaymentID":"PAY1"
     ///         },
     ///         {
     ///             "keyCustomerAccountPaymentID":"43",
@@ -56,7 +56,7 @@ namespace EcommerceStandardsDocuments
     ///                     "amount": 60.00,
     ///                     "recordType":"INVOICE"
     ///                 }
-    ///             }
+    ///             ]
     ///         }
     ///     ]
     /// }

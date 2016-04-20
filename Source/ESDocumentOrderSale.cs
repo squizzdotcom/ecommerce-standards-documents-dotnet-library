@@ -253,14 +253,16 @@ namespace EcommerceStandardsDocuments
     ///                     "purchaseOrderDownloadCode": "DOWN-1234",
     ///                     "taxes":
     ///                     [
-    ///                         "keyTaxcodeID":"456",
-    ///                         "taxcode":"GST",
-    ///                         "taxcodeLabel":"Goods And Services Tax",
-    ///                         "taxRate": 10.00,
-    ///                         "language": "EN_AU",
-    ///                         "quantity": 1,
-    ///                         "priceTax": 2.00,
-    ///                         "priceTotalTax": 2.00
+    ///                         {
+    ///                             "keyTaxcodeID":"456",
+    ///                             "taxcode":"GST",
+    ///                             "taxcodeLabel":"Goods And Services Tax",
+    ///                             "taxRate": 10.00,
+    ///                             "language": "EN_AU",
+    ///                             "quantity": 1,
+    ///                             "priceTax": 2.00,
+    ///                             "priceTotalTax": 2.00
+    ///                         }
     ///                     ]
     ///                 },
     ///                 {
@@ -285,16 +287,18 @@ namespace EcommerceStandardsDocuments
     ///                     "purchaseOrderLabourCode": "LAB-1234",
     ///                     "taxes":
     ///                     [
-    ///                         "keyTaxcodeID":"456",
-    ///                         "taxcode":"GST",
-    ///                         "taxcodeLabel":"Goods And Services Tax",
-    ///                         "taxRate": 10.00,
-    ///                         "language": "EN_AU",
-    ///                         "quantity": 1,
-    ///                         "priceTax": 4.00,
-    ///                         "priceTotalTax": 4.00
+    ///                         {
+    ///                             "keyTaxcodeID":"456",
+    ///                             "taxcode":"GST",
+    ///                             "taxcodeLabel":"Goods And Services Tax",
+    ///                             "taxRate": 10.00,
+    ///                             "language": "EN_AU",
+    ///                             "quantity": 1,
+    ///                             "priceTax": 4.00,
+    ///                             "priceTotalTax": 4.00
+    ///                         }
     ///                     ]
-    ///                 },
+    ///                 }
     ///             ],
     ///             "surcharges":
     ///             [
@@ -309,14 +313,16 @@ namespace EcommerceStandardsDocuments
     ///                     "priceTax": 2.00,
     ///                     "taxes":
     ///                     [
-    ///                         "keyTaxcodeID":"456",
-    ///                         "taxcode":"GST",
-    ///                         "taxcodeLabel":"Goods And Services Tax",
-    ///                         "taxRate": 10.00,
-    ///                         "language": "EN_AU",
-    ///                         "quantity": 1,
-    ///                         "priceTax": 2.00,
-    ///                         "priceTotalTax": 2.00
+    ///                         {
+    ///                             "keyTaxcodeID":"456",
+    ///                             "taxcode":"GST",
+    ///                             "taxcodeLabel":"Goods And Services Tax",
+    ///                             "taxRate": 10.00,
+    ///                             "language": "EN_AU",
+    ///                             "quantity": 1,
+    ///                             "priceTax": 2.00,
+    ///                             "priceTotalTax": 2.00
+    ///                         }
     ///                     ]
     ///                 }
     ///             ]
