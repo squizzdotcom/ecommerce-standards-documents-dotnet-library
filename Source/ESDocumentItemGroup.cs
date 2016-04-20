@@ -36,7 +36,7 @@ namespace EcommerceStandardsDocuments
     ///             "groupDescription": "Group contains an assorted number of teatowels, each styled with vibrant colours.",
     ///             "keyDefaultProductID": "456",
     ///             "keyDefaultDownloadID": "",
-    ///             "keyDefaultLabourID": ""
+    ///             "keyDefaultLabourID": "",
     ///             "keyProductIDs": ["123","456","789","1000"],
     ///             "keyDownloadIDs": [],
     ///             "keyLabourIDs": []
@@ -48,7 +48,7 @@ namespace EcommerceStandardsDocuments
     ///             "groupDescription": "Bundle contains everything you need to get a TV. It contains a television, labour to install the TV, and a downloadable manual to be able to use the TV.",
     ///             "keyDefaultProductID": "0987",
     ///             "keyDefaultDownloadID": "",
-    ///             "keyDefaultLabourID": ""
+    ///             "keyDefaultLabourID": "",
     ///             "keyProductIDs": ["0987"],
     ///             "keyDownloadIDs": ["DOWN-9898"],
     ///             "keyLabourIDs": ["LAB-INSTALL"]

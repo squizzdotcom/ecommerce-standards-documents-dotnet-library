@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     /// {
     ///     "resultStatus":"1",
     ///     "message":"The purchaser data has been successfully obtained.",
-    ///     "configs":{"dataFields":"keyPurchaserID,salesRepCode,contact,isIndividual"},
+    ///     "configs":{"dataFields":"keyPurchaserID,purchaserCode,contact,isIndividual"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.1,
     ///     "totalDataRecords": 3,
@@ -33,13 +33,13 @@ namespace EcommerceStandardsDocuments
     ///         },
     ///         {
     ///             "keyPurchaserID":"PUR-2",
-    ///             "salesRepCode": "JD",
+    ///             "purchaserCode": "JD",
     ///             "contact": "John Doe",
     ///             "isIndividual": "Y"
     ///         },
     ///         {
     ///             "keyPurchaserID":"4533",
-    ///             "salesRepCode": "AI",
+    ///             "purchaserCode": "AI",
     ///             "name": "Acme Industries",
     ///             "contact": "Kevin Peterson",
     ///             "isIndividual": "N"
