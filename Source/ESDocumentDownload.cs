@@ -67,14 +67,14 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of download records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProduct[] dataRecords;
+        public ESDRecordDownload[] dataRecords;
 
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the download data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="downloadRecords">list of download records</param>
         [JsonConstructor]
-        public ESDocumentDownload(int resultStatus, string message, ESDRecordProduct[] downloadRecords)
+        public ESDocumentDownload(int resultStatus, string message, ESDRecordDownload[] downloadRecords)
         {
             this.resultStatus = resultStatus;
             this.message = message;
@@ -89,7 +89,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the download record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentDownload(int resultStatus, string message, ESDRecordProduct[] downloadRecords, Dictionary<string, string> configs)
+        public ESDocumentDownload(int resultStatus, string message, ESDRecordDownload[] downloadRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;

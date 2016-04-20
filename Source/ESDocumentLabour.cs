@@ -70,14 +70,14 @@ namespace EcommerceStandardsDocuments
         /// <summary>List of labour records</summary>
         [JsonProperty(Order = -4)]
         [DataMember]
-        public ESDRecordProduct[] dataRecords;
+        public ESDRecordLabour[] dataRecords;
 
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the labour data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="labourRecords">list of labour records</param>
         [JsonConstructor]
-        public ESDocumentLabour(int resultStatus, string message, ESDRecordProduct[] labourRecords)
+        public ESDocumentLabour(int resultStatus, string message, ESDRecordLabour[] labourRecords)
         {
             this.resultStatus = resultStatus;
             this.message = message;
@@ -92,7 +92,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the labour record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentLabour(int resultStatus, string message, ESDRecordProduct[] labourRecords, Dictionary<string, string> configs)
+        public ESDocumentLabour(int resultStatus, string message, ESDRecordLabour[] labourRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;
