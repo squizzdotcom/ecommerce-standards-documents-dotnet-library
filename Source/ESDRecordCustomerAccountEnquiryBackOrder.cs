@@ -102,7 +102,7 @@ namespace EcommerceStandardsDocuments
         public string taxNumber { get; set; }
         /// <summary>Label of the taxes assigned to the order's total</summary>
         [DataMember(EmitDefaultValue = false)]
-        public decimal taxLabel { get; set; }
+        public string taxLabel { get; set; }
         /// <summary>Percentage amount of tax that the applied to the order's total</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal taxRate { get; set; }
