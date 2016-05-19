@@ -38,6 +38,12 @@ namespace EcommerceStandardsDocuments
         /// If 'Y' then indicates that the alternate code has been defined by another entity who supplies the product, download, or labour.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string isSupplierCode { get; set; }
+        /// <summary>Key of the supplier account record that the code is linked to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySupplierAccountID { get; set; }
+        /// <summary>Key of the customer account record that the code is linked to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCustomerAccountID { get; set; }
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
