@@ -57,6 +57,11 @@ namespace EcommerceStandardsDocuments
         /// <summary>Data mode of the Ecommerce Standards Document is complete, and all the data available is contained within the document.</summary>
         public static readonly string ESD_DATA_MODE_COMPLETE = "COMPLETE";
 
+        /// <summary>Yes value that can be embedded in an ESD document</summary>
+        public static readonly string ESD_VALUE_YES = "Y";
+        /// <summary>No value that can be embedded in an ESD document</summary>
+        public static readonly string ESD_VALUE_NO = "N";
+
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs to be inserted into the requesting data source because it is a new record.</summary>
         public static readonly int ESD_RECORD_OPERATION_INSERT = 1;
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs to be updated in the requesting data source because the record has changed.</summary>
@@ -140,5 +145,31 @@ namespace EcommerceStandardsDocuments
         public static readonly string PAYMENT_METHOD_PROPRIETARY = "PROPRIETARY";
         /// <summary>Payment method - ACCOUNT - A payment will be assigned to a customer account and paid based on the agreed payment terms</summary>
         public static readonly string PAYMENT_METHOD_ACCOUNT = "ACCOUNT";
+
+        /// <summary>Record Type - Invoice</summary>
+        public static readonly string RECORD_TYPE_INVOICE = "INVOICE";
+        /// <summary>Record Type - Transaction</summary>
+        public static readonly string RECORD_TYPE_TRANSACTION = "TRANSACTION";
+        /// <summary>Record Type - Sales Order</summary>
+        public static readonly string RECORD_TYPE_ORDER_SALE = "ORDER_SALE";
+        /// <summary>Record Type - Purchase Order</summary>
+        public static readonly string RECORD_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
+        /// <summary>Record Type - Back Order</summary>
+        public static readonly string RECORD_TYPE_BACKORDER = "BACKORDER";
+        /// <summary>Record Type - Credit</summary>
+        public static readonly string RECORD_TYPE_CREDIT = "CREDIT";
+        /// <summary>Record Type - Payment</summary>
+        public static readonly string RECORD_TYPE_PAYMENT = "PAYMENT";
+
+        /// <summary>Record Line Type - Item</summary>
+        public static readonly string RECORD_LINE_TYPE_ITEM = "ITEM";
+        /// <summary>Record Line Type - Text</summary>
+        public static readonly string RECORD_LINE_TYPE_TEXT = "TEXT";
+        /// <summary>Record Line Type - Invoice</summary>
+        public static readonly string RECORD_LINE_TYPE_INVOICE = "INVOICE";
+        /// <summary>Record Line Type - Sales Order</summary>
+        public static readonly string RECORD_LINE_TYPE_ORDER_SALE = "ORDER_SALE";
+        /// <summary>Record Line Type - Sales Order</summary>
+        public static readonly string RECORD_LINE_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
     }
 }
