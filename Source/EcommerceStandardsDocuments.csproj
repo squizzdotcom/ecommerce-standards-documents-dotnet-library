@@ -64,6 +64,7 @@
     <Compile Include="ESDocumentSupplierAccount.cs" />
     <Compile Include="ESDocumentSupplierAccountAddress.cs" />
     <Compile Include="ESDocumentSupplierAccountContact.cs" />
+    <Compile Include="ESDocumentSupplierAccountEnquiry.cs" />
     <Compile Include="ESDocumentSurcharge.cs" />
     <Compile Include="ESDRecordContact.cs" />
     <Compile Include="ESDRecordCustomerAccountContract.cs" />
@@ -103,6 +104,8 @@
     <Compile Include="ESDRecordSupplierAccount.cs" />
     <Compile Include="ESDRecordSupplierAccountAddress.cs" />
     <Compile Include="ESDRecordFlag.cs" />
+    <Compile Include="ESDRecordSupplierAccountEnquiryOrderPurchase.cs" />
+    <Compile Include="ESDRecordSupplierAccountEnquiryOrderPurchaseLine.cs" />
     <Compile Include="ESDRecordSurcharge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryProductPrice.cs" />

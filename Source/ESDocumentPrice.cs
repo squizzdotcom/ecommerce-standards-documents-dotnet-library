@@ -146,10 +146,10 @@ namespace EcommerceStandardsDocuments
     ///     "version": 1.0,
     ///     "totalDataRecords": 4,
     ///     "priceGroups":
-    ///     [
-    ///         {"PRICE-GROUP-1": ["ACC-1","ACC-2","ACC-3","ACC-4"]},
-    ///         {"PRICE-GROUP-2": ["ACC-5","ACC-6","ACC-7","ACC-8"]}
-    ///     ],
+    ///     {
+    ///         "PRICE-GROUP-1": ["ACC-1","ACC-2","ACC-3","ACC-4"],
+    ///         "PRICE-GROUP-2": ["ACC-5","ACC-6","ACC-7","ACC-8"]
+    ///     },
     ///     "dataRecords":
     ///      [
     ///         {
