@@ -45,6 +45,16 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public decimal parentQuantity { get; set; }
 
+        /// <summary>
+        /// Either
+        /// <list type="bullet">
+        /// <item><term>N</term><description>No</description></item>
+        /// <item><term>Y</term><description>Yes</description></item>
+        /// </list>
+        /// If 'Y' then indicates that the pricing of the sell unit should occur off the base sell unit. This could be set if a sell unit is assigned to a product for a given quantity, and all the pricing of the product is set in the base sell unit, not the assigned sell unit.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string isPricedOffBaseUnit { get; set; }
+
         /// <summary>Key of the sell unit linked as a parent. This allows the parentQuantity to be related to another unit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySellUnitParentID { get; set; }
