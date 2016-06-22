@@ -67,6 +67,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the sales representative associated to the credit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string salesRepName { get; set; }
+        /// <summary>Name of the contact person associated with the delivery address</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryContact { get; set; }
+        /// <summary>Name of the organisation associated to the delivery address</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryOrgName { get; set; }
         /// <summary>First delivery address field set for the credit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryAddress1 { get; set; }
@@ -82,6 +88,21 @@ namespace EcommerceStandardsDocuments
         /// <summary>Country delivery address field set for the credit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryCountry { get; set; }
+        /// <summary>Code of the country at the delivery address as a 2 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryCountryCodeISO2 { get; set; }
+        /// <summary>Code of the country at the delivery address as a 3 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryCountryCodeISO3 { get; set; }
+        /// <summary>Post code at the delivery address.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryPostcode { get; set; }
+        /// <summary>Name of the contact person at the address associated with the billing of the credit.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingContact { get; set; }
+        /// <summary>Name of the organisation set against the billing address for the credit.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingOrgName { get; set; }
         /// <summary>First address field of the billing address set for the credit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string billingAddress1 { get; set; }
@@ -97,6 +118,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the country that the credit is being billed to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string billingCountry { get; set; }
+        /// <summary>Code of the country at the billing address as a 2 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingCountryCodeISO2 { get; set; }
+        /// <summary>Code of the country at the billing address as a 3 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingCountryCodeISO3 { get; set; }
+        /// <summary>Post code at the billing address</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingPostcode { get; set; }
         /// <summary>Tax number displayed on the credit</summary>
         [DataMember(EmitDefaultValue = false)]
         public string taxNumber { get; set; }

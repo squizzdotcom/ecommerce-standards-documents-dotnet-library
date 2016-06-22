@@ -73,6 +73,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the purchase representative associated to the purchase order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaserName { get; set; }
+        /// <summary>Name of the contact person at the address that the ordered goods are being delivered to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryContact { get; set; }
+        /// <summary>Name of the organisation that the ordered goods are being delivered to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryOrgName { get; set; }
         /// <summary>First address field that the purchase order is being delivered to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryAddress1 { get; set; }
@@ -88,6 +94,21 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the country that the purchase order is being delivered to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryCountry { get; set; }
+        /// <summary>Code of the country at the address that the ordered goods are being delivered to as a 2 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryCountryCodeISO2 { get; set; }
+        /// <summary>Code of the country at the address that the ordered goods are being delivered to as a 3 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryCountryCodeISO3 { get; set; }
+        /// <summary>Post code of the address that the ordered goods are being delivered to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryPostcode { get; set; }
+        /// <summary>Name of the contact person at the address associated with the billing of the purchase order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingContact { get; set; }
+        /// <summary>Name of the organisation that the orders goods are being billed to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingOrgName { get; set; }
         /// <summary>First address field of the billing address set for the purchase order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string billingAddress1 { get; set; }
@@ -103,6 +124,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the country that the purchase order is being billed to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string billingCountry { get; set; }
+        /// <summary>Code of the country at the billing address as a 2 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingCountryCodeISO2 { get; set; }
+        /// <summary>Code of the country at the billing address as a 3 digit code set by ISO standards.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingCountryCodeISO3 { get; set; }
+        /// <summary>Post code at the billing address</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string billingPostcode { get; set; }
         /// <summary>Tax number displayed on the purchase order</summary>
         [DataMember(EmitDefaultValue = false)]
         public string taxNumber { get; set; }
