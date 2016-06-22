@@ -40,6 +40,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Date that the purchase order is due. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public long dueDate { get; set; }
+        /// <summary>Date that the ordered goods/services are expected to be delivered. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long expectedDeliveryDate { get; set; }
+        /// <summary>Date that the ordered goods/services were delivered. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long deliveredDate { get; set; }
         /// <summary>Key of the location record associated to the purchase order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
@@ -160,6 +166,27 @@ namespace EcommerceStandardsDocuments
         /// <summary>Text that contains additional comments that have been made for the purchase order</summary>
         [DataMember(EmitDefaultValue = false)]
         public string comment { get; set; }
+        /// <summary>Code of the freight carrier who delivered the ordered goods</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierCode { get; set; }
+        /// <summary>Name of the freight carrier who delivered the orders goods</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierName { get; set; }
+        /// <summary>Reference code to the system used to process the freight</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightSystemRefCode { get; set; }
+        /// <summary>Consignment code issued by the freight carrier to delivery the ordered goods</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierConsignCode { get; set; }
+        /// <summary>Code to track the freight carrier who delivered the ordered goods</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierTrackingCode { get; set; }
+        /// <summary>Code of the service provided by the freight carrier to deliver the ordered goods</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierServiceCode { get; set; }
+        /// <summary>Code of the account in the freight carrier's system</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string freightCarrierAccountCode { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
