@@ -255,7 +255,7 @@ namespace EcommerceStandardsDocuments
                 }
             }
 
-            if (taxes == null){
+            if (productDeliveries == null){
                 productDeliveries = new List<ESDRecordOrderProductDelivery>();
             }
             else{
