@@ -36,13 +36,15 @@ namespace EcommerceStandardsDocuments
     ///             "keyProductID":"123A",
     ///             "alternateCode":"SWISH-1234",
     ///             "isUseCode":"N",
-    ///             "isSupplierCode":"Y"
+    ///             "isSupplierCode":"Y",
+    ///             "keySupplierAccountID":"SUP2"
     ///         },
     ///         {
     ///             "keyProductID":"1234",
     ///             "alternateCode":"SWISH-4567",
     ///             "isUseCode":"Y",
-    ///             "isSupplierCode":"N"
+    ///             "isSupplierCode":"N",
+    ///             "keyCustomerAccountID":"222"
     ///         }
     ///     ]
     /// }
