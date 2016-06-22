@@ -317,25 +317,25 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string instructions { get; set; }
         /// <summary>Code of the freight carrier delivering the ordered goods</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierCode { get; set; }
         /// <summary>Name of the freight carrier delivering the orders goods</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierName { get; set; }
         /// <summary>Reference code to the system used to process the freight order</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightSystemRefCode { get; set; }
         /// <summary>Consignment code issued by the freight carrier to delivery the ordered goods</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierConsignCode { get; set; }
         /// <summary>Code to track the freight carrier delivering the ordered goods</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierTrackingCode { get; set; }
         /// <summary>Code of the service provided by the freight carrier to deliver the ordered goods</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierServiceCode { get; set; }
         /// <summary>Code of the account in the freight carrier's system</summary>
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string freightCarrierAccountCode { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
