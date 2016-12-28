@@ -70,6 +70,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>tax code set for the line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string taxCode { get; set; }
+        /// <summary>pecentage amount associated with the taxcode that has been used to calculate the line tax.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal taxCodeRatePercent { get; set; }
         /// <summary>ISO currency code that denotes the currency that all monetary amounts stored as in the line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string currencyCode { get; set; }
