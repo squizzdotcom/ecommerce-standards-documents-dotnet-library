@@ -171,5 +171,12 @@ namespace EcommerceStandardsDocuments
         public static readonly string RECORD_LINE_TYPE_ORDER_SALE = "ORDER_SALE";
         /// <summary>Record Line Type - Sales Order</summary>
         public static readonly string RECORD_LINE_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
+
+        /// <summary>Price reference Type - Contract</summary>
+        public static readonly string PRICE_REFERENCE_TYPE_CONTRACT = "C";
+        /// <summary>Price reference Type - Contract With Forced Pricing</summary>
+        public static readonly string PRICE_REFERENCE_TYPE_CONTRACT_FORCED = "CF";
+        /// <summary>Price reference Type - Promotion</summary>
+        public static readonly string PRICE_REFERENCE_TYPE_PROMOTION = "P";
     }
 }
