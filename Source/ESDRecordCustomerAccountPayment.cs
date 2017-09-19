@@ -20,6 +20,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>list of records that the payment applies to</summary>
         [DataMember(EmitDefaultValue = false)]
         public List<ESDRecordCustomerAccountPaymentRecord> records { get; set; }
+        /// <summary>list of surcharges that have been added to the payment</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public List<ESDRecordAccountPaymentSurcharge> surcharges { get; set; }
 
         /// <summary>Key that allows the customer account payment record to be uniquely identified and linked to.</summary>
         [DataMember]
