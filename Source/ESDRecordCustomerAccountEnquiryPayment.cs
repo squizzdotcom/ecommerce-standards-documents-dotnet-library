@@ -49,6 +49,18 @@ namespace EcommerceStandardsDocuments
         /// <summary>total monetary amount the payment applies</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal totalAmount { get; set; }
+        /// <summary>Total number of surcharges applied to the payment</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public int totalSurchargeItems { get; set; }
+        /// <summary>Total monetary amount of surcharges applied to the payment exclusive of taxes</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal totalSurchargeExTax { get; set; }
+        /// <summary>Total monetary amount of surcharges applied to the payment inclusive of taxes</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal totalSurchargeIncTax { get; set; }
+        /// <summary>Total monetary amount of taxes applied to surcharges in the payment</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal totalSurchargeTax { get; set; }
         /// <summary>ISO currency code that denotes the currency that all monetary amounts stored in the payment with</summary>
         [DataMember(EmitDefaultValue = false)]
         public string currencyCode { get; set; }
