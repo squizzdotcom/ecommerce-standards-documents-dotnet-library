@@ -55,6 +55,9 @@
     <Compile Include="ESDocumentItemGroup.cs" />
     <Compile Include="ESDocumentItemRelation.cs" />
     <Compile Include="ESDocumentLabour.cs" />
+    <Compile Include="ESDocumentMaker.cs" />
+    <Compile Include="ESDocumentMakerModel.cs" />
+    <Compile Include="ESDocumentMakerModelItem.cs" />
     <Compile Include="ESDocumentOrderPurchase.cs" />
     <Compile Include="ESDocumentOrderSale.cs" />
     <Compile Include="ESDocumentPaymentType.cs" />
@@ -78,6 +81,8 @@
     <Compile Include="ESDRecordCustomerAccountEnquiryOrderSaleLine.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryPayment.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryPaymentLine.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryQuote.cs" />
+    <Compile Include="ESDRecordCustomerAccountEnquiryQuoteLine.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryTransaction.cs" />
     <Compile Include="ESDRecordCustomerAccountPayment.cs" />
     <Compile Include="ESDRecordCustomerAccountPaymentRecord.cs" />
@@ -86,6 +91,9 @@
     <Compile Include="ESDRecordItemGroup.cs" />
     <Compile Include="ESDRecordItemRelation.cs" />
     <Compile Include="ESDRecordLabour.cs" />
+    <Compile Include="ESDRecordMaker.cs" />
+    <Compile Include="ESDRecordMakerModel.cs" />
+    <Compile Include="ESDRecordMakerModelMapping.cs" />
     <Compile Include="ESDRecordOrderPurchase.cs" />
     <Compile Include="ESDRecordOrderPurchaseLine.cs" />
     <Compile Include="ESDRecordOrderLineAttribute.cs" />

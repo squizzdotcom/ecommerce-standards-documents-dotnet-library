@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single attribute profile associated with products. A profile allows any number of attributes to be grouped together.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single attribute profile associated with entities such as products, download, labour or models. A profile allows any number of attributes to be grouped together.</summary>
     [DataContract]
     public class ESDRecordAttributeProfile
     {

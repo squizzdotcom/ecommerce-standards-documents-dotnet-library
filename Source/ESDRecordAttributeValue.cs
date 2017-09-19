@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single product, download, or labour attribute value.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single product, download, labour or model attribute value.</summary>
     [DataContract]
     public class ESDRecordAttributeValue
     {

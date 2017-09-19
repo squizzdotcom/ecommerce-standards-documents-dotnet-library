@@ -972,6 +972,216 @@ namespace EcommerceStandardsDocuments
     ///     ]
     /// }
     /// </code>
+    /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of quotes for a customer account
+    /// <code>
+    /// {
+    ///     "resultStatus":"1",
+    ///     "message":"The customer account enquiry quote data has been successfully obtained.",
+    ///     "configs":{},
+    ///     "dataTransferMode": "COMPLETE",
+    ///     "version": 1.0,
+    ///     "totalDataRecords": 2,
+    ///     "orderSaleRecords":
+    ///      [
+    ///         {
+    ///             "keyQuoteID":"11",
+    ///             "quoteID":"QUOTE-11",
+    ///             "keyCustomerAccountID":"222",
+    ///             "customerAccountCode":"CUST004",
+    ///             "totalExTax": 400.00,
+    ///             "totalIncTax": 440.00,
+    ///             "totalTax": 40.00,
+    ///             "totalPaid": 0,
+    ///             "balance": 440.00
+    ///         },
+    ///         {
+    ///             "keyQuoteID":"12",
+    ///             "quoteID":"QUOTE-12",
+    ///             "keyCustomerAccountID":"222",
+    ///             "customerAccountCode":"CUST004",
+    ///             "quoteNumber": "4324234",
+    ///             "creationDate": 1449132083084,
+    ///             "quoteDate": 1449932083084,
+    ///             "expiryDate": 1449932083084,
+    ///             "expectedDeliveryDate": 1449982083084,
+    ///             "keyLocationID": "456",
+    ///             "locationCode": "LCT-456",
+    ///             "locationLabel": "Warehouse",
+    ///             "locationType": "WAREHOUSE",
+    ///             "referenceKeyID": "112",
+    ///             "referenceType": "INVOICE",
+    ///             "referenceNumber": "1234123",
+    ///             "customerReference": "3434343",
+    ///             "salesRepCode": "JD",
+    ///             "salesRepName": "John Doe",
+    ///             "deliveryContact": "Lee",
+    ///             "deliveryOrgName": "Lee's Business Pty Ltd",
+    ///             "deliveryAddress1": "22",
+    ///             "deliveryAddress2": "Bourkie Street",
+    ///             "deliveryAddress3": "Melbourne",
+    ///             "deliveryStateProvince": "Victoria",
+    ///             "deliveryCountry": "Australia",
+    ///             "deliveryCountryCodeISO2": "AU",
+    ///             "deliveryCountryCodeISO3": "AUS",
+    ///             "deliveryPostcode": "3000",
+    ///             "billingContact": "Tom",
+    ///             "billingOrgName": "Lee's Business Pty Ltd",
+    ///             "billingAddress1": "15",
+    ///             "billingAddress2": "Bourkie Street",
+    ///             "billingAddress3": "Melbourne",
+    ///             "billingStateProvince": "Victoria",
+    ///             "billingCountry": "Australia",
+    ///             "billingCountryCodeISO2": "AU",
+    ///             "billingCountryCodeISO3": "AUS",
+    ///             "billingPostcode": "3000",
+    ///             "taxNumber": "123 12332 123",
+    ///             "taxLabel": "GST",
+    ///             "taxRate": 10,
+    ///             "totalExTax": 100.00,
+    ///             "totalIncTax": 110.00,
+    ///             "totalTax": 10.00,
+    ///             "totalFreightIncTax": 11.00,
+    ///             "totalFreightExTax": 10.00,
+    ///             "totalExtraChargesIncTax": 1.10,
+    ///             "totalExtraChargesExTax": 1.00,
+    ///             "totalDiscountsIncTax": 220.00,
+    ///             "totalDiscountsExTax": 22.00,
+    ///             "totalLeviesIncTax": 22.00,
+    ///             "totalLeviesExTax": 20.00,
+    ///             "totalPaid": 50.00,
+    ///             "balance": 60.00,
+    ///             "currencyCode": "AUD",
+    ///             "totalQuantity": 3,
+    ///             "description": "",
+    ///             "freightCarrierCode": "ACME-FREIGHT-001",
+    ///             "freightCarrierName": "ACME Freight Shippers",
+    ///             "freightSystemRefCode": "SHIP-SYS",
+    ///             "freightCarrierConsignCode": "CON-23124123",
+    ///             "freightCarrierTrackingCode": "34325-25243-24343",
+    ///             "freightCarrierServiceCode": "EXPRESS-24",
+    ///             "freightCarrierAccountCode": "ACME-001",
+    ///             "language": "EN_AU",
+    ///             "comment": "Please leave goods by the back entrance"
+    ///         }
+    ///     ]
+    /// }
+    /// </code>
+    /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single quote for a customer account
+    /// <code>
+    /// {
+    ///     "resultStatus":"1",
+    ///     "message":"The customer account enquiry sales order detail data has been successfully obtained.",
+    ///     "configs":{},
+    ///     "dataTransferMode": "COMPLETE",
+    ///     "version": 1.0,
+    ///     "totalDataRecords": 1,
+    ///     "orderSaleRecords":
+    ///      [
+    ///         {
+    ///             "keyQuoteID":"112",
+    ///             "quoteID":"QUOTE-112",
+    ///             "keyCustomerAccountID":"222",
+    ///             "customerAccountCode":"CUST004",
+    ///             "quoteNumber": "4324234",
+    ///             "creationDate": 1449132083084,
+    ///             "quoteDate": 1449932083084,
+    ///             "dueDate": 1449932083084,
+    ///             "expiryDate": 1449982083084,
+    ///             "keyLocationID": "456",
+    ///             "locationCode": "LCT-456",
+    ///             "locationLabel": "Warehouse",
+    ///             "locationType": "WAREHOUSE",
+    ///             "referenceKeyID": "112",
+    ///             "referenceType": "INVOICE",
+    ///             "referenceNumber": "1234123",
+    ///             "customerReference": "3434343",
+    ///             "salesRepCode": "JD",
+    ///             "salesRepName": "John Doe",
+    ///             "deliveryContact": "Lee",
+    ///             "deliveryOrgName": "Lee's Business Pty Ltd",
+    ///             "deliveryAddress1": "22",
+    ///             "deliveryAddress2": "Bourkie Street",
+    ///             "deliveryAddress3": "Melbourne",
+    ///             "deliveryStateProvince": "Victoria",
+    ///             "deliveryCountry": "Australia",
+    ///             "deliveryCountryCodeISO2": "AU",
+    ///             "deliveryCountryCodeISO3": "AUS",
+    ///             "deliveryPostcode": "3000",
+    ///             "billingContact": "Tom",
+    ///             "billingOrgName": "Lee's Business Pty Ltd",
+    ///             "billingAddress1": "15",
+    ///             "billingAddress2": "Bourkie Street",
+    ///             "billingAddress3": "Melbourne",
+    ///             "billingStateProvince": "Victoria",
+    ///             "billingCountry": "Australia",
+    ///             "billingCountryCodeISO2": "AU",
+    ///             "billingCountryCodeISO3": "AUS",
+    ///             "billingPostcode": "3000",
+    ///             "taxNumber": "123 12332 123",
+    ///             "taxLabel": "GST",
+    ///             "taxRate": 10,
+    ///             "totalExTax": 100.00,
+    ///             "totalIncTax": 110.00,
+    ///             "totalTax": 10.00,
+    ///             "totalFreightIncTax": 11.00,
+    ///             "totalFreightExTax": 10.00,
+    ///             "totalExtraChargesIncTax": 1.10,
+    ///             "totalExtraChargesExTax": 1.00,
+    ///             "totalDiscountsIncTax": 220.00,
+    ///             "totalDiscountsExTax": 22.00,
+    ///             "totalLeviesIncTax": 22.00,
+    ///             "totalLeviesExTax": 20.00,
+    ///             "totalPaid": 50.00,
+    ///             "balance": 60.00,
+    ///             "currencyCode": "AUD",
+    ///             "totalQuantity": 3,
+    ///             "description": "",
+    ///             "freightCarrierCode": "ACME-FREIGHT-001",
+    ///             "freightCarrierName": "ACME Freight Shippers",
+    ///             "freightSystemRefCode": "SHIP-SYS",
+    ///             "freightCarrierConsignCode": "CON-23124123",
+    ///             "freightCarrierTrackingCode": "34325-25243-24343",
+    ///             "freightCarrierServiceCode": "EXPRESS-24",
+    ///             "freightCarrierAccountCode": "ACME-001",
+    ///             "language": "EN_AU",
+    ///             "comment": "Please leave goods by the back entrance",
+    ///             "lines":
+    ///             [
+    ///                 {
+    ///                     "keyOrderSaleLineID":"4122"
+    ///                 },
+    ///                 {
+    ///                     "keyQuoteLineID":"4123",
+    ///                     "lineItemID":"PROD1234453",
+    ///                     "lineItemCode":"PROD-123",
+    ///                     "lineType":"ITEM",
+    ///                     "description":"Tea Towels",
+    ///                     "language":"EN_AU",
+    ///                     "unit":"EACH",
+    ///                     "quantityQuoted": 22,
+    ///                     "priceExTax": 300.00,
+    ///                     "priceIncTax": 330.00,
+    ///                     "priceTax": 30.00,
+    ///                     "totalPriceExTax":6600.00,
+    ///                     "totalPriceIncTax": 7260.00,
+    ///                     "totalPriceTax": 660,
+    ///                     "taxCode":"GST",
+    ///                     "keyLocationID":"456",
+    ///                     "locationCode":"LCT-456",
+    ///                     "currencyCode":"AUD",
+    ///                     "referenceLineItemCode":"",
+    ///                     "referenceLineCode":""
+    ///                 },
+    ///                 {
+    ///                     "keyQuoteLineID":"11234124",
+    ///                     "lineType":"TEXT",
+    ///                     "description":"Tea towels are packed into cardboard boxes"
+    ///                 }
+    ///             ]
+    ///         }
+    ///     ]
+    /// }
+    /// </code>
     /// </example>
     [DataContract]
     public class ESDocumentCustomerAccountEnquiry : ESDocument
@@ -994,7 +1204,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>list of Customer Account Enquiry Credit records.</summary>
         [DataMember(EmitDefaultValue = false)]
         public ESDRecordCustomerAccountEnquiryCredit[] creditRecords { get; set; }
-       
+        /// <summary>list of Customer Account Enquiry quote records.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordCustomerAccountEnquiryQuote[] quoteRecords { get; set; }
+
         /// <summary>Constructor</summary>
         /// <param name="resultStatus">status of obtaining the customer account record data</param>
         /// <param name="message">message to accompany the result status</param>
@@ -1019,6 +1232,8 @@ namespace EcommerceStandardsDocuments
         public static readonly string RECORD_TYPE_CREDIT = "CREDIT";
         /// <summary>Record Type - Payment</summary>
         public static readonly string RECORD_TYPE_PAYMENT = "PAYMENT";
+        /// <summary>Record Type - Payment</summary>
+        public static readonly string RECORD_TYPE_QUOTE = "QUOTE";
 
         /// <summary>Record Line Type - Item</summary>
         public static readonly string RECORD_LINE_TYPE_ITEM = "ITEM";
@@ -1028,7 +1243,5 @@ namespace EcommerceStandardsDocuments
         public static readonly string RECORD_LINE_TYPE_INVOICE = "INVOICE";
         /// <summary>Record Line Type - Sales Order</summary>
         public static readonly string RECORD_LINE_TYPE_ORDER_SALE = "ORDER_SALE";
-        //public static readonly string RECORD_TYPE_QUOTE = "quote";
-        //public static readonly string RECORD_TYPE_LAYBUY = "laybuy";
     }
 }
