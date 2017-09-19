@@ -72,7 +72,7 @@ namespace EcommerceStandardsDocuments
         public static readonly int ESD_RECORD_OPERATION_IGNORE = 4;
 
         /// <summary>Contains the version that the Ecommerce Standards Documents library is currently at.</summary>
-        public static readonly decimal ESD_DOCUMENT_VERSION = Convert.ToDecimal(1.1);
+        public static readonly decimal ESD_DOCUMENT_VERSION = Convert.ToDecimal(1.2);
 
         /// <summary>Denotes that the location is a warehouse</summary>
         public static readonly string LOCATION_TYPE_WAREHOUSE = "WAREHOUSE";
@@ -87,6 +87,8 @@ namespace EcommerceStandardsDocuments
         public static readonly string LANG_EN_AU = "EN_AU";
         /// <summary>Language - English USA</summary>
         public static readonly string LANG_EN_US = "EN_US";
+        /// <summary>Language - French Franch</summary>
+        public static readonly string LANG_FR_FR = "FR_FR";
 
         /// <summary>Authority Number - Australian Business Number</summary>
         public static readonly int AUTHORITY_NUM_AUS_ABN = 1;
@@ -160,6 +162,8 @@ namespace EcommerceStandardsDocuments
         public static readonly string RECORD_TYPE_CREDIT = "CREDIT";
         /// <summary>Record Type - Payment</summary>
         public static readonly string RECORD_TYPE_PAYMENT = "PAYMENT";
+        /// <summary>Record Type - Payment</summary>
+        public static readonly string RECORD_TYPE_QUOTE = "QUOTE";
 
         /// <summary>Record Line Type - Item</summary>
         public static readonly string RECORD_LINE_TYPE_ITEM = "ITEM";
