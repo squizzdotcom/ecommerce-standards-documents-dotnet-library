@@ -733,5 +733,125 @@ namespace EcommerceStandardsDocuments
                 internalID = "";
             }
         }
+        
+        /// <summary>Converts the order sale record into a customer account enquiry order sale record</summary>
+        /// <returns>customer account enquiry sales order record and its lines</returns>
+        public ESDRecordCustomerAccountEnquiryOrderSale convertToCustomerAccountEnquiryOrderSaleRecord()
+        {
+            ESDRecordCustomerAccountEnquiryOrderSale accountEnquiryOrderSaleRecord = new ESDRecordCustomerAccountEnquiryOrderSale();
+            List<ESDRecordCustomerAccountEnquiryOrderSaleLine> recordLines = new List<ESDRecordCustomerAccountEnquiryOrderSaleLine>();
+
+            accountEnquiryOrderSaleRecord.keyOrderSaleID = keySalesOrderID;
+            accountEnquiryOrderSaleRecord.orderID = salesOrderCode;
+            accountEnquiryOrderSaleRecord.orderNumber = salesOrderNumber;
+            accountEnquiryOrderSaleRecord.keyCustomerAccountID = keyCustomerAccountID;
+            accountEnquiryOrderSaleRecord.customerAccountCode = customerAccountCode;
+            accountEnquiryOrderSaleRecord.deliveredDate = dispatchedDate;
+            accountEnquiryOrderSaleRecord.creationDate = createdDate;
+            accountEnquiryOrderSaleRecord.salesRepCode = salesRepCode;
+            accountEnquiryOrderSaleRecord.salesRepName = salesRepName;
+            accountEnquiryOrderSaleRecord.currencyCode = currencyISOCode;
+
+            if (accountEnquiryOrderSaleRecord.referenceType.ToUpper() == ESDocumentCustomerAccountEnquiry.RECORD_TYPE_ORDER_PURCHASE.ToUpper())
+            {
+                accountEnquiryOrderSaleRecord.referenceNumber = purchaseOrderNumber;
+                accountEnquiryOrderSaleRecord.referenceType = ESDocumentCustomerAccountEnquiry.RECORD_TYPE_ORDER_PURCHASE;
+            }
+
+            if (invoiceNumbers != null && invoiceNumbers.Length > 0)
+            {
+                accountEnquiryOrderSaleRecord.referenceNumber = invoiceNumbers[0];
+                accountEnquiryOrderSaleRecord.referenceType = ESDocumentCustomerAccountEnquiry.RECORD_TYPE_INVOICE;
+            }
+
+            accountEnquiryOrderSaleRecord.deliveryContact = deliveryContact;
+            accountEnquiryOrderSaleRecord.deliveryOrgName = deliveryOrgName;
+            accountEnquiryOrderSaleRecord.deliveryAddress1 = deliveryAddress1;
+            accountEnquiryOrderSaleRecord.deliveryAddress2 = deliveryAddress2;
+            accountEnquiryOrderSaleRecord.deliveryAddress3 = deliveryAddress3;
+            accountEnquiryOrderSaleRecord.deliveryPostcode = deliveryPostcode;
+            accountEnquiryOrderSaleRecord.deliveryStateProvince = deliveryRegionName;
+            accountEnquiryOrderSaleRecord.deliveryCountry = deliveryCountryName;
+            accountEnquiryOrderSaleRecord.deliveryCountryCodeISO2 = deliveryCountryCodeISO2;
+            accountEnquiryOrderSaleRecord.deliveryCountryCodeISO3 = deliveryCountryCodeISO3;
+            accountEnquiryOrderSaleRecord.billingContact = billingContact;
+            accountEnquiryOrderSaleRecord.billingOrgName = billingOrgName;
+            accountEnquiryOrderSaleRecord.billingAddress1 = billingAddress1;
+            accountEnquiryOrderSaleRecord.billingAddress2 = billingAddress2;
+            accountEnquiryOrderSaleRecord.billingAddress3 = billingAddress3;
+            accountEnquiryOrderSaleRecord.billingPostcode = billingPostcode;
+            accountEnquiryOrderSaleRecord.billingStateProvince = billingRegionName;
+            accountEnquiryOrderSaleRecord.billingCountry = billingCountryName;
+            accountEnquiryOrderSaleRecord.billingCountryCodeISO2 = billingCountryCodeISO2;
+            accountEnquiryOrderSaleRecord.billingCountryCodeISO3 = billingCountryCodeISO3;
+            accountEnquiryOrderSaleRecord.totalExTax = totalPriceExTax;
+            accountEnquiryOrderSaleRecord.totalIncTax = totalPriceIncTax;
+            accountEnquiryOrderSaleRecord.totalTax = totalTax;
+            accountEnquiryOrderSaleRecord.totalExtraChargesExTax = totalSurchargeExTax;
+            accountEnquiryOrderSaleRecord.totalExtraChargesIncTax = totalSurchargeIncTax;
+            accountEnquiryOrderSaleRecord.comment = instructions;
+            accountEnquiryOrderSaleRecord.freightCarrierCode = freightCarrierCode;
+            accountEnquiryOrderSaleRecord.freightCarrierName = freightCarrierName;
+            accountEnquiryOrderSaleRecord.freightSystemRefCode = freightSystemRefCode;
+            accountEnquiryOrderSaleRecord.freightCarrierConsignCode = freightCarrierConsignCode;
+            accountEnquiryOrderSaleRecord.freightCarrierTrackingCode = freightCarrierTrackingCode;
+            accountEnquiryOrderSaleRecord.freightCarrierAccountCode = freightCarrierAccountCode;
+            accountEnquiryOrderSaleRecord.keyLocationID = keyLocationID;
+            accountEnquiryOrderSaleRecord.locationCode = locationCode;
+            accountEnquiryOrderSaleRecord.locationLabel = locationName;
+
+            //iterate through each order line and add to the account enquiry record
+            for (int i = 0; i < lines.Count(); i++)
+            {
+                ESDRecordCustomerAccountEnquiryOrderSaleLine recordLine = new ESDRecordCustomerAccountEnquiryOrderSaleLine();
+                recordLine.lineType = lines[i].lineType;
+                recordLine.referenceLineCode = lines[i].purchaseOrderLineCode;
+                recordLine.referenceLineItemCode = lines[i].purchaseOrderLineNumber;
+                recordLine.locationCode = lines[i].locationCode;
+                recordLine.locationCode = lines[i].locationName;
+                recordLine.keyLocationID = lines[i].keyLocationID;
+                recordLine.UNSPSC = lines[i].UNSPSC;
+                recordLine.language = lines[i].language;
+                recordLine.quantityOrdered = lines[i].quantity;
+                recordLine.priceExTax = lines[i].priceExTax;
+                recordLine.priceIncTax = lines[i].priceIncTax;
+                recordLine.priceTax = lines[i].priceTax;
+                recordLine.totalPriceExTax = lines[i].priceTotalExTax;
+                recordLine.totalPriceIncTax = lines[i].priceTotalIncTax;
+                recordLine.totalPriceTax = lines[i].priceTotalTax;
+                recordLine.unit = lines[i].unitName;
+                recordLine.referenceLineCode = lines[i].priceReferenceCode;
+
+                if (lines[i].lineType.ToUpper() == ESDocumentConstants.ORDER_LINE_TYPE_DOWNLOAD.ToUpper())
+                {
+                    recordLine.lineItemCode = lines[i].downloadCode;
+                    recordLine.description = lines[i].downloadDescription;
+                    recordLine.referenceLineItemCode = lines[i].purchaseOrderDownloadCode;
+                }
+                else if (lines[i].lineType.ToUpper() == ESDocumentConstants.ORDER_LINE_TYPE_LABOUR.ToUpper())
+                {
+                    recordLine.lineItemCode = lines[i].labourCode;
+                    recordLine.description = lines[i].labourDescription;
+                    recordLine.referenceLineItemCode = lines[i].purchaseOrderLabourCode;
+                }
+                else {
+                    recordLine.lineItemCode = lines[i].productCode;
+                    recordLine.description = lines[i].productDescription;
+                    recordLine.referenceLineItemCode = lines[i].purchaseOrderProductCode;
+                }
+
+                if (lines[i].taxes != null && lines[i].taxes.Count() > 0)
+                {
+                    recordLine.taxCode = lines[i].taxes[0].taxcode;
+                }
+
+                recordLines.Add(recordLine);
+            }
+
+            //add lines to the record
+            accountEnquiryOrderSaleRecord.lines = recordLines.ToArray();
+
+            return accountEnquiryOrderSaleRecord;
+        }
     }
 }

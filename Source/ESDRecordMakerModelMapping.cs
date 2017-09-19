@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single mapping between a maker/manufacturer's model, a category, and either a product, download, or labour entity. Each mapping may also contain any number of attribute values to contain more data about the mapping</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single mapping between a maker/manufacturer's model, a category, and either a product, download, or labour entity. Each mapping may also contain any number of attribute values to contain more data about the mapped entity in relation to the model</summary>
     [DataContract]
     public class ESDRecordMakerModelMapping
     {
