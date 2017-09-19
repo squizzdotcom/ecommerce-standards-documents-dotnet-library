@@ -82,12 +82,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>ISO currency code that denotes the currency that all monetary amounts stored as in the line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string currencyCode { get; set; }
-        /// <summary>Item code of a line that it may reference from another record</summary>
+        /// <summary>Item code of a item in the line that may be referenced from another record</summary>
         [DataMember(EmitDefaultValue = false)]
         public string referenceLineItemCode { get; set; }
         /// <summary>Code of the line that it may reference from another record</summary>
         [DataMember(EmitDefaultValue = false)]
         public string referenceLineCode { get; set; }
+        /// <summary>Code of the supplier's item that the item in the line is associated to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierItemCode { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

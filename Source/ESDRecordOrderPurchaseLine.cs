@@ -117,6 +117,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Type of entity that the price is referenced to. Typically use one of the PRICE constants in th ESDRecordProductPrice class to set this field, or leave it empty.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string priceReferenceType { get; set; }
+        /// <summary>Code of the supplier's product/labour/download that the line is associated to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierItemCode { get; set; }
         /// <summary>
         /// Either
         /// <list type="bullet">
@@ -295,6 +298,10 @@ namespace EcommerceStandardsDocuments
 
             if (salesOrderLineNumber == null){
                 salesOrderLineNumber = "";
+            }
+
+            if (supplierItemCode == null){
+                supplierItemCode = "";
             }
 
             if (isPriceFree == null){
