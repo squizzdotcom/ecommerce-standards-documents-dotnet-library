@@ -358,6 +358,15 @@ namespace EcommerceStandardsDocuments
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string isMultiLocation { get; set; }
+        /// <summary>key of the external location where the products for the order can be found. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalKeyLocationID { get; set; }
+        /// <summary>Code of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationCode { get; set; }
+        /// <summary>Name of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationName { get; set; }
         /// <summary>Method that the order is being shipped by</summary>
         [DataMember(EmitDefaultValue = false)]
         public string shippingMethod { get; set; }
@@ -560,6 +569,18 @@ namespace EcommerceStandardsDocuments
         
             if(locationName == null){
                 locationName="";
+            }
+
+            if (externalKeyLocationID == null){
+                externalKeyLocationID = "";
+            }
+
+            if (externalLocationCode == null){
+                externalLocationCode = "";
+            }
+
+            if (externalLocationName == null){
+                externalLocationName = "";
             }
 
             if (freightCarrierCode == null){

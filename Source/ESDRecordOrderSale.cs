@@ -358,6 +358,19 @@ namespace EcommerceStandardsDocuments
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string isMultiLocation { get; set; }
+        /// <summary>key of the external location where the products for the order can be found. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalKeyLocationID { get; set; }
+        /// <summary>Code of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationCode { get; set; }
+        /// <summary>Name of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationName { get; set; }
+        /// <summary>Either 'N'-No or 
+        /// 'Y'-Yes
+        /// If 'Y' then indicates that the ordered goods are to be obtained across multiple locations.
+        /// </summary>
         /// <summary>Method that the order is being shipped by</summary>
         [DataMember(EmitDefaultValue = false)]
         public string shippingMethod { get; set; }
@@ -709,7 +722,19 @@ namespace EcommerceStandardsDocuments
                 isMultiLocation = "N";
             }
 
-            if(shippingMethod == null){
+            if (externalKeyLocationID == null){
+                externalKeyLocationID = "";
+            }
+
+            if (externalLocationCode == null){
+                externalLocationCode = "";
+            }
+
+            if (externalLocationName == null){
+                externalLocationName = "";
+            }
+
+            if (shippingMethod == null){
                 shippingMethod="";
             }
 
@@ -834,7 +859,10 @@ namespace EcommerceStandardsDocuments
                     recordLine.description = lines[i].labourDescription;
                     recordLine.referenceLineItemCode = lines[i].purchaseOrderLabourCode;
                 }
-                else {
+                else if(lines[i].lineType.ToUpper() == ESDocumentConstants.ORDER_LINE_TYPE_TEXT.ToUpper())
+                {
+                    recordLine.description = lines[i].textDescription;
+                }else{
                     recordLine.lineItemCode = lines[i].productCode;
                     recordLine.description = lines[i].productDescription;
                     recordLine.referenceLineItemCode = lines[i].purchaseOrderProductCode;
