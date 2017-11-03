@@ -229,7 +229,7 @@ namespace EcommerceStandardsDocuments
         public ESDRecordSupplierAccountEnquiryOrderPurchaseLine[] lines { get; set; }
 
         /// <summary>Converts the supplier account enquiry order purchase record into a purchase order record</summary>
-        /// <returns>customer account enquiry sales order record and its lines</returns>
+        /// <returns>purchase order record and its lines</returns>
         public ESDRecordOrderPurchase convertToOrderPurchaseRecord()
         {
             ESDRecordOrderPurchase orderPurchaseRecord = new ESDRecordOrderPurchase();
@@ -314,7 +314,8 @@ namespace EcommerceStandardsDocuments
                 }
                 else if(lines[i].lineType == ESDocumentConstants.RECORD_LINE_TYPE_TEXT)
                 {
-                    lines[i].lineType = ESDocumentConstants.ORDER_LINE_TYPE_TEXT;
+                    orderLine.lineType = ESDocumentConstants.ORDER_LINE_TYPE_TEXT;
+                    orderLine.textDescription = lines[i].description;
                 }
                 orderLine.productDeliveries = new List<ESDRecordOrderProductDelivery>();
                 orderLine.attributes = new List<ESDRecordOrderLineAttributeProfile>();

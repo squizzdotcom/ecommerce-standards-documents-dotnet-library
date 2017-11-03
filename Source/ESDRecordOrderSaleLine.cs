@@ -29,7 +29,6 @@ namespace EcommerceStandardsDocuments
         /// <summary>Type of line set in the order. Set it to a constant prefixed with ORDER_LINE_TYPE_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string lineType { get; set; }
-        
         /// <summary>Code of the line in the purchase order associated to the sales order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderLineCode { get; set; }
@@ -45,6 +44,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the location record that the order line is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
+        /// <summary>key of the external location where the products for the order can be found. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalKeyLocationID { get; set; }
+        /// <summary>Code of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationCode { get; set; }
+        /// <summary>Name of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string externalLocationName { get; set; }
         /// <summary>United Nations Standard Products and Service Code. Stores a standard code defined by the United Nations classifying objects.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string UNSPSC { get; set; }
@@ -144,6 +152,11 @@ namespace EcommerceStandardsDocuments
         /// If 'Y' then indicates quantity in the line should be reserved.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string isReserved { get; set; }
+
+        //text line fields
+        /// <summary>description/comment or any other text to set for a line</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string textDescription { get; set; }
 
         // product fields
         /// <summary>Key of the product record associated to the line. Only relevent when the lineType has been set to product</summary>
@@ -281,13 +294,16 @@ namespace EcommerceStandardsDocuments
                 }
             }
             
-
             if (lineType == null){
                 lineType = "";
             }
 
             if (productCode == null){
                 productCode = "";
+            }
+
+            if (textDescription == null){
+                textDescription = "";
             }
 
             if (keyProductID == null){
@@ -360,6 +376,18 @@ namespace EcommerceStandardsDocuments
 
             if (keyLocationID == null){
                 keyLocationID = "";
+            }
+
+            if (externalKeyLocationID == null){
+                externalKeyLocationID = "";
+            }
+
+            if (externalLocationCode == null){
+                externalLocationCode = "";
+            }
+
+            if (externalLocationName == null){
+                externalLocationName = "";
             }
 
             if (UNSPSC == null){
