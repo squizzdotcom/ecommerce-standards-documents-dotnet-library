@@ -122,6 +122,9 @@ namespace EcommerceStandardsDocuments
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string kitProductsSetPrice { get; set; }
+        /// <summary>Number to order the product by. This may be used to order a number of products within a list.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public int ordering { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

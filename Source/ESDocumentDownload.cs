@@ -55,8 +55,8 @@ namespace EcommerceStandardsDocuments
     ///             "downloadLowQuantity": 10,
     ///             "isPriceTaxInclusive": "N",
     ///             "isKitted":"N",
-    ///             "kitSetPrice":"N"
-    ///         }
+    ///             "kitSetPrice":"N",
+    ///             "ordering": 2
     ///     ]
     /// }
     /// </code>

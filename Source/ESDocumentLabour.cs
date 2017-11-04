@@ -49,6 +49,7 @@ namespace EcommerceStandardsDocuments
     ///             "labourNoneQuantity": 0,
     ///             "labourLowQuantity": 10,
     ///             "isPriceTaxInclusive": "N",
+    ///             "ordering": 2,
     ///             "sellUnits":[
     ///                 {
     ///                     "keySellUnitID":"8"
