@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
+using System.ComponentModel;
 
 namespace EcommerceStandardsDocuments
 {
@@ -52,6 +53,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Fax number of the location</summary>
         [DataMember(EmitDefaultValue = false)]
         public string fax { get; set; }
+        /// <summary>URL of the website that is associated to the location</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string website { get; set; }
+        /// <summary>address of the email that is handles communications for the location</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string email { get; set; }
         /// <summary>
         /// Either
         /// <list type="bullet">
@@ -76,6 +83,22 @@ namespace EcommerceStandardsDocuments
         /// <summary>longitude co-ordinate of the geographic location. The number must be between 180 and -180</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal longitude { get; set; }
+        /// <summary>
+        /// Specifies the kind of the location that it represents
+        /// <list type="bullet">
+        /// <item><term>HEAD_OFFICE</term><description>Location is the main head office of an organisational entity</description></item>
+        /// <item><term>WAREHOUSE</term><description>Location is a warehouse that may store an amount of stock</description></item>
+        /// <item><term>STORE</term><description>Location is a store that may sell goods and services</description></item>
+        /// <item><term>OFFICE</term><description>Location is an office where work is performed</description></item>
+        /// <item><term>SITE</term><description>Location is a site that has a defined area managed or used for business purposes.</description></item>
+        /// <item><term>THIRD_PARTY</term><description>Location is external to an organisation and may be owned or run by a separate entity</description></item>
+        /// <item><term>OTHER</term><description>The location type is not specified</description></item>
+        /// </list>
+        /// The location type defaults to OTHER if no value is set.</summary>
+        [DefaultValue("OTHER")]
+        [DataMember(EmitDefaultValue = false)]
+        public string locationType { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

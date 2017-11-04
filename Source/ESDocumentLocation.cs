@@ -47,10 +47,13 @@ namespace EcommerceStandardsDocuments
     ///                 "contact":"John Doe",
     ///                 "phone":"+614001112222",
     ///                 "fax":"+614002223333",
+    ///                 "email":"headoffice@example.com",
     ///                 "isActive":"Y",
     ///                 "isGeographic":"Y",
     ///                 "latitude":45.123,
     ///                 "longitude":-72.123,
+    ///                 "website":"www.example.com",
+    ///                 "locationType":"OFFICE",
     ///                 "productStock":[]
     ///             },
     ///             {
@@ -66,10 +69,13 @@ namespace EcommerceStandardsDocuments
     ///                 "contact":"Max Smith",
     ///                 "phone":"+614003334444",
     ///                 "fax":"+614005556666",
+    ///                 "email":"warehouse@example.com",
     ///                 "isActive":"Y",
     ///                 "isGeographic":"Y",
     ///                 "latitude":45.423,
     ///                 "longitude":-72.823,
+    ///                 "website":"www.example.com",
+    ///                 "locationType":"WAREHOUSE",
     ///                 "productStock":
     ///                 [
     ///                     {
