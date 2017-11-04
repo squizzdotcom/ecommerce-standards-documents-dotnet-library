@@ -34,6 +34,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Unit quantity of stock that has been ordered by a purchaser</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyOrdered { get; set; }
+        /// <summary>Unit quantity of stock that is the maximum amount that can be ordered by a purchaser</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal qtyOrderable { get; set; }
         /// <summary>Unit quantity of stock that has been back ordered from a supplier</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyBackordered { get; set; }
