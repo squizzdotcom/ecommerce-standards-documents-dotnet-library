@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2016 Squizz PTY LTD
+/// Copyright (C) 2018 Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -18,12 +18,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of transactions for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry transaction data has been successfully obtained.",
-    ///     "configs": {},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.1,
     ///     "totalDataRecords": 5,
+    ///     "configs": {},
     ///     "transactionRecords":
     ///      [
     ///         {
@@ -113,12 +113,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of invoices for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry invoice data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "invoiceRecords":
     ///      [
     ///         {
@@ -208,12 +208,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single invoice for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry invoice detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "invoiceRecords":
     ///      [
     ///         {
@@ -327,12 +327,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of sales orders for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry sales order data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "orderSaleRecords":
     ///      [
     ///         {
@@ -422,12 +422,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single sales order for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry sales order detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "orderSaleRecords":
     ///      [
     ///         {
@@ -541,12 +541,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of credits for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry credit data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "creditRecords":
     ///      [
     ///         {
@@ -606,12 +606,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single credit for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry credit detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "creditRecords":
     ///      [
     ///         {
@@ -688,12 +688,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of payments for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry payment data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "paymentRecords":
     ///      [
     ///         {
@@ -728,12 +728,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single payment for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry payment detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "paymentRecords":
     ///      [
     ///         {
@@ -780,12 +780,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of back orders for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry back order data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "backOrderRecords":
     ///      [
     ///         {
@@ -865,12 +865,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single back order for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry back order detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "backOrderRecords":
     ///      [
     ///         {
@@ -975,12 +975,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, displaying a list of quotes for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry quote data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 2,
+    ///     "configs":{},
     ///     "orderSaleRecords":
     ///      [
     ///         {
@@ -1069,12 +1069,12 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Enqury Standards document in its JSON serialised form, containing the detail of a single quote for a customer account
     /// <code>
     /// {
-    ///     "resultStatus":"1",
+    ///     "version": 1.2,
+    ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry sales order detail data has been successfully obtained.",
-    ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
     ///     "totalDataRecords": 1,
+    ///     "configs":{},
     ///     "orderSaleRecords":
     ///      [
     ///         {
