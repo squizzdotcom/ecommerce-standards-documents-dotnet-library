@@ -981,7 +981,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 2,
     ///     "configs":{},
-    ///     "orderSaleRecords":
+    ///     "quoteRecords":
     ///      [
     ///         {
     ///             "keyQuoteID":"11",
@@ -1075,7 +1075,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 1,
     ///     "configs":{},
-    ///     "orderSaleRecords":
+    ///     "quoteRecords":
     ///      [
     ///         {
     ///             "keyQuoteID":"112",
