@@ -92,63 +92,67 @@ namespace EcommerceStandardsDocuments
         public string isInventoried { get; set; }
 
         /// <summary>Quantity of units invoiced.</summary>
-        public double quantityInvoiced{ get; set; }
+        public double quantityInvoiced { get; set; }
 
         /// <summary>Quantity of units delivered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityDelivered{ get; set; }
+        public double quantityDelivered { get; set; }
 
         /// <summary>Quantity of units back ordered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityBackordered{ get; set; }
+        public double quantityBackordered { get; set; }
+
+        /// <summary>Quantity of units that were ordered.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public double quantityOrdered { get; set; }
 
         /// <summary>Monetary price of the line's unit, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceExTax{ get; set; }
+        public double priceExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceIncTax{ get; set; }
+        public double priceIncTax { get; set; }
 
         /// <summary>Monetary price of the tax applied to the line's unit.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTax{ get; set; }
+        public double priceTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, exclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedExTax{ get; set; }
+        public double priceUndiscountedExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, inclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedIncTax{ get; set; }
+        public double priceUndiscountedIncTax { get; set; }
 
         /// <summary>Monetary price of tax applied the line's unit before any discounting was applied.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedTax{ get; set; }
+        public double priceUndiscountedTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalExTax{ get; set; }
+        public double priceTotalExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalIncTax{ get; set; }
+        public double priceTotalIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalTax{ get; set; }
+        public double priceTotalTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedExTax{ get; set; }
+        public double priceTotalUndiscountedExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedIncTax{ get; set; }
+        public double priceTotalUndiscountedIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced before discounting.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedTax{ get; set; }
+        public double priceTotalUndiscountedTax { get; set; }
 
         /// <summary>
         /// Either
@@ -544,6 +548,11 @@ namespace EcommerceStandardsDocuments
             if (internalID == null)
             {
                 internalID = "";
+            }
+
+            if (customerItemCode == null)
+            {
+                customerItemCode = "";
             }
         }
     }
