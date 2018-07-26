@@ -51,6 +51,8 @@
     <Compile Include="ESDocumentCustomerAccountEnquiry.cs" />
     <Compile Include="ESDocumentCustomerAccountEnquiryLine.cs" />
     <Compile Include="ESDocumentCustomerAccountPayment.cs" />
+    <Compile Include="ESDocumentCustomerInvoice.cs" />
+    <Compile Include="ESDocumentDeliveryNotice.cs" />
     <Compile Include="ESDocumentDownload.cs" />
     <Compile Include="ESDocumentItemGroup.cs" />
     <Compile Include="ESDocumentItemRelation.cs" />
@@ -68,7 +70,9 @@
     <Compile Include="ESDocumentSupplierAccountAddress.cs" />
     <Compile Include="ESDocumentSupplierAccountContact.cs" />
     <Compile Include="ESDocumentSupplierAccountEnquiry.cs" />
+    <Compile Include="ESDocumentSupplierInvoice.cs" />
     <Compile Include="ESDocumentSurcharge.cs" />
+    <Compile Include="ESDocumentType.cs" />
     <Compile Include="ESDRecordAccountPaymentSurchargeTax.cs" />
     <Compile Include="ESDRecordContact.cs" />
     <Compile Include="ESDRecordCustomerAccountContract.cs" />
@@ -88,8 +92,17 @@
     <Compile Include="ESDRecordCustomerAccountPayment.cs" />
     <Compile Include="ESDRecordCustomerAccountPaymentRecord.cs" />
     <Compile Include="ESDRecordAccountPaymentSurcharge.cs" />
+    <Compile Include="ESDRecordCustomerInvoice.cs" />
+    <Compile Include="ESDRecordCustomerInvoiceLine.cs" />
+    <Compile Include="ESDRecordDeliveryNotice.cs" />
+    <Compile Include="ESDRecordDeliveryNoticeLine.cs" />
     <Compile Include="ESDRecordDownload.cs" />
     <Compile Include="ESDRecordFlagMapping.cs" />
+    <Compile Include="ESDRecordInvoiceLineAttribute.cs" />
+    <Compile Include="ESDRecordInvoiceLineAttributeProfile.cs" />
+    <Compile Include="ESDRecordInvoiceLineTax.cs" />
+    <Compile Include="ESDRecordInvoicePayment.cs" />
+    <Compile Include="ESDRecordInvoiceSurcharge.cs" />
     <Compile Include="ESDRecordItemGroup.cs" />
     <Compile Include="ESDRecordItemRelation.cs" />
     <Compile Include="ESDRecordLabour.cs" />
@@ -116,7 +129,10 @@
     <Compile Include="ESDRecordFlag.cs" />
     <Compile Include="ESDRecordSupplierAccountEnquiryOrderPurchase.cs" />
     <Compile Include="ESDRecordSupplierAccountEnquiryOrderPurchaseLine.cs" />
+    <Compile Include="ESDRecordSupplierInvoice.cs" />
+    <Compile Include="ESDRecordSupplierInvoiceLine.cs" />
     <Compile Include="ESDRecordSurcharge.cs" />
+    <Compile Include="ESDRecordType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryProductPrice.cs" />
     <Compile Include="ESDRecordOrderSale.cs" />
