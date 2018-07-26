@@ -68,9 +68,13 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string customerProductCode { get; set; }
 
+        /// <summary>Code of the supplire's product that the line is associated to</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierProductCode { get; set; }
+
         /// <summary>quantity of the product's units being delivered</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityDelivered { get; set; }
+        public double quantityOnDelivery { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or  it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
@@ -152,6 +156,11 @@ namespace EcommerceStandardsDocuments
             if (internalID == null)
             {
                 internalID = "";
+            }
+
+            if (supplierProductCode == null)
+            {
+                supplierProductCode = "";
             }
         }
     }
