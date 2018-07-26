@@ -110,6 +110,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Order Line Type - Labour</summary>
         public static readonly string ORDER_LINE_TYPE_LABOUR = "LABOUR";
 
+        /// <summary>Invoice Line Type - Text</summary>
+        public static readonly string INVOICE_LINE_TYPE_TEXT = "TEXT";
+        /// <summary>Invoice Line Type - Product</summary>
+        public static readonly string INVOICE_LINE_TYPE_PRODUCT = "PRODUCT";
+        /// <summary>Invoice Line Type - Download</summary>
+        public static readonly string INVOICE_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
+        /// <summary>Invoice Line Type - Labour</summary>
+        public static readonly string INVOICE_LINE_TYPE_LABOUR = "LABOUR";
+
         /// <summary>Entity Type - Org, denotes an organisation</summary>
         public static readonly string ENTITY_TYPE_ORG = "ORG";
         /// <summary>Entity Type - Personal, denotes a human individual</summary>
@@ -148,6 +157,17 @@ namespace EcommerceStandardsDocuments
         /// <summary>Payment method - ACCOUNT - A payment will be assigned to a customer account and paid based on the agreed payment terms</summary>
         public static readonly string PAYMENT_METHOD_ACCOUNT = "ACCOUNT";
 
+        /// <summary>UNPAID - The invoice has not been paid for</summary>
+        public const string PAYMENT_STATUS_UNPAID = "UNPAID";
+        /// <summary>PENDING - A payment is currently in the process of being paid for, or is waiting on a process to complete</summary>
+        public const string PAYMENT_STATUS_PENDING = "PENDING";
+        /// <summary>PAID - The invoice has been paid</summary>
+        public const string PAYMENT_STATUS_PAID = "PAID";
+        /// <summary>DECLINED - A payment failed when trying to be paid</summary>
+        public const string PAYMENT_STATUS_DECLINED = "DECLINED";
+        /// <summary>NONREQUIRED - No payment is required to pay for the invoice</summary>
+        public const string PAYMENT_STATUS_NONREQUIRED = "NONREQUIRED";
+
         /// <summary>Record Type - Invoice</summary>
         public static readonly string RECORD_TYPE_INVOICE = "INVOICE";
         /// <summary>Record Type - Transaction</summary>
@@ -182,5 +202,29 @@ namespace EcommerceStandardsDocuments
         public static readonly string PRICE_REFERENCE_TYPE_CONTRACT_FORCED = "CF";
         /// <summary>Price reference Type - Promotion</summary>
         public static readonly string PRICE_REFERENCE_TYPE_PROMOTION = "P";
+
+
+        /// <summary>Delivery Status - Awaiting Packaging - The ordered goods are awaiting to be packaged up for delivery</summary>
+        public const string DELIVERY_STATUS_AWAITING_PACKAGING = "AWAITING_PACKAGING";
+	    /// <summary>Delivery Status - Packed - The ordered goods have been packaged up and awaiting to be loaded on transport for delivery</summary>
+	    public const string DELIVERY_STATUS_PACKED = "PACKED";
+	    /// <summary>Delivery Status - Loaded - The ordered goods have been packaged up and have been loaded on transport for delivery. The transport has not yet left with the packaged goods.</summary>
+	    public const string DELIVERY_STATUS_LOADED = "LOADED";
+	    /// <summary>Delivery Status - In Transit - The ordered goods have been packaged up, loaded and are in transit on transport.</summary>
+	    public const string DELIVERY_STATUS_IN_TRANSIT = "IN_TRANSIT";
+	    /// <summary>Delivery Status - In Storage - The ordered goods have been packaged up and are being stored at a location for later delivery.</summary>
+	    public const string DELIVERY_STATUS_IN_STORAGE = "IN_STORAGE";
+	    /// <summary>Delivery Status - Delivered - The ordered goods have been packaged up, transported and delivered to a final location.</summary>
+	    public const string DELIVERY_STATUS_DELIVERED = "DELIVERED";
+	    /// <summary>Delivery Status - Unpacked - The ordered goods have been packaged up, transported and delivered to a final location, then unpacked at that location.</summary>
+	    public const string DELIVERY_STATUS_UNPACKED = "UNPACKED";
+	    /// <summary>Delivery Status - Delivery Missed - The ordered goods have been packaged up, transported to a final location, however they were not able to be received due to the authorized person(s) not being available to accept the goods.</summary>
+	    public const string DELIVERY_STATUS_DELIVERY_MISSED = "DELIVERY_MISSED";
+	    /// <summary>Delivery Status - Received - The ordered goods have been packaged up, transported to a final location, delivered and able to be received by the authorised person(s).</summary>
+	    public const string DELIVERY_STATUS_RECEIVED = "RECEIVED";
+	    /// <summary>Delivery Status - Lost In Transit - The ordered goods have been packaged up, and transported, however they were lost in transit. They may have been been lost in an accident, by an act of nature, or any other unforseen circumstance.</summary>
+	    public const string DELIVERY_STATUS_LOST_IN_TRANSIT = "LOST_IN_TRANSIT";
+	    /// <summary>Delivery Status - Damaged In Transit - The ordered goods have been packaged up, and transported, however they were damaged in transit. They may have been been damaged in an accident, by an act of nature, or any other unforseen circumstance.</summary>
+	    public const string DELIVERY_STATUS_DAMAGED_IN_TRANSIT = "DAMAGED_IN_TRANSIT";
     }
 }
