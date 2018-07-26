@@ -64,6 +64,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Number that provides a reference to the quote.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string referenceNumber { get; set; }
+        /// <summary>Text, number or code that the customer uses to identify the quote record. This could be the customer's purchase order order, supplier invoice code, or an other identifier.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerReference { get; set; }
         /// <summary>Code of the sales representative associated to the quote.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string salesRepCode { get; set; }

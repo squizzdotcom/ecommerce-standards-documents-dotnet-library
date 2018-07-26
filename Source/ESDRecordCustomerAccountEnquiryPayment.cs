@@ -46,6 +46,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Number that provides a reference to the payment.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string referenceNumber { get; set; }
+        /// <summary>Text, number or code that the customer uses to identify the payment record. This could be the customer's purchase order order, supplier invoice code, or an other identifier.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerReference { get; set; }
         /// <summary>total monetary amount the payment applies</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal totalAmount { get; set; }
