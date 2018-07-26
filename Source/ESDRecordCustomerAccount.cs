@@ -181,6 +181,6 @@ namespace EcommerceStandardsDocuments
         /// <summary>Payment Terms - Cash On Delivery</summary>
         public static readonly string ACCOUNT_PAYMENT_TERMS_CASH_ON_DELIVERY = "COD";
         /// <summary>Payment Terms - Not Applicable</summary>
-        public static readonly string ACCOUNT_PAYMENT_TERMS_NA = "MA";
+        public static readonly string ACCOUNT_PAYMENT_TERMS_NA = "NA";
     }
 }
