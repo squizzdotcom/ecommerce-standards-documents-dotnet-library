@@ -35,13 +35,13 @@ namespace EcommerceStandardsDocuments
         /// <summary>number of the line in the purchase order associated to the sales order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderLineNumber { get; set; }
-        /// <summary>Code of the location that order line is assigned to.</summary>
+        /// <summary>Code of the location that order line is assigned to.  This location may override the default location assigned to the order that specifies where the products are picked/packed/delivered/managed from.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationCode { get; set; }
-        /// <summary>Name of the location that the order line is assigned to.</summary>
+        /// <summary>Name of the location that the order line is assigned to. This location may override the default location assigned to the order that specifies where the products are picked/packed/delivered/managed from.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationName { get; set; }
-        /// <summary>Key of the location record that the order line is assigned to.</summary>
+        /// <summary>Key of the location record that the order line is assigned to. This location may override the default location assigned to the order that specifies where the products are picked/packed/delivered/managed from.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
         /// <summary>key of the external location where the products for the order can be found. This external location may be the location where goods are being delivered to or held at.</summary>

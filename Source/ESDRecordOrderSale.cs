@@ -346,10 +346,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>key of the location where the products for the order can be found.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
-        /// <summary>Code of the location</summary>
+        /// <summary>Code of the location that the order's products are to be picked/packed/delivered/managed from by default.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationCode { get; set; }
-        /// <summary>Name of the location</summary>
+        /// <summary>Name of the location that the order's products are to be picked/packed/delivered/managed from by default.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationName { get; set; }
         /// <summary>Either 'N'-No or 

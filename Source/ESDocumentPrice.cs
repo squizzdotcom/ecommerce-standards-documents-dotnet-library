@@ -31,26 +31,32 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-001",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 10.00
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-002",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 8.00
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-003",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 5.00
     ///         },
     ///         {
     ///             "keyProductID":"PROD-456",
     ///             "keyPriceLevelID":"PL-001",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 22.00
+    ///         },
+    ///         {
+    ///             "keyProductID":"PROD-456",
+    ///             "keyPriceLevelID":"PL-001",
+    ///             "keySellUnitID": "PACK",
+    ///             "price": 80.00
     ///         }
     ///     ]
     /// }
@@ -62,31 +68,35 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,price,quantity"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.2,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-001",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 10.00,
     ///             "quantity": 5
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-001",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 5.00,
     ///             "quantity": 10
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-001",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 2.00,
     ///             "quantity": 20
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-002",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 4.10,
     ///             "quantity": 5
     ///         }
@@ -100,13 +110,14 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyAccountID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.2,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyAccountID":"ACC-123",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 70.00,
     ///             "quantity": 5,
     ///             "referenceID": "FORCED-CONTRACT-1",
@@ -115,6 +126,7 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyAccountID":"ACC-123",
+    ///             "keySellUnitID": "EACH",
     ///             "price": 1.00,
     ///             "quantity": 20,
     ///             "referenceID": "FORCED-CONTRACT-1",
@@ -123,6 +135,7 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyAccountID":"ACC-456",
+    ///             "keySellUnitID": "EA",
     ///             "price": 7.30,
     ///             "quantity": 1,
     ///             "referenceID": "CONTRACT-222",
@@ -143,7 +156,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceGroupID,keySellUnitID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.2,
     ///     "totalDataRecords": 4,
     ///     "priceGroups":
     ///     {
@@ -161,7 +174,7 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceGroupID":"PRICE-GROUP-2",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "1",
     ///             "price": 2.90,
     ///             "quantity": 1,
     ///             "referenceID": "FORCED-CONTRACT-1",
@@ -170,7 +183,7 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyProductID":"PROD-456",
     ///             "keyPriceGroupID":"PRICE-GROUP-2",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 0.255,
     ///             "quantity": 50
     ///         }
@@ -184,34 +197,34 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,drop"},
     ///     "dataTransferMode": "INCREMENT",
-    ///     "version": 1.0,
+    ///     "version": 1.2,
     ///     "totalDataRecords": 5,
     ///     "dataRecords":
     ///      [
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-006",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 22.00,
     ///             "drop": 1
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-002",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "price": 11.00,
     ///             "drop": 2
     ///         },
     ///         {
     ///             "keyProductID":"PROD-123",
     ///             "keyPriceLevelID":"PL-003",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "drop": 3
     ///         },
     ///         {
     ///             "keyProductID":"PROD-456",
     ///             "keyPriceLevelID":"PL-001",
-    ///             "keySellUnitID": 1,
+    ///             "keySellUnitID": "EACH",
     ///             "drop": 4
     ///         }
     ///     ]
