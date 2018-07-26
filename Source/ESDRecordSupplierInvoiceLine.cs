@@ -93,63 +93,67 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Quantity of units invoiced.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityInvoiced = 0;
+        public double quantityInvoiced { get; set; }
 	
 	    /// <summary>Quantity of units delivered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityDelivered = 0;
+        public double quantityDelivered { get; set; }
 	
 	    /// <summary>Quantity of units back ordered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityBackordered = 0;
+        public double quantityBackordered { get; set; }
+
+        /// <summary>Quantity of units that were ordered.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public double quantityOrdered { get; set; }
 
         /// <summary>Monetary price of the line's unit, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceExTax = 0;
+        public double priceExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceIncTax = 0;
+        public double priceIncTax { get; set; }
 
         /// <summary>Monetary price of the tax applied to the line's unit.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTax = 0;
+        public double priceTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, exclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedExTax = 0;
+        public double priceUndiscountedExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, inclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedIncTax = 0;
+        public double priceUndiscountedIncTax { get; set; }
 
         /// <summary>Monetary price of tax applied the line's unit before any discounting was applied.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedTax = 0;
+        public double priceUndiscountedTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalExTax = 0;
+        public double priceTotalExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalIncTax = 0;
+        public double priceTotalIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalTax = 0;
+        public double priceTotalTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedExTax = 0;
+        public double priceTotalUndiscountedExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedIncTax = 0;
+        public double priceTotalUndiscountedIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced before discounting.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedTax = 0;
+        public double priceTotalUndiscountedTax { get; set; }
 
         /// <summary>
         /// Either
@@ -175,7 +179,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Sets the unit quantity of the invoiced line that makes up the base quantity. Eg. if the line was bought as a pack, this would indicate that a pack sell unit type consists of "6" individual units.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double sellUnitBaseQuantity = 0;
+        public double sellUnitBaseQuantity { get; set; }
 
         /// <summary>Code that the pricing references.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -234,23 +238,23 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Width measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double width = 0;
+        public double width { get; set; }
 
         /// <summary>Height measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double height = 0;
+        public double height { get; set; }
 
         /// <summary>Depth measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double depth = 0;
+        public double depth { get; set; }
 
         /// <summary>Volume measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double volume = 0;
+        public double volume { get; set; }
 
         /// <summary>Weight measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double weight = 0;
+        public double weight { get; set; }
 
         /// <summary>Code of the product's width measurement to define the unit of measurement.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -320,6 +324,7 @@ namespace EcommerceStandardsDocuments
         public int drop { get; set; }
 
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
 
         /// <summary>s default values for members that have no values </summary>
@@ -545,7 +550,12 @@ namespace EcommerceStandardsDocuments
             if (internalID == null)
             {
                 internalID = "";
-            }         
+            }
+
+            if (supplierItemCode == null)
+            {
+                supplierItemCode = "";
+            }
         }
     }
 }     
