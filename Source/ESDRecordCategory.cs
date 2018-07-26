@@ -28,6 +28,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyCategoryParentID { get; set; }
 
+        /// <summary>Key of the category tree that the category record may reside within. The category tree defines a collection of categories that can be navigated within.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCategoryTreeID { get; set; }
+
         /// <summary>Name of the category.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string name { get; set; }
