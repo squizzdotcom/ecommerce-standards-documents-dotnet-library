@@ -176,7 +176,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Monetary amount paid for the invoice.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double paymentAmount { get; set; }
+        public decimal paymentAmount { get; set; }
 
         /// <summary>Key of the payment type record that is associated to the payment. The payment type record indicates how the payment was made for the invoice.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -345,23 +345,23 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Total monetary price of the invoice exclusive of tax</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalPriceExTax { get; set; }
+        public decimal totalPriceExTax { get; set; }
 
         /// <summary>Total monetary price of the invoice inclusive of tax</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalPriceIncTax { get; set; }
+        public decimal totalPriceIncTax { get; set; }
 
         /// <summary>Total monetary amount of taxes applied to the invoice</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalTax { get; set; }
+        public decimal totalTax { get; set; }
 
         /// <summary>Total volume of the invoiced goods</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalVolume { get; set; }
+        public decimal totalVolume { get; set; }
 
         /// <summary>Total weight of the invoiced goods</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalWeight { get; set; }
+        public decimal totalWeight { get; set; }
 
         /// <summary>Total number of surcharges applied to the invoice</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -369,27 +369,27 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Total monetary amount of surcharges applied to the invoice exclusive of taxes</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalSurchargeExTax { get; set; }
+        public decimal totalSurchargeExTax { get; set; }
 
         /// <summary>Total monetary amount of surcharges applied to the invoice inclusive of taxes</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalSurchargeIncTax { get; set; }
+        public decimal totalSurchargeIncTax { get; set; }
 
         /// <summary>Total monetary amount of taxes applied to surcharges in the invoice</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalSurchargeTax { get; set; }
+        public decimal totalSurchargeTax { get; set; }
 
         /// <summary>Total monetary amount of the invoice before discounts were applied, exclusive of taxes. This amount may be useful when showing discounts applied to an order.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalPriceUndiscountedExTax { get; set; }
+        public decimal totalPriceUndiscountedExTax { get; set; }
 
         /// <summary>Total monetary amount of the invoice before discounts were applied, inclusive of taxes. This amount may be useful when showing discounts applied to an order.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalPriceUndiscountedIncTax { get; set; }
+        public decimal totalPriceUndiscountedIncTax { get; set; }
 
         /// <summary>Total monetary amount of taxes applied to the invoice before discounts were applied. This amount may be useful when showing discounts applied to an order.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double totalPriceUndiscountedTax { get; set; }
+        public decimal totalPriceUndiscountedTax { get; set; }
 
         /// <summary>Text describing instructions on how to handle the invoice.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -470,7 +470,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Percentage rate discounted off the invoice monetary total.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double accountDiscountRate { get; set; }
+        public decimal accountDiscountRate { get; set; }
 
         /// <summary>Territory associated with the customer account</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -512,7 +512,7 @@ namespace EcommerceStandardsDocuments
         }
 
         /// <summary>sets default values for members that have no values </summary>
-        public void DefaultValuesForNullMembers() {
+        public void setDefaultValuesForNullMembers() {
             if (lines == null)
             {
                 lines = new List<ESDRecordSupplierInvoiceLine>();

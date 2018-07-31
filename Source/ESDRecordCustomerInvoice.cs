@@ -514,7 +514,7 @@ namespace EcommerceStandardsDocuments
         }
 
         /// <summary>sets default values for members that have no values</summary>
-        public void DefaultValuesForNullMembers(){
+        public void setDefaultValuesForNullMembers(){
             if (lines == null)
             {
                 lines = new List<ESDRecordCustomerInvoiceLine>();

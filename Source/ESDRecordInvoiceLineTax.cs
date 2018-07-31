@@ -30,7 +30,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Numeric amount as a percentage rate that the taxcode applies to. Eg. if  to 10, then a 10% tax will be applied on top of the invoice line price.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double taxRate { get; set; }
+        public decimal taxRate { get; set; }
 
         /// <summary>Language that the descriptive text of the line is set in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -38,15 +38,15 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Number of units that the tax applies to</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantity { get; set; }
+        public decimal quantity { get; set; }
 
         /// <summary>Monetary amount of tax priced for each unit</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTax { get; set; }
+        public decimal priceTax { get; set; }
 
         /// <summary>Monetary amount of tax priced for the total quantity of units</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalTax { get; set; }
+        public decimal priceTotalTax { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>

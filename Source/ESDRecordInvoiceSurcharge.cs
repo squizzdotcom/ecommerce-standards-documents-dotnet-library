@@ -22,47 +22,47 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Key of the surcharge record that the invoice line surcharge record is linked to.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String keySurchargeID { get; set; }
+        public string keySurchargeID { get; set; }
 
         /// <summary>Code of the surcharge. May or may not be a unique identifier</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String surchargeCode { get; set; }
+        public string surchargeCode { get; set; }
 
         /// <summary>Label of the surcharge</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String surchargeLabel { get; set; }
+        public string surchargeLabel { get; set; }
 
         /// <summary>Text description of the surcharge</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String surchargeDescription { get; set; }
+        public string surchargeDescription { get; set; }
 
         /// <summary>Language that the descriptive text of the line is  in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String language { get; set; }
+        public string language { get; set; }
 
         /// <summary>Monetary price of the surcharge, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceExTax { get; set; }
+        public decimal priceExTax { get; set; }
 
         /// <summary>Monetary price of the surcharge, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceIncTax { get; set; }
+        public decimal priceIncTax { get; set; }
 
         /// <summary>Monetary price of the tax applied to the surcharge</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTax { get; set; }
+        public decimal priceTax { get; set; }
 
         /// <summary>Monetary price of the surcharge before any discounting was applied, exclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedExTax { get; set; }
+        public decimal priceUndiscountedExTax { get; set; }
 
         /// <summary>Monetary price of the surcharge before any discounting was applied, inclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedIncTax { get; set; }
+        public decimal priceUndiscountedIncTax { get; set; }
 
         /// <summary>Monetary price of tax applied the surcharge before any discounting was applied.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedTax { get; set; }
+        public decimal priceUndiscountedTax { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
@@ -71,7 +71,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public String internalID { get; set; }
+        public string internalID { get; set; }
 
         /// <summary>sets default values for members that have no values </summary>
         public void setDefaultValuesForNullMembers()

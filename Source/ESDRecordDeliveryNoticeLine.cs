@@ -74,7 +74,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>quantity of the product's units being delivered</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityOnDelivery { get; set; }
+        public decimal quantityOnDelivery { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or  it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>

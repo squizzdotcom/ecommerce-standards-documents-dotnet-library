@@ -21,7 +21,7 @@ namespace EcommerceStandardsDocuments
         public string paymentMethod { get; set; }
         /// <summary>Monetary amount the payment applies to</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double paymentAmount { get; set; }
+        public decimal paymentAmount { get; set; }
         /// <summary>Receipt number associated to the payment.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string paymentReceipt { get; set; }

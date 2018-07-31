@@ -89,11 +89,11 @@ namespace EcommerceStandardsDocuments
 	
 	    /// <summary>Latitude co-ordinate of the geographic location where the goods are located at. The number must be between 90 and -90</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double locationLatitude { get; set; }
+        public decimal locationLatitude { get; set; }
 
         /// <summary>longitude co-ordinate of the geographic location the goods are located at. The number must be between 180 and -180</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double locationLongitude { get; set; }
+        public decimal locationLongitude { get; set; }
 	
 	    /// <summary>Text describing instructions on how to handle the order.</summary>
         [DataMember(EmitDefaultValue = false)]

@@ -93,67 +93,67 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Quantity of units invoiced.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityInvoiced { get; set; }
+        public decimal quantityInvoiced { get; set; }
 	
 	    /// <summary>Quantity of units delivered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityDelivered { get; set; }
+        public decimal quantityDelivered { get; set; }
 	
 	    /// <summary>Quantity of units back ordered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityBackordered { get; set; }
+        public decimal quantityBackordered { get; set; }
 
         /// <summary>Quantity of units that were ordered.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double quantityOrdered { get; set; }
+        public decimal quantityOrdered { get; set; }
 
         /// <summary>Monetary price of the line's unit, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceExTax { get; set; }
+        public decimal priceExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceIncTax { get; set; }
+        public decimal priceIncTax { get; set; }
 
         /// <summary>Monetary price of the tax applied to the line's unit.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTax { get; set; }
+        public decimal priceTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, exclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedExTax { get; set; }
+        public decimal priceUndiscountedExTax { get; set; }
 
         /// <summary>Monetary price of the line's unit before any discounting was applied, inclusive of tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedIncTax { get; set; }
+        public decimal priceUndiscountedIncTax { get; set; }
 
         /// <summary>Monetary price of tax applied the line's unit before any discounting was applied.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceUndiscountedTax { get; set; }
+        public decimal priceUndiscountedTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalExTax { get; set; }
+        public decimal priceTotalExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalIncTax { get; set; }
+        public decimal priceTotalIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalTax { get; set; }
+        public decimal priceTotalTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, excluding tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedExTax { get; set; }
+        public decimal priceTotalUndiscountedExTax { get; set; }
 
         /// <summary>Total monetary price of the quantity of unit's invoiced before discounting, including tax.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedIncTax { get; set; }
+        public decimal priceTotalUndiscountedIncTax { get; set; }
 
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's invoiced before discounting.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double priceTotalUndiscountedTax { get; set; }
+        public decimal priceTotalUndiscountedTax { get; set; }
 
         /// <summary>
         /// Either
@@ -179,7 +179,7 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Sets the unit quantity of the invoiced line that makes up the base quantity. Eg. if the line was bought as a pack, this would indicate that a pack sell unit type consists of "6" individual units.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double sellUnitBaseQuantity { get; set; }
+        public decimal sellUnitBaseQuantity { get; set; }
 
         /// <summary>Code that the pricing references.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -236,25 +236,37 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string productDescription { get; set; }
 
+        /// <summary>code of the product in the supplier's customer invoice, that stores the code of the customer's product</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerInvoiceProductCode { get; set; }
+
+        /// <summary>code of the product in the supplier's sales order, that stores the code of the supplier's product originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderProductCode { get; set; }
+
+        /// <summary>code of the product in the customer's purchase order, that stores the code of the customer's product originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderProductCode { get; set; }
+
         /// <summary>Width measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double width { get; set; }
+        public decimal width { get; set; }
 
         /// <summary>Height measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double height { get; set; }
+        public decimal height { get; set; }
 
         /// <summary>Depth measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double depth { get; set; }
+        public decimal depth { get; set; }
 
         /// <summary>Volume measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double volume { get; set; }
+        public decimal volume { get; set; }
 
         /// <summary>Weight measurement of the product.</summary>
         [DataMember(EmitDefaultValue = false)]
-        public double weight { get; set; }
+        public decimal weight { get; set; }
 
         /// <summary>Code of the product's width measurement to define the unit of measurement.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -293,6 +305,18 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string downloadDescription { get; set; }
 
+        /// <summary>code of the download in the supplier's customer invoice, that stores the code of the customer's download</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerInvoiceDownloadCode { get; set; }
+
+        /// <summary>code of the download in the supplier's sales order, that stores the code of the supplier's download originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderDownloadCode { get; set; }
+
+        /// <summary>code of the download in the customer's purchase order, that stores the code of the customer's download originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderDownloadCode { get; set; }
+
         // labour fields
         /// <summary>Key of the labour record associated to the line. Only relevent when the lineType has been  to labour</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -309,7 +333,19 @@ namespace EcommerceStandardsDocuments
         /// <summary>text to describe details of the labour in the line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string labourDescription { get; set; }
-    
+
+        /// <summary>code of the labour in the supplier's customer invoice, that stores the code of the labour's download</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerInvoiceLabourCode { get; set; }
+
+        /// <summary>code of the labour in the supplier's sales order, that stores the code of the supplier's labour originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderLabourCode { get; set; }
+
+        /// <summary>code of the labour in the customer's purchase order, that stores the code of the customer's labour originally ordered</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderLabourCode { get; set; }
+
         /// <summary>text to describe details or comment of a text line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string textDescription { get; set; }
@@ -328,7 +364,7 @@ namespace EcommerceStandardsDocuments
         public string internalID { get; set; }
 
         /// <summary>s default values for members that have no values </summary>
-        public void DefaultValuesForNullMembers()
+        public void setDefaultValuesForNullMembers()
         {
             if (attributes == null)
             {
