@@ -17,145 +17,147 @@ namespace EcommerceStandardsDocuments
     public class ESDocumentConstants
     {
         /// <summary>result status denoting that data was successfully obtained</summary>
-        public static readonly int RESULT_SUCCESS = 1;
+        public const int RESULT_SUCCESS = 1;
         /// <summary>result status denoting that an error occurred when trying to obtain/process data</summary>
-        public static readonly int RESULT_ERROR = 2;
+        public const int RESULT_ERROR = 2;
         /// <summary>result status denoting that an unknown error occurred when trying to obtain/process data</summary>
-        public static readonly int RESULT_ERROR_UNKNOWN = 3;
+        public const int RESULT_ERROR_UNKNOWN = 3;
         /// <summary>result status denoting that an error occurred when a connection could not be made to a data source to obtain/process data</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_CONNECTION_MISSING = 4;
+        public const int RESULT_ERROR_DATA_SOURCE_CONNECTION_MISSING = 4;
         /// <summary>result status denoting that an error occurred when a connection was unexpectedly lost from a data source when trying to obtain/process data</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_CONNECTION_LOST = 5;
+        public const int RESULT_ERROR_DATA_SOURCE_CONNECTION_LOST = 5;
         /// <summary>result status denoting that an error occurred when trying to access a data source because of incorrect credentials given.</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_INVALID_CREDENTIALS = 6;
+        public const int RESULT_ERROR_DATA_SOURCE_INVALID_CREDENTIALS = 6;
         /// <summary>result status denoting that an error occurred when trying to process data from a data source to obtain/process data.</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_PROCESSING = 7;
+        public const int RESULT_ERROR_DATA_SOURCE_PROCESSING = 7;
         /// <summary>result status denoting that an error occurred when a data source was given or sent invalid data.</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_INVALID_DATA = 8;
+        public const int RESULT_ERROR_DATA_SOURCE_INVALID_DATA = 8;
         /// <summary>result status denoting that an error occurred when trying to access a data source because it denied access.</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_PERMISSION_DENIED = 13;
+        public const int RESULT_ERROR_DATA_SOURCE_PERMISSION_DENIED = 13;
         /// <summary>result status denoting that an error occurred when requesting access a data source too many times.</summary>
-        public static readonly int RESULT_ERROR_DATA_SOURCE_MAXIMUM_REQUESTS_EXCEEDED = 14;
+        public const int RESULT_ERROR_DATA_SOURCE_MAXIMUM_REQUESTS_EXCEEDED = 14;
         /// <summary>result status denoting that an error occurred because incorrect credials were given to a connecting system to obtain/process data.</summary>
-        public static readonly int RESULT_ERROR_CONNECTOR_INVALID_CREDENTIALS = 9;
+        public const int RESULT_ERROR_CONNECTOR_INVALID_CREDENTIALS = 9;
         /// <summary>result status denoting that an error occurred because a connecting system could not process data.</summary>
-        public static readonly int RESULT_ERROR_CONNECTOR_PROCESSING = 10;
+        public const int RESULT_ERROR_CONNECTOR_PROCESSING = 10;
         /// <summary>result status denoting that an error occurred because incorrect data was sent to or received from a connecting system.</summary>
-        public static readonly int RESULT_ERROR_CONNECTOR_INVALID_DATA = 11;
+        public const int RESULT_ERROR_CONNECTOR_INVALID_DATA = 11;
         /// <summary>result status denoting that an error occurred because a connecting system was incorrectly configured to obtain/process data.</summary>
-        public static readonly int RESULT_ERROR_CONNECTOR_INCORRECT_CONFIGURATION = 12;
+        public const int RESULT_ERROR_CONNECTOR_INCORRECT_CONFIGURATION = 12;
 
         /// <summary>Result response status denoting the type of data returned is in the JSON format (JavaScript Object Notation)</summary>
-        public static readonly string RESULT_RESPONSE_TYPE_JSON = "JSON";
+        public const string RESULT_RESPONSE_TYPE_JSON = "JSON";
         /// <summary>Result response status denoting the type of data returned is in a raw binary format.</summary>
-        public static readonly string RESULT_RESPONSE_TYPE_RAW = "RAW";
+        public const string RESULT_RESPONSE_TYPE_RAW = "RAW";
 
         /// <summary>Data mode of the Ecommerce Standards Document is incremental, meaning only changes to data are contained within the document.</summary>
-        public static readonly string ESD_DATA_MODE_INCREMENT = "INCREMENT";
+        public const string ESD_DATA_MODE_INCREMENT = "INCREMENT";
         /// <summary>Data mode of the Ecommerce Standards Document is incremental if possible, meaning only changes to data need be contained within the document, but if it is not possible then all the data can be contained in the document.</summary>
-        public static readonly string ESD_DATA_MODE_INCREMENT_IF_AVAILABLE = "INCREMENT_AVAILABLE";
+        public const string ESD_DATA_MODE_INCREMENT_IF_AVAILABLE = "INCREMENT_AVAILABLE";
         /// <summary>Data mode of the Ecommerce Standards Document is complete, and all the data available is contained within the document.</summary>
-        public static readonly string ESD_DATA_MODE_COMPLETE = "COMPLETE";
+        public const string ESD_DATA_MODE_COMPLETE = "COMPLETE";
 
         /// <summary>Yes value that can be embedded in an ESD document</summary>
-        public static readonly string ESD_VALUE_YES = "Y";
+        public const string ESD_VALUE_YES = "Y";
         /// <summary>No value that can be embedded in an ESD document</summary>
-        public static readonly string ESD_VALUE_NO = "N";
+        public const string ESD_VALUE_NO = "N";
 
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs to be inserted into the requesting data source because it is a new record.</summary>
-        public static readonly int ESD_RECORD_OPERATION_INSERT = 1;
+        public const int ESD_RECORD_OPERATION_INSERT = 1;
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs to be updated in the requesting data source because the record has changed.</summary>
-        public static readonly int ESD_RECORD_OPERATION_UPDATE = 2;
+        public const int ESD_RECORD_OPERATION_UPDATE = 2;
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs to be deleted from the requesting data source because the record no longer exists.</summary>
-        public static readonly int ESD_RECORD_OPERATION_DELETE = 3;
+        public const int ESD_RECORD_OPERATION_DELETE = 3;
         /// <summary>Denotes that the record in the Ecommerce Standard Document needs can be ignored in the requesting data source from being modified because the record's data has not changed.</summary>
-        public static readonly int ESD_RECORD_OPERATION_IGNORE = 4;
+        public const int ESD_RECORD_OPERATION_IGNORE = 4;
 
         /// <summary>Contains the version that the Ecommerce Standards Documents library is currently at.</summary>
-        public static readonly decimal ESD_DOCUMENT_VERSION = Convert.ToDecimal(1.3);
+        public const decimal ESD_DOCUMENT_VERSION = (decimal)1.3;
 
         /// <summary>Denotes that the location is a warehouse</summary>
-        public static readonly string LOCATION_TYPE_WAREHOUSE = "WAREHOUSE";
+        public const string LOCATION_TYPE_WAREHOUSE = "WAREHOUSE";
         /// <summary>Denotes that the location is a store</summary>
-        public static readonly string LOCATION_TYPE_STORE = "STORE";
+        public const string LOCATION_TYPE_STORE = "STORE";
         /// <summary>Denotes that the location is a site</summary>
-        public static readonly string LOCATION_TYPE_SITE = "SITE";
+        public const string LOCATION_TYPE_SITE = "SITE";
         /// <summary>Denotes that the location is an office</summary>
-        public static readonly string LOCATION_TYPE_OFFICE = "OFFICE";
+        public const string LOCATION_TYPE_OFFICE = "OFFICE";
 
         /// <summary>Language - English Australia</summary>
-        public static readonly string LANG_EN_AU = "EN_AU";
+        public const string LANG_EN_AU = "EN_AU";
         /// <summary>Language - English USA</summary>
-        public static readonly string LANG_EN_US = "EN_US";
+        public const string LANG_EN_US = "EN_US";
         /// <summary>Language - French Franch</summary>
-        public static readonly string LANG_FR_FR = "FR_FR";
+        public const string LANG_FR_FR = "FR_FR";
 
         /// <summary>Authority Number - Australian Business Number</summary>
-        public static readonly int AUTHORITY_NUM_AUS_ABN = 1;
+        public const int AUTHORITY_NUM_AUS_ABN = 1;
         /// <summary>Authority Number - Australian Company Number</summary>
-        public static readonly int AUTHORITY_NUM_AUS_ACN = 2;
+        public const int AUTHORITY_NUM_AUS_ACN = 2;
         /// <summary>Authority Number - Great Britain Company Registration Number</summary>
-        public static readonly int AUTHORITY_NUM_GBR_CRN = 3;
+        public const int AUTHORITY_NUM_GBR_CRN = 3;
         /// <summary>Authority Number - New Zealand Business Number</summary>
-        public static readonly int AUTHORITY_NUM_NZL_NZBN = 4;
+        public const int AUTHORITY_NUM_NZL_NZBN = 4;
         /// <summary>Authority Number - United States Employer Identification Number</summary>
-        public static readonly int AUTHORITY_NUM_USA_EIN = 5;
+        public const int AUTHORITY_NUM_USA_EIN = 5;
 
         /// <summary>Order Line Type - Text</summary>
-        public static readonly string ORDER_LINE_TYPE_TEXT = "TEXT";
+        public const string ORDER_LINE_TYPE_TEXT = "TEXT";
         /// <summary>Order Line Type - Product</summary>
-        public static readonly string ORDER_LINE_TYPE_PRODUCT = "PRODUCT";
+        public const string ORDER_LINE_TYPE_PRODUCT = "PRODUCT";
         /// <summary>Order Line Type - Download</summary>
-        public static readonly string ORDER_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
+        public const string ORDER_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
         /// <summary>Order Line Type - Labour</summary>
-        public static readonly string ORDER_LINE_TYPE_LABOUR = "LABOUR";
+        public const string ORDER_LINE_TYPE_LABOUR = "LABOUR";
 
-        /// <summary>Invoice Line Type - Text</summary>
-        public static readonly string INVOICE_LINE_TYPE_TEXT = "TEXT";
-        /// <summary>Invoice Line Type - Product</summary>
-        public static readonly string INVOICE_LINE_TYPE_PRODUCT = "PRODUCT";
-        /// <summary>Invoice Line Type - Download</summary>
-        public static readonly string INVOICE_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
-        /// <summary>Invoice Line Type - Labour</summary>
-        public static readonly string INVOICE_LINE_TYPE_LABOUR = "LABOUR";
+        /// <summary>Invoice Line Type - Text - indicates that textual details and comments have been set against an invoice line</summary>
+        public const string INVOICE_LINE_TYPE_TEXT = "TEXT";
+        /// <summary>Invoice Line Type - Product - indicates that a physical or non-physical product has been sold or purchased within an invoice line.</summary>
+        public const string INVOICE_LINE_TYPE_PRODUCT = "PRODUCT";
+        /// <summary>Invoice Line Type - Download - indicates that a digital file or asset has been sold or purchased within an invoice line.</summary>
+        public const string INVOICE_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
+        /// <summary>Invoice Line Type - Labour - indicates that labour or work effort has been sold or purchased within in an invoice line.</summary>
+        public const string INVOICE_LINE_TYPE_LABOUR = "LABOUR";
+        /// <summary>Invoice Line Type - Miscellaneous - indicates that a non-specified sale or purchase has been made within an invoice line. Use this if no product/download/labour has been sold or purchased.</summary>
+        public const string INVOICE_LINE_TYPE_MISC = "MISC";
 
         /// <summary>Entity Type - Org, denotes an organisation</summary>
-        public static readonly string ENTITY_TYPE_ORG = "ORG";
+        public const string ENTITY_TYPE_ORG = "ORG";
         /// <summary>Entity Type - Personal, denotes a human individual</summary>
-        public static readonly string ENTITY_TYPE_PERSON = "PERSON";
+        public const string ENTITY_TYPE_PERSON = "PERSON";
 
         /// <summary>Entity Set Price - system automatically calculated the price</summary>
-        public static readonly string ENTITY_SET_PRICE_SYSTEM = "SYSTEM";
+        public const string ENTITY_SET_PRICE_SYSTEM = "SYSTEM";
         /// <summary>Entity Set Price - price set by a sales representative</summary>
-        public static readonly string ENTITY_SET_PRICE_SALESREP = "SALESREP";
+        public const string ENTITY_SET_PRICE_SALESREP = "SALESREP";
         /// <summary>Entity Set Price - price set by an employee</summary>
-        public static readonly string ENTITY_SET_PRICE_EMPLOYEE = "EMPLOYEE";
+        public const string ENTITY_SET_PRICE_EMPLOYEE = "EMPLOYEE";
 
         /// <summary>Surcharge Type - Freight</summary>
-        public static readonly string SURCHARGE_TYPE_FREIGHT = "FREIGHT";
+        public const string SURCHARGE_TYPE_FREIGHT = "FREIGHT";
         /// <summary>Surcharge Type - Credit Card</summary>
-        public static readonly string SURCHARGE_TYPE_CREDIT_CARD = "CREDITCARD";
+        public const string SURCHARGE_TYPE_CREDIT_CARD = "CREDITCARD";
         /// <summary>Surcharge Type - Minimum Order Total</summary>
-        public static readonly string SURCHARGE_TYPE_MIN_ORDER = "MINORDER";
+        public const string SURCHARGE_TYPE_MIN_ORDER = "MINORDER";
         /// <summary>Surcharge Type - Other</summary>
-        public static readonly string SURCHARGE_TYPE_OTHER = "OTHER";
+        public const string SURCHARGE_TYPE_OTHER = "OTHER";
 
         /// <summary>Payment method - UNPAID - No payment was received as yet</summary>
-        public static readonly string PAYMENT_METHOD_UNPAID = "UNPAID";
+        public const string PAYMENT_METHOD_UNPAID = "UNPAID";
         /// <summary>Payment method - CREDIT - A payment was made with a credit card</summary>
-        public static readonly string PAYMENT_METHOD_CREDIT = "CREDITCARD";
+        public const string PAYMENT_METHOD_CREDIT = "CREDITCARD";
         /// <summary>Payment method - COD - Payment will be made with cash when the goods are delivered to the delivery location</summary>
-        public static readonly string PAYMENT_METHOD_CASHONDELIVERY = "COD";
+        public const string PAYMENT_METHOD_CASHONDELIVERY = "COD";
         /// <summary>Payment method - DIRECTDEPOSIT - Payment has been made with a direct bank transfer</summary>
-        public static readonly string PAYMENT_METHOD_DIRECTDEPOSIT = "DIRECTDEPOSIT";
+        public const string PAYMENT_METHOD_DIRECTDEPOSIT = "DIRECTDEPOSIT";
         /// <summary>Payment method - QUOTE - No payment was made as a quote was only required</summary>
-        public static readonly string PAYMENT_METHOD_QUOTE = "QUOTE";
+        public const string PAYMENT_METHOD_QUOTE = "QUOTE";
         /// <summary>Payment method - NONE - No payment was made or needed</summary>
-        public static readonly string PAYMENT_METHOD_NONE = "NONE";
+        public const string PAYMENT_METHOD_NONE = "NONE";
         /// <summary>Payment method - PROPRIETARY - A payment was made using a proprietary payment system. PayPal could be one example of this.</summary>
-        public static readonly string PAYMENT_METHOD_PROPRIETARY = "PROPRIETARY";
+        public const string PAYMENT_METHOD_PROPRIETARY = "PROPRIETARY";
         /// <summary>Payment method - ACCOUNT - A payment will be assigned to a customer account and paid based on the agreed payment terms</summary>
-        public static readonly string PAYMENT_METHOD_ACCOUNT = "ACCOUNT";
+        public const string PAYMENT_METHOD_ACCOUNT = "ACCOUNT";
 
         /// <summary>UNPAID - The invoice has not been paid for</summary>
         public const string PAYMENT_STATUS_UNPAID = "UNPAID";
@@ -169,39 +171,39 @@ namespace EcommerceStandardsDocuments
         public const string PAYMENT_STATUS_NONREQUIRED = "NONREQUIRED";
 
         /// <summary>Record Type - Invoice</summary>
-        public static readonly string RECORD_TYPE_INVOICE = "INVOICE";
+        public const string RECORD_TYPE_INVOICE = "INVOICE";
         /// <summary>Record Type - Transaction</summary>
-        public static readonly string RECORD_TYPE_TRANSACTION = "TRANSACTION";
+        public const string RECORD_TYPE_TRANSACTION = "TRANSACTION";
         /// <summary>Record Type - Sales Order</summary>
-        public static readonly string RECORD_TYPE_ORDER_SALE = "ORDER_SALE";
+        public const string RECORD_TYPE_ORDER_SALE = "ORDER_SALE";
         /// <summary>Record Type - Purchase Order</summary>
-        public static readonly string RECORD_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
+        public const string RECORD_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
         /// <summary>Record Type - Back Order</summary>
-        public static readonly string RECORD_TYPE_BACKORDER = "BACKORDER";
+        public const string RECORD_TYPE_BACKORDER = "BACKORDER";
         /// <summary>Record Type - Credit</summary>
-        public static readonly string RECORD_TYPE_CREDIT = "CREDIT";
+        public const string RECORD_TYPE_CREDIT = "CREDIT";
         /// <summary>Record Type - Payment</summary>
-        public static readonly string RECORD_TYPE_PAYMENT = "PAYMENT";
+        public const string RECORD_TYPE_PAYMENT = "PAYMENT";
         /// <summary>Record Type - Payment</summary>
-        public static readonly string RECORD_TYPE_QUOTE = "QUOTE";
+        public const string RECORD_TYPE_QUOTE = "QUOTE";
 
         /// <summary>Record Line Type - Item</summary>
-        public static readonly string RECORD_LINE_TYPE_ITEM = "ITEM";
+        public const string RECORD_LINE_TYPE_ITEM = "ITEM";
         /// <summary>Record Line Type - Text</summary>
-        public static readonly string RECORD_LINE_TYPE_TEXT = "TEXT";
+        public const string RECORD_LINE_TYPE_TEXT = "TEXT";
         /// <summary>Record Line Type - Invoice</summary>
-        public static readonly string RECORD_LINE_TYPE_INVOICE = "INVOICE";
+        public const string RECORD_LINE_TYPE_INVOICE = "INVOICE";
         /// <summary>Record Line Type - Sales Order</summary>
-        public static readonly string RECORD_LINE_TYPE_ORDER_SALE = "ORDER_SALE";
+        public const string RECORD_LINE_TYPE_ORDER_SALE = "ORDER_SALE";
         /// <summary>Record Line Type - Sales Order</summary>
-        public static readonly string RECORD_LINE_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
+        public const string RECORD_LINE_TYPE_ORDER_PURCHASE = "ORDER_PURCHASE";
 
         /// <summary>Price reference Type - Contract</summary>
-        public static readonly string PRICE_REFERENCE_TYPE_CONTRACT = "C";
+        public const string PRICE_REFERENCE_TYPE_CONTRACT = "C";
         /// <summary>Price reference Type - Contract With Forced Pricing</summary>
-        public static readonly string PRICE_REFERENCE_TYPE_CONTRACT_FORCED = "CF";
+        public const string PRICE_REFERENCE_TYPE_CONTRACT_FORCED = "CF";
         /// <summary>Price reference Type - Promotion</summary>
-        public static readonly string PRICE_REFERENCE_TYPE_PROMOTION = "P";
+        public const string PRICE_REFERENCE_TYPE_PROMOTION = "P";
 
 
         /// <summary>Delivery Status - Awaiting Packaging - The ordered goods are awaiting to be packaged up for delivery</summary>
@@ -226,5 +228,27 @@ namespace EcommerceStandardsDocuments
 	    public const string DELIVERY_STATUS_LOST_IN_TRANSIT = "LOST_IN_TRANSIT";
 	    /// <summary>Delivery Status - Damaged In Transit - The ordered goods have been packaged up, and transported, however they were damaged in transit. They may have been been damaged in an accident, by an act of nature, or any other unforseen circumstance.</summary>
 	    public const string DELIVERY_STATUS_DAMAGED_IN_TRANSIT = "DAMAGED_IN_TRANSIT";
+
+        /// <summary>General Ledger Account Type - Asset - a type of general ledger account that represents the different types of economic resources owned or controlled by an entity. Common examples of asset accounts are cash in hand, cash in bank, real estate, inventory, prepaid expenses, goodwill, and accounts receivable.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_ASSET = "ASSET";
+        /// <summary>General Ledger Account Type - Liability - a type of general ledger account that represents the different types of economic obligations of an entity, such as accounts payable, bank loans, bonds payable, and accrued expenses.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_LIABILITY = "LIABILITY";
+        /// <summary>General Ledger Account Type - Equity - a type of general ledger account that represents the residual equity of an entity (the value of assets after deducting the value of all liabilities). Equity accounts include common stock, paid-in capital, and retained earnings.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_EQUITY = "EQUITY";
+        /// <summary>General Ledger Account Type - Operating Revenue - a type of general ledger account that represents an entity's earnings from operating and trading activities, such as sales and service revenue.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_OPERATING_REVENUE = "OPERATING_REVENUE";
+        /// <summary>General Ledger Account Type - Non Operating Expense - a type of general ledger account that represent an entity's expenditures from operating and trading activities, such as utilities, rents and insurance.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_OPERATING_EXPENSE = "OPERATING_EXPENSE";
+        /// <summary>General Ledger Account Type - Non Operating Revenue - a type of general ledger account that represents an entity's earnings from non-operating or trading activities, such as investments, property or asset sales, currency exchange, or non-recurring sales.</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_NON_OPERATING_REVENUE = "NON_OPERATING_REVENUE";
+        /// <summary>General Ledger Account Type - Non Operating Expenses - a type of general ledger account that represent an entity's expenditures from non-operating or trading activities, such as paying interest of loans, depreciation, losses on property or assets, legal fees</summary>
+        public const string GENERAL_LEDGER_ACCOUNT_TYPE_NON_OPERATING_EXPENSE = "NON_OPERATING_EXPENSE";
+
+        /// <summary>Currency Type - Fiat - currency that is issued and controlled by a central authority, such as a government</summary>
+        public const string CURRENCY_TYPE_FIAT = "FIAT";
+        /// <summary>Currency Type - Cryptographic - currency that is stored and generated through cryptographic, digital mechanisms and not controlled by any one central authority.</summary>
+        public const string CURRENCY_TYPE_CRYPTO = "CRYPTO";
+        /// <summary>Currency Type - Virtual - currency that is stored and created through digital mechanisms, and may be invented and/or controlled by a single organisation or other entity.</summary>
+        public const string CURRENCY_TYPE_VIRTUAL = "VIRTUAL";
     }
 }
