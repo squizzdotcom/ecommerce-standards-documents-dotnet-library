@@ -36,7 +36,7 @@ namespace EcommerceStandardsDocuments
         [DataMember]
         public string supplierInvoiceCode { get; set; }
 
-        /// <summary>Number of the supplier invoice, may or may not be a unique identifier</summary>
+        /// <summary>Number of the supplier invoice, may or may not be a unique identifier. The number may or may not be numerical or in an ordered sequence.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string supplierInvoiceNumber { get; set; }
 
@@ -56,11 +56,11 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyPurchaseOrderID { get; set; }
 
-        /// <summary>Code of the purchase order record that may be linked to the supplier invoice</summary>
+        /// <summary>Code of the purchase order record that may be linked to the supplier invoice. The code may cotain the purchsae order number and any prefix or suffix text.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderCode { get; set; }
 
-        /// <summary>Number of the purchase order record that may be linked to the supplier invoice</summary>
+        /// <summary>Number of the purchase order record that may be linked to the supplier invoice. The number may or may not be numerical or in an ordered sequence.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderNumber { get; set; }
 
@@ -182,7 +182,19 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyPaymentTypeID { get; set; }
 
-        /// <summary>Number of the supplier's sales order that may be associated to the supplier invoice. This may be used for referencing purposes.</summary>
+        /// <summary>Code of the supplier's customer invoice that may be associated to the supplier invoice. The code may cotain the invoice number and any prefix or suffix text. This may be used for referencing purposes.</summary>
+        [DataMember]
+        public string supplierCustomerInvoiceCode { get; set; }
+
+        /// <summary>Number of the supplier's customer invoice that may be associated to the supplier invoice. The number may or may not be numerical or in an ordered sequence. This may be used for referencing purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierCustomerInvoiceNumber { get; set; }
+
+        /// <summary>Code of the supplier's sales order that may be associated to the supplier invoice. The code may cotain the sales order number and any prefix or suffix text. This may be used for referencing purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderCode { get; set; }
+
+        /// <summary>Number of the supplier's sales order that may be associated to the supplier invoice. The number may or may not be numerical or in an ordered sequence. This may be used for referencing purposes.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string salesOrderNumber { get; set; }
 
@@ -338,7 +350,6 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public int totalLabour { get; set; }
 
-
         /// <summary>Total number of download lines in the invoice</summary>
         [DataMember(EmitDefaultValue = false)]
         public int totalDownloads { get; set; }
@@ -456,12 +467,15 @@ namespace EcommerceStandardsDocuments
         public string isMultiLocation { get; set; }
 
         /// <summary>key of the external location where the products for the invoice can be found. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public string externalKeyLocationID { get; set; }
 
         /// <summary>Code of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public string externalLocationCode { get; set; }
 
         /// <summary>Name of the external location. This external location may be the location where goods are being delivered to or held at.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public string externalLocationName { get; set; }
 
         /// <summary>Method that the invoice is being shipped by</summary>
@@ -595,6 +609,16 @@ namespace EcommerceStandardsDocuments
                 supplierAccountName = "";
             }
 
+            if (supplierCustomerInvoiceCode == null)
+            {
+                supplierCustomerInvoiceCode = "";
+            }
+
+            if (supplierCustomerInvoiceNumber == null)
+            {
+                supplierCustomerInvoiceNumber = "";
+            }
+
             if (keyPurchaserID == null)
             {
                 keyPurchaserID = "";
@@ -705,6 +729,11 @@ namespace EcommerceStandardsDocuments
                 paymentReceipt = "";
             }
 
+            if(keyPaymentTypeID == null)
+            {
+                keyPaymentTypeID = "";
+            }
+
             if (instructions == null)
             {
                 instructions = "";
@@ -713,6 +742,11 @@ namespace EcommerceStandardsDocuments
             if (salesOrderNumber == null)
             {
                 salesOrderNumber = "";
+            }
+
+            if (salesOrderCode == null)
+            {
+                salesOrderCode = "";
             }
 
             if (keyLocationID == null)
@@ -843,11 +877,6 @@ namespace EcommerceStandardsDocuments
             if (deliveryCountryName == null)
             {
                 deliveryCountryName = "";
-            }
-
-            if (deliveryPostcode == null)
-            {
-                deliveryPostcode = "";
             }
 
             if (deliveryCountryCodeISO2 == null)
