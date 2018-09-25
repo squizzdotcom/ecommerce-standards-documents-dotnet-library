@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ESDocumentCurrencyExchangeRate.cs" />
     <Compile Include="ESDocumentCustomerAccountContact.cs" />
     <Compile Include="ESDocumentCustomerAccountContract.cs" />
     <Compile Include="ESDocumentCustomerAccountEnquiry.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="ESDocumentType.cs" />
     <Compile Include="ESDRecordAccountPaymentSurchargeTax.cs" />
     <Compile Include="ESDRecordContact.cs" />
+    <Compile Include="ESDRecordCurrencyExchangeRate.cs" />
     <Compile Include="ESDRecordCustomerAccountContract.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryBackOrder.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryBackOrderLine.cs" />
