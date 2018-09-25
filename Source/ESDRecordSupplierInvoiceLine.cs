@@ -354,6 +354,18 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string supplierItemCode { get; set; }
 
+        /// <summary>Key of the general ledger account that the line is assigned to. This links the invoice line to the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyGLAccountID { get; set; }
+
+        /// <summary>Code of the general ledger account that the line is assigned to. The code can be used to identify the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string glAccountCode { get; set; }
+
+        /// <summary>Name of the general ledger account that the line is assigned to. The name can be used to identify the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string glAccountName { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or  it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -392,7 +404,27 @@ namespace EcommerceStandardsDocuments
             {
                 lineType = "";
             }
-         
+
+            if (purchaseOrderLineCode == null)
+            {
+                purchaseOrderLineCode = "";
+            }
+
+            if (purchaseOrderLineNumber == null)
+            {
+                purchaseOrderLineNumber = "";
+            }
+
+            if (customerInvoiceLineCode == null)
+            {
+                customerInvoiceLineCode = "";
+            }
+
+            if (customerInvoiceLineNumber == null)
+            {
+                customerInvoiceLineNumber = "";
+            }
+
             if (locationCode == null)
             {
                 locationCode = "";
@@ -497,7 +529,22 @@ namespace EcommerceStandardsDocuments
             {
                 productDescription = "";
             }
-         
+
+            if (customerInvoiceProductCode == null)
+            {
+                customerInvoiceProductCode = "";
+            }
+
+            if (salesOrderProductCode == null)
+            {
+                salesOrderProductCode = "";
+            }
+
+            if (purchaseOrderProductCode == null)
+            {
+                purchaseOrderProductCode = "";
+            }
+
             if (widthUnitMeasureCode == null)
             {
                 widthUnitMeasureCode = "";
@@ -542,7 +589,22 @@ namespace EcommerceStandardsDocuments
             {
                 downloadDescription = "";
             }
-         
+
+            if (customerInvoiceDownloadCode == null)
+            {
+                customerInvoiceDownloadCode = "";
+            }
+
+            if (salesOrderDownloadCode == null)
+            {
+                salesOrderDownloadCode = "";
+            }
+
+            if (purchaseOrderDownloadCode == null)
+            {
+                purchaseOrderDownloadCode = "";
+            }
+
             if (labourCode == null)
             {
                 labourCode = "";
@@ -561,6 +623,21 @@ namespace EcommerceStandardsDocuments
             if (labourDescription == null)
             {
                 labourDescription = "";
+            }
+
+            if (customerInvoiceLabourCode == null)
+            {
+                customerInvoiceLabourCode = "";
+            }
+
+            if (salesOrderLabourCode == null)
+            {
+                salesOrderLabourCode = "";
+            }
+
+            if (purchaseOrderLabourCode == null)
+            {
+                purchaseOrderLabourCode = "";
             }
          
             if (isKitted == null)
@@ -591,6 +668,18 @@ namespace EcommerceStandardsDocuments
             if (supplierItemCode == null)
             {
                 supplierItemCode = "";
+            }
+
+            if (keyGLAccountID == null){
+                keyGLAccountID = "";
+            }
+
+            if (glAccountCode == null){
+                glAccountCode = "";
+            }
+
+            if (glAccountName == null){
+                glAccountName = "";
             }
         }
     }

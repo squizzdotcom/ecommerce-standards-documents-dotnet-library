@@ -61,7 +61,8 @@ namespace EcommerceStandardsDocuments
     ///             "termsDescription":"Pay before 14 days",
     ///             "termsValue1":"14",
     ///             "termsValue2":"",
-    ///             "keyLocationIDs":[]
+    ///             "keyLocationIDs":[],
+    ///             "keyGLAccountID","1240-SALES"
     ///         },
     ///         {
     ///             "keyCustomerAccountID":"10",
@@ -90,7 +91,8 @@ namespace EcommerceStandardsDocuments
     ///             "termsDescription":"Pay on the 15th day of the month",
     ///             "termsValue1":"15",
     ///             "termsValue2":"",
-    ///             "keyLocationIDs":["LOC1","LOC3","RURA"]
+    ///             "keyLocationIDs":["LOC1","LOC3","RURA"],
+    ///             "keyGLAccountID","1240-SALES"
     ///         }
     ///     ]
     /// }

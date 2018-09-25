@@ -54,6 +54,7 @@
     <Compile Include="ESDocumentCustomerInvoice.cs" />
     <Compile Include="ESDocumentDeliveryNotice.cs" />
     <Compile Include="ESDocumentDownload.cs" />
+    <Compile Include="ESDocumentGeneralLedgerAccount.cs" />
     <Compile Include="ESDocumentItemGroup.cs" />
     <Compile Include="ESDocumentItemRelation.cs" />
     <Compile Include="ESDocumentLabour.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="ESDRecordDeliveryNoticeLine.cs" />
     <Compile Include="ESDRecordDownload.cs" />
     <Compile Include="ESDRecordFlagMapping.cs" />
+    <Compile Include="ESDRecordGeneralLedgerAccount.cs" />
     <Compile Include="ESDRecordInvoiceLineAttribute.cs" />
     <Compile Include="ESDRecordInvoiceLineAttributeProfile.cs" />
     <Compile Include="ESDRecordInvoiceLineTax.cs" />

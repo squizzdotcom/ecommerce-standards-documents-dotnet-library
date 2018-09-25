@@ -26,7 +26,7 @@ namespace EcommerceStandardsDocuments
     /// 		
     /// 	},
     /// 	"dataTransferMode": "COMPLETE",
-    /// 	"version": 1.1,
+    /// 	"version": 1.3,
     /// 	"totalDataRecords": 2,
     /// 	"dataRecords": [{
     /// 		"keySupplierInvoiceID": "123"
@@ -35,38 +35,56 @@ namespace EcommerceStandardsDocuments
     /// 		"keySupplierInvoiceID": "2231321",
     /// 		"supplierInvoiceCode": "SINV-123",
     /// 		"supplierInvoiceNumber": "123",
-    /// 		"purchaseOrderCode": "PO-122",
-    /// 		"purchaseOrderNumber": "122",
+    /// 		"purchaseOrderCode": "PO-00000122",
+    /// 		"purchaseOrderNumber": "00000122",
+    /// 		"keyPurchaseOrderID": 122, 
+    /// 		"supplierCustomerInvoiceCode": "SUPPLIER-INV-0001322",
+    /// 		"supplierCustomerInvoiceNumber": "0001322",
     /// 		"keySupplierAccountID": "222",
     /// 		"supplierAccountCode": "SUP004",
-    /// 		"supplierAccountName": "John Smith",
+    /// 		"supplierAccountName": "John Smith Industrials",
+    /// 		"supplierEntity": "ORG",
+    /// 		"supplierPersonName": "",
+    /// 		"supplierOrgName": "John Smith Industrials Pty Ltd",
+    /// 		"supplierAuthorityNumbers": ["ABN-1234-5678"],
+    /// 		"supplierAuthorityNumberLabels": ["Australian Business Number"],
+    /// 		"supplierAuthorityNumberTypes": [1],
     /// 		"accountDiscountRate": 0,
-    /// 		"accountTerritory": "",
+    /// 		"accountTerritory": "VICTORIA-METRO",
     /// 		"sentDate": 1448132083084,
     /// 		"processedDate": 1449132083084,
     /// 		"dispatchedDate": 1450132083084,
     /// 		"receivedDate": 1451132083084,
     /// 		"modifiedDate": 1452132083084,
     /// 		"createdDate": 1447132083084,
+    /// 		"paymentDueDate": 1451566800000,
+    /// 		"fullyPaidDate": 1451739600000,
+    /// 		"keyPurchaserID": "PURCHASER-5",
+    /// 		"purchaserCode": "SS",
+    /// 		"purchaserName": "Sarah Smith",
+    /// 		"purchaserIndividual": "Y",
     /// 		"keySalesRepID": "REP-2",
     /// 		"salesRepCode": "JD",
     /// 		"salesRepName": "John Doe",
     /// 		"salesRepIndividual": "Y",
     /// 		"currencyISOCode": "AUD",
+    /// 		"keyPaymentTypeID": "CC-12",
     /// 		"paymentStatus": "PAID",
     /// 		"paymentMethod": "CREDITCARD",
     /// 		"paymentProprietaryCode": "",
     /// 		"paymentReceipt": "32423RES3432",
     /// 		"paymentAmount": 110.00,
-    /// 		"salesOrderNumber": "SALE-123",
+    /// 		"salesOrderNumber": "23123",
+    /// 		"salesOrderCode": "SALE-23123",
     /// 		"purchaserSystemID": "ACME-123",
     /// 		"purchaserSystemName": "ACME ACCOUNTING SYSTEM",
     /// 		"purchaserSystemCode": "AAS",
     /// 		"sellerSystemID": "ERP-1",
     /// 		"sellerSystemName": "ENTERPRISE RESOURCE PLANNING SYS",
     /// 		"sellerSystemCode": "ERPS",
-    /// 		"invoiceNumbers": ["INV-001",
-    /// 		"INV-002"],
+    /// 		"eCommerceUserID": "1001",
+    /// 		"eCommerceUserName": "JohnD",
+    /// 		"eCommerceSystemID": "MY_ORG.PLATFORM",
     /// 		"deliveryDescription": "Primary Delivery Address",
     /// 		"deliveryContact": "John Smith",
     /// 		"deliveryOrgName": "",
@@ -127,6 +145,9 @@ namespace EcommerceStandardsDocuments
     /// 		"locationCode": "LCT-456",
     /// 		"locationName": "Warehouse",
     /// 		"isMultiLocation": "N",
+    /// 		"externalKeyLocationID": "EXT-123",
+    /// 		"externalLocationCode": " RESELLER-123",
+    /// 		"externalLocationName": " Paper Reseller's Warehouse 123",
     /// 		"shippingMethod": "N",
     /// 		"isProductsDelivered": "N",
     /// 		"lines": [{
@@ -143,11 +164,16 @@ namespace EcommerceStandardsDocuments
     /// 			"locationCode": "LCT-456",
     /// 			"locationName": "Warehouse",
     /// 			"keyLocationID": "456",
+    /// 			"externalKeyLocationID": "EXT-123",
+    /// 			"externalLocationCode": " RESELLER-123",
+    /// 			"externalLocationName": " Paper Reseller's Warehouse 123",
     /// 			"language": "EN_AU",
     /// 			"isInventoried": "Y",
     /// 			"quantityInvoiced": 2,
     /// 			"quantityDelivered": 2,
     /// 			"quantityBackordered": 0,
+    /// 			"quantityOrdered": 2,
+    /// 			"sellUnitBaseQuantity": 2,
     /// 			"priceExTax": 10.00,
     /// 			"priceIncTax": 11.00,
     /// 			"priceTax": 1.00,
@@ -162,7 +188,9 @@ namespace EcommerceStandardsDocuments
     /// 			"priceTotalUndiscountedTax": 8.00,
     /// 			"isPriceFree": "N",
     /// 			"entitySetPrice": "SYSTEM",
+    /// 			"keySellUnitID": "EA",
     /// 			"unitName": "REAM",
+    /// 			"UNSPSC": "141115",
     /// 			"priceReferenceCode": "SALE-34",
     /// 			"priceReferenceType": "C",
     /// 			"isKitted": "N",
@@ -172,7 +200,10 @@ namespace EcommerceStandardsDocuments
     /// 			"productCode": "PROD-001",
     /// 			"productName": "Swisho Green Paper",
     /// 			"productDescription": "Swisho green coloured paper is the ultimate green paper.",
+    /// 			"customerInvoiceProductCode": "SUP-PAPER-SWISH",
     /// 			"purchaseOrderProductCode": "SWISH-001",
+    /// 			"salesOrderProductCode": "SUP-PAPER-SWISH",
+    /// 			"supplierItemCode": "SUP-PAPER-SWISH",
     /// 			"width": 20.1,
     /// 			"height": 21,
     /// 			"depth": 29.7,
@@ -183,6 +214,9 @@ namespace EcommerceStandardsDocuments
     /// 			"depthUnitMeasureCode": "METRES",
     /// 			"volumeUnitMeasureCode": "METRES-CUBED",
     /// 			"weightUnitMeasureCode": "KG",
+    /// 			"keyGLAccountID": "GLA2",
+    /// 			"glAccountCode": "570",
+    /// 			"glAccountName": "Office Expense",
     /// 			"taxes": [{
     /// 				"keyTaxcodeID": "456",
     /// 				"taxcode": "GST",
@@ -209,22 +243,6 @@ namespace EcommerceStandardsDocuments
     /// 					"attributeName": "Comment",
     /// 					"attributeValue": "Make sure that the edges are not too sharp"
     /// 				}]
-    /// 			}],
-    /// 			"productDeliveries": [{
-    /// 				"quantity": 1,
-    /// 				"deliveryDate": 1447132083084,
-    /// 				"customerAccountInvoiceCode": "INV-001",
-    /// 				"customerAccountInvoiceLineCode": "2",
-    /// 				"customerAccountDeliveryCode": "DEL-1234",
-    /// 				"customerAccountDeliveryLineCode": "1"
-    /// 			},
-    /// 			{
-    /// 				"quantity": 1,
-    /// 				"deliveryDate": 1448132083084,
-    /// 				"customerAccountInvoiceCode": "INV-002",
-    /// 				"customerAccountInvoiceLineCode": "1",
-    /// 				"customerAccountDeliveryCode": "DEL-1235",
-    /// 				"customerAccountDeliveryLineCode": "1"
     /// 			}]
     /// 		},
     /// 		{
@@ -232,7 +250,7 @@ namespace EcommerceStandardsDocuments
     /// 			"purchaseOrderLineCode": "SWISH-002",
     /// 			"purchaseOrderLineNumber": "1",
     /// 			"language": "EN_AU",
-    /// 			"quantity": 1,
+    /// 			"quantityInvoiced": 1,
     /// 			"priceExTax": 20.00,
     /// 			"priceIncTax": 22.00,
     /// 			"priceTax": 2.00,
@@ -246,6 +264,8 @@ namespace EcommerceStandardsDocuments
     /// 			"downloadCode": "Download 2",
     /// 			"downloadName": "Track01 - Standards",
     /// 			"downloadDescription": "Listen to My Rock Band's first track off their new album called Standards.",
+    /// 			"customerInvoiceDownloadCode": "SUPPLIER-DOWNLOAD-ABC",
+    /// 			"salesOrderDownloadCode": "SUPPLIER-DOWNLOAD-DEF",
     /// 			"purchaseOrderDownloadCode": "DOWN-1234",
     /// 			"taxes": [{
     /// 				"keyTaxcodeID": "456",
@@ -263,7 +283,7 @@ namespace EcommerceStandardsDocuments
     /// 			"purchaseOrderLineCode": "SWISH-002",
     /// 			"purchaseOrderLineNumber": "1",
     /// 			"language": "EN_AU",
-    /// 			"quantity": 1,
+    /// 			"quantityInvoiced": 1,
     /// 			"priceExTax": 40.00,
     /// 			"priceIncTax": 44.00,
     /// 			"priceTax": 4.00,
@@ -277,6 +297,8 @@ namespace EcommerceStandardsDocuments
     /// 			"labourCode": "DELIVERY-HELP",
     /// 			"labourName": "Paper Delivery Help",
     /// 			"labourDescription": "Service to help deliver and place paper products internally at the delivery address",
+    /// 			"customerInvoiceLabourCode": "SUP-LABOUR-DEL",
+    /// 			"salesOrderLabourCode": "SUP-LABOUR-DEL",
     /// 			"purchaseOrderLabourCode": "LAB-1234",
     /// 			"taxes": [{
     /// 				"keyTaxcodeID": "456",
@@ -288,6 +310,10 @@ namespace EcommerceStandardsDocuments
     /// 				"priceTax": 4.00,
     /// 				"priceTotalTax": 4.00
     /// 			}]
+    /// 		},
+    /// 		{
+    /// 			"lineType": "TEXT",
+    /// 			"textDescription": "This invoice needs urgent payment to ensure that the supply of future deliveries continues"
     /// 		}],
     /// 		"surcharges": [{
     /// 			"surchargeCode": "WEB_CC_SURCHARGE"
@@ -308,6 +334,23 @@ namespace EcommerceStandardsDocuments
     /// 				"priceTax": 2.00,
     /// 				"priceTotalTax": 2.00
     /// 			}]
+    /// 		}],
+    /// 		"payments": [
+    /// 		{
+    /// 			"paymentMethod": "PROPRIETARY",
+    /// 			"paymentAmount": 20.00,
+    /// 			"paymentReceipt": "PP-12321-543221",
+    /// 			"paymentProprietaryCode": "PAYPAL",
+    /// 			"keyPaymentTypeID": "943",
+    /// 			"paidDate": 1451739600000
+    /// 		},
+    /// 		{
+    /// 			"paymentMethod": "PROPRIETARY",
+    /// 			"paymentAmount": 10.00,
+    /// 			"paymentReceipt": "ZP-12321",
+    /// 			"paymentProprietaryCode": "ZIPPAY",
+    /// 			"keyPaymentTypeID": "432",
+    /// 			"paidDate": 1451739600000
     /// 		}]
     /// 	}]
     /// }

@@ -161,6 +161,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string termsValue2 { get; set; }
 
+        /// <summary>Key of the general ledger account that the customer account is assigned to. This links the customer account to a general ledger account that sales against it may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyGLAccountID { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

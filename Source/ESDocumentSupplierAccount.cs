@@ -56,7 +56,8 @@ namespace EcommerceStandardsDocuments
     ///             "termsType":"GND",
     ///             "termsDescription":"Pay before 14 days",
     ///             "termsValue1":"14",
-    ///             "termsValue2":""
+    ///             "termsValue2":"",
+    ///             "keyGLAccountID","6011-Stationery"
     ///         },
     ///         {
     ///             "keySupplierAccountID":"SUP3",
@@ -81,7 +82,7 @@ namespace EcommerceStandardsDocuments
     ///             "termsType":"DOM",
     ///             "termsDescription":"Pay on the 15th day of the month",
     ///             "termsValue1":"15",
-    ///             "termsValue2":""
+    ///             "keyGLAccountID","6012-Electricity"
     ///         }
     ///     ]
     /// }

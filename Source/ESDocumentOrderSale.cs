@@ -158,6 +158,7 @@ namespace EcommerceStandardsDocuments
     ///                     "isPriceFree": "N",
     ///                     "entitySetPrice": "SYSTEM",
     ///                     "unitName": "REAM",
+    /// 			        "UNSPSC": "141115",
     ///                     "priceReferenceCode": "SALE-34",
     ///                     "priceReferenceType": "C",
     ///                     "isKitted": "N",
@@ -178,6 +179,9 @@ namespace EcommerceStandardsDocuments
     ///                     "depthUnitMeasureCode": "METRES",
     ///                     "volumeUnitMeasureCode": "METRES-CUBED",
     ///                     "weightUnitMeasureCode": "KG",
+    /// 			        "keyGLAccountID": "GLA8",
+    /// 			        "glAccountCode": "410",
+    /// 			        "glAccountName": "Sales Income",
     ///                     "taxes":
     ///                     [
     ///                         {
@@ -335,7 +339,26 @@ namespace EcommerceStandardsDocuments
     ///                         }
     ///                     ]
     ///                 }
-    ///             ]
+    ///             ],
+    /// 		    "payments": 
+    /// 		    [
+    /// 		        {
+    /// 		        	"paymentMethod": "PROPRIETARY",
+    /// 		        	"paymentAmount": 20.00,
+    /// 		        	"paymentReceipt": "PP-12321-543221",
+    /// 		        	"paymentProprietaryCode": "PAYPAL",
+    /// 		        	"keyPaymentTypeID": "943",
+    /// 		        	"paidDate": 1451739600000
+    /// 		        },
+    /// 		        {
+    /// 		        	"paymentMethod": "PROPRIETARY",
+    /// 		        	"paymentAmount": 10.00,
+    /// 		        	"paymentReceipt": "ZP-12321",
+    /// 		        	"paymentProprietaryCode": "ZIPPAY",
+    /// 		        	"keyPaymentTypeID": "432",
+    /// 		        	"paidDate": 1451739600000
+    /// 		        }
+    /// 		    ]
     ///         }
     ///     ]
     /// }

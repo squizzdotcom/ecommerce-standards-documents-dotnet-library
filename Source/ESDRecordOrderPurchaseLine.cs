@@ -242,6 +242,18 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string salesOrderLabourCode { get; set; }
 
+        /// <summary>Key of the general ledger account that the line is assigned to. This links the invoice line to the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyGLAccountID { get; set; }
+
+        /// <summary>Code of the general ledger account that the line is assigned to. The code can be used to identify the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string glAccountCode { get; set; }
+
+        /// <summary>Name of the general ledger account that the line is assigned to. The name can be used to identify the general ledger account that the purchase may be reported against for accounting purposes.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string glAccountName { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -446,6 +458,18 @@ namespace EcommerceStandardsDocuments
 
             if (isReserved == null){
                 isReserved = "N";
+            }
+
+            if (keyGLAccountID == null){
+                keyGLAccountID = "";
+            }
+
+            if (glAccountCode == null){
+                glAccountCode = "";
+            }
+
+            if (glAccountName == null){
+                glAccountName = "";
             }
 
             if (internalID == null){

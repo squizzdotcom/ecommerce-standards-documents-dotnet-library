@@ -161,6 +161,7 @@ namespace EcommerceStandardsDocuments
     /// 			"isPriceFree": "N",
     /// 			"entitySetPrice": "SYSTEM",
     /// 			"unitName": "REAM",
+    /// 			"UNSPSC": "141115",
     /// 			"priceReferenceCode": "SALE-34",
     /// 			"priceReferenceType": "C",
     /// 			"isKitted": "N",
@@ -181,6 +182,9 @@ namespace EcommerceStandardsDocuments
     /// 			"depthUnitMeasureCode": "METRES",
     /// 			"volumeUnitMeasureCode": "METRES-CUBED",
     /// 			"weightUnitMeasureCode": "KG",
+    /// 			"keyGLAccountID": "GLA8",
+    /// 			"glAccountCode": "410",
+    /// 			"glAccountName": "Sales Income",
     /// 			"taxes": [{
     /// 				"keyTaxcodeID": "456",
     /// 				"taxcode": "GST",
@@ -286,6 +290,10 @@ namespace EcommerceStandardsDocuments
     /// 				"priceTax": 4.00,
     /// 				"priceTotalTax": 4.00
     /// 			}]
+    /// 		},
+    /// 		{
+    /// 			"lineType": "TEXT",
+    /// 			"textDescription": "This invoice needs urgent payment to ensure that the supply of future deliveries continues"
     /// 		}],
     /// 		"surcharges": [{
     /// 			"surchargeCode": "WEB_CC_SURCHARGE"
