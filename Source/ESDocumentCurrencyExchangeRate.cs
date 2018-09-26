@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The currency exchange rate data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 4,
-    ///     "configs":{"dataFields":"keyCurrencyExchangeRateID,sellCurrencyISOCode,sellCurrencyName,sellCurrencyType,buyCurrencyISOCode,buyCurrencyName,buyCurrencyType,exchangeRate"},
+    ///     "configs":{"dataFields":"keyCurrencyExchangeRateID,sellCurrencyCode,sellCurrencyName,sellCurrencyType,buyCurrencyCode,buyCurrencyName,buyCurrencyType,exchangeRate"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -34,7 +34,7 @@ namespace EcommerceStandardsDocuments
     ///         //exchange rate from Australian Dollars to US dollars, $1 AUD sells for $0.70 USD
     ///         {
     ///             "keyCurrencyExchangeRateID":"2",
-    ///             "sellCurrencyISOCode":"AUD",
+    ///             "sellCurrencyCode":"AUD",
     ///             "sellCurrencyName":"Australian Dollars",
     ///             "sellCurrencyType":"FIAT",
     ///             "buyCurrencyCode":"USD",
@@ -45,7 +45,7 @@ namespace EcommerceStandardsDocuments
     ///         //exchange rate USD to AUD, $1 USD sells for $1.30 AUD
     ///         {
     ///             "keyCurrencyExchangeRateID":"3",
-    ///             "sellCurrencyISOCode":"USD",
+    ///             "sellCurrencyCode":"USD",
     ///             "sellCurrencyName":"United States Dollars",
     ///             "sellCurrencyType":"FIAT",
     ///             "buyCurrencyCode":"AUD",
@@ -56,7 +56,7 @@ namespace EcommerceStandardsDocuments
     ///         //exchange rate USD to EUR, $1 USD sells for €0.7727 EUR
     ///         {
     ///             "keyCurrencyExchangeRateID":"4AB",
-    ///             "sellCurrencyISOCode":"USD",
+    ///             "sellCurrencyCode":"USD",
     ///             "sellCurrencyName":"United States Dollars",
     ///             "sellCurrencyType":"FIAT",
     ///             "buyCurrencyCode":"EUR",
@@ -67,7 +67,7 @@ namespace EcommerceStandardsDocuments
     ///         //exchange rate Bitcoin to US Dollars, 1 Bitcoin sells for $8023.60 US Dollars
     ///         {
     ///             "keyCurrencyExchangeRateID":"5CC",
-    ///             "sellCurrencyISOCode":"BTC",
+    ///             "sellCurrencyCode":"BTC",
     ///             "sellCurrencyName":"Bitcoins",
     ///             "sellCurrencyType":"CRYPTO",
     ///             "buyCurrencyCode":"USD",
