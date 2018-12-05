@@ -1,5 +1,5 @@
 /// <remarks>
-/// Copyright (C) 2018 Squizz PTY LTD
+/// Copyright (C) 2019 Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -24,6 +24,7 @@ namespace EcommerceStandardsDocuments
         public const int COMBINATION_PROFILE = 7;
         public const int COMBINATION_PROFILE_FIELD = 8;
         public const int CONTACT = 9;
+        public const int CURRENCY_EXCHANGE_RATE = 78;
         public const int CUSTOMER_ACCOUNT = 10;
         public const int CUSTOMER_ACCOUNT_ADDRESS = 11;
         public const int CUSTOMER_ACCOUNT_CONTRACT = 12;

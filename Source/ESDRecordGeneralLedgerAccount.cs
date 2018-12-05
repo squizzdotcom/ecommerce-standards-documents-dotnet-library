@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2018 Squizz PTY LTD
+/// Copyright (C) 2019 Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -40,7 +40,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of a general ledger account that is the parent of the account and is linked to. This is used to create a hierarchy of accounts that may be used for reporting purposes.</summary>
         [DataMember]
         public string keyParentGLAccountID { get; set; }
-        /// <summary>Specifies the kind of montary transactions that are recorded against the general ledger acocunt. If set, must use the ESDocumentConstants that are prefixed with "GENERAL_LEDGER_ACCOUNT_TYPE".</summary>
+        /// <summary>Specifies the kind of monetary transactions that are recorded against the general ledger account. If set, must use the ESDocumentConstants that are prefixed with "GENERAL_LEDGER_ACCOUNT_TYPE".</summary>
         [DataMember(EmitDefaultValue = false)]
         public string accountType { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
