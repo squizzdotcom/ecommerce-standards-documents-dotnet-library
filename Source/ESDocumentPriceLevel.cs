@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Price Level Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The price level data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",

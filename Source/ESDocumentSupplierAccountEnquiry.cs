@@ -18,7 +18,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Supplier Account Enqury Standards document in its JSON serialised form, displaying a list of purchase orders for a supplier account
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The supplier account enquiry purchase order data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -108,7 +108,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account enquiry purchase order detail data has been successfully obtained.",
     ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.0,
+    ///     "version": 1.3,
     ///     "totalDataRecords": 1,
     ///     "orderPurchaseRecords":
     ///      [

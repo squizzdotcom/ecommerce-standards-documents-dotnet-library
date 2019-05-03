@@ -52,6 +52,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public int[] authorityNumberTypes { get; set; }
 
+        /// <summary>Primary phone number to contact the supplier account's organisation or individual person. Its preferable to set phone numbers that can be dialled from anywhere internationally.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string phone { get; set; }
+
         /// <summary>Email address that may be used to contact the entity associated with the supplier account.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string email { get; set; }

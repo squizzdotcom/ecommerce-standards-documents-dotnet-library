@@ -18,7 +18,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the payment type Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The payment type data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",

@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Customer Account Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The customer account payment data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -55,6 +55,32 @@ namespace EcommerceStandardsDocuments
     ///                     "recordID":"INVOICE-112",
     ///                     "amount": 60.00,
     ///                     "recordType":"INVOICE"
+    ///                 }
+    ///             ],
+    ///             "surcharges":
+    ///             [
+    ///                 {
+    ///                     "surchargeCode":"WEB_INVOICE_FEE"
+    ///                 },
+    ///                 {
+    ///                     "keySurchargeID":"765",
+    ///                     "surchargeCode":"WEB_CC_SURCHARGE",
+    ///                     "surchargeLabel":"Web Credit Card Surcharge",
+    ///                     "surchargeDescription":"Credit card processing fee",
+    ///                     "priceExTax": 20.00,
+    ///                     "priceIncTax": 22.00,
+    ///                     "priceTax": 2.00,
+    ///                     "taxes":
+    ///                     [
+    ///                         {
+    ///                             "keyTaxcodeID":"456",
+    ///                             "taxcode":"GST",
+    ///                             "taxcodeLabel":"Goods And Services Tax",
+    ///                             "taxRate": 10.00,
+    ///                             "language": "EN_AU",
+    ///                             "priceTax": 2.00
+    ///                         }
+    ///                     ]
     ///                 }
     ///             ]
     ///         }

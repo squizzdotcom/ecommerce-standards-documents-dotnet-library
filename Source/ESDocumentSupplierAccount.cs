@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Supplier Account Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The supplier account data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -43,6 +43,7 @@ namespace EcommerceStandardsDocuments
     ///             "authorityNumbers":["2342342334","3432424424243"],
     ///             "authorityNumberLabels":["ABN", "ACN"],
     ///             "authorityNumberTypes":[1,2],
+    ///             "phone":"+610987654321",
     ///             "email":"js@esdstandards.somewhere",
     ///             "accountClass":"primary",
     ///             "paymentTypes":"CC",
@@ -68,6 +69,7 @@ namespace EcommerceStandardsDocuments
     ///             "orgName":"ESD Industries",
     ///             "authorityNumber":"1234567890",
     ///             "authorityNumberLabel":"ABN",
+    ///             "phone":"+61123456789",
     ///             "email":"esd@esdstandards.somewhere",
     ///             "accountClass":"secondary",
     ///             "paymentTypes":"AC,CC,DD",

@@ -17,7 +17,7 @@ namespace EcommerceStandardsDocuments
     /// <example>
     /// An example of the Customer Account Enqury Line Standards document in its JSON serialised form, displaying a list of invoice lines for a customer account
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The customer account enquiry invoice line data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",

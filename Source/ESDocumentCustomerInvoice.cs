@@ -24,7 +24,7 @@ namespace EcommerceStandardsDocuments
     /// 	"message": "The customer invoice data has been successfully obtained.",
     /// 	"configs": {},
     /// 	"dataTransferMode": "COMPLETE",
-    /// 	"version": 1.1,
+    /// 	"version": 1.3,
     /// 	"totalDataRecords": 2,
     /// 	"dataRecords": [{
     /// 		"keyCustomerInvoiceID": "123"

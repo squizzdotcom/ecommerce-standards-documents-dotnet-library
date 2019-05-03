@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Product Pricing Ecommerce Standards document in its JSON serialised form, containing product price-level data
     /// <code>
     /// {
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "resultStatus": 1,
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -68,7 +68,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,price,quantity"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -110,7 +110,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyAccountID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -156,7 +156,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceGroupID,keySellUnitID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "totalDataRecords": 4,
     ///     "priceGroups":
     ///     {
@@ -197,7 +197,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,drop"},
     ///     "dataTransferMode": "INCREMENT",
-    ///     "version": 1.2,
+    ///     "version": 1.3,
     ///     "totalDataRecords": 5,
     ///     "dataRecords":
     ///      [
