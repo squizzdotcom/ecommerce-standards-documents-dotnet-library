@@ -28,6 +28,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the labour record that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
+        /// <summary>Key of the category record that the image is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCategoryID { get; set; }
+        /// <summary>Key of the maker/manufacturer model record that the image is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyMakerModelID { get; set; }
+        /// <summary>Key of the maker/manufacturer that creates or assembles models and products that the image is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyMakerID { get; set; }
         /// <summary>Full file path to locate the image, including the image file name and extension. The file path may be a URL, or could be a path to the file in a local machine, or network file store.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string imageFullFilePath { get; set; }
