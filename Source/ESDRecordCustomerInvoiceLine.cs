@@ -92,6 +92,7 @@ namespace EcommerceStandardsDocuments
         public string isInventoried { get; set; }
 
         /// <summary>Quantity of units invoiced.</summary>
+        [DataMember(EmitDefaultValue = false)]
         public decimal quantityInvoiced { get; set; }
 
         /// <summary>Quantity of units delivered.</summary>
