@@ -107,6 +107,7 @@ namespace EcommerceStandardsDocuments
         public ESDRecordCustomerAccountPayment()
         {
             this.records = new List<ESDRecordCustomerAccountPaymentRecord>();
+            this.surcharges = new List<ESDRecordAccountPaymentSurcharge>();
         }
 
         /// <summary>sets default values for members that have no values set</summary>
@@ -119,6 +120,18 @@ namespace EcommerceStandardsDocuments
             else
             {
                 foreach (ESDRecordCustomerAccountPaymentRecord record in records)
+                {
+                    record.setDefaultValuesForNullMembers();
+                }
+            }
+
+            if (surcharges == null)
+            {
+                surcharges = new List<ESDRecordAccountPaymentSurcharge>();
+            }
+            else
+            {
+                foreach (ESDRecordAccountPaymentSurcharge record in surcharges)
                 {
                     record.setDefaultValuesForNullMembers();
                 }
