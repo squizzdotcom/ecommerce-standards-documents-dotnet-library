@@ -295,6 +295,10 @@ namespace EcommerceStandardsDocuments
         public const string UNIT_MEASURE_MASS_PICOGRAM = "PG";
         /// <summary>Unit Of Measure - Mass - Metric Tonne. Metric unit. Less widely known as a Megagram. Each metric tonne consists of 1000 kilograms</summary>
         public const string UNIT_MEASURE_MASS_TONNE_METRIC = "T";
+        /// <summary>Unit Of Measure - Mass - Mega Tonne. Metric unit. Each mega tonne consists of 1000 metric tonnes</summary>
+        public const string UNIT_MEASURE_MASS_MEGATONNE = "MT";
+        /// <summary>Unit Of Measure - Mass - Giga Tonne. Metric unit. Each giga tonne consists of 1000 mega tonnes</summary>
+        public const string UNIT_MEASURE_MASS_GIGATONNE = "GT";
         /// <summary>Unit Of Measure - Mass - Grain. Imperial unit. 7000 grains make up a pound</summary>
         public const string UNIT_MEASURE_MASS_GRAIN = "GR";
         /// <summary>Unit Of Measure - Mass - Ounce. Imperial unit. Each once consists of 16 drams</summary>
