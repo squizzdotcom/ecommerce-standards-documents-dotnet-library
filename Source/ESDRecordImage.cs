@@ -31,6 +31,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the category record that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyCategoryID { get; set; }
+        /// <summary>Key of the category tree record that the image is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCategoryTreeID { get; set; }
         /// <summary>Key of the maker/manufacturer model record that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyMakerModelID { get; set; }
@@ -52,6 +55,18 @@ namespace EcommerceStandardsDocuments
         /// <summary>Text to decribe details about the image</summary>
         [DataMember(EmitDefaultValue = false)]
         public string description { get; set; }
+        /// <summary>
+        /// Either
+        /// <list type="bullet">
+        /// <item><term>N</term><description>No</description></item>
+        /// <item><term>Y</term><description>Yes</description></item>
+        /// </list>
+        /// If 'Y' then indicates that the image is the primary image of the entity (such as product, category, model etc...) that the image is associated to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string isPrimary { get; set; }
+        /// <summary>Number to order the image by. This may be used to order a number of images that appear is a list against the same entity.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public int ordering { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
