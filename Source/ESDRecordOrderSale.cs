@@ -19,7 +19,7 @@ namespace EcommerceStandardsDocuments
     {
         /// <summary>UNPAID - No payment was received as yet</summary>
         public static readonly string PAYMENT_METHOD_UNPAID = "UNPAID";
-        /// <summary>CREDIT - A payment was made with a credit card</summary>
+        /// <summary>CREDITCARD - A payment was made with a credit card</summary>
         public static readonly string PAYMENT_METHOD_CREDIT = "CREDITCARD";
         /// <summary>COD - Payment will be made with cash when the goods are delivered to the delivery location</summary>
         public static readonly string PAYMENT_METHOD_CASHONDELIVERY = "COD";
@@ -386,10 +386,10 @@ namespace EcommerceStandardsDocuments
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string isProductsDelivered { get; set; }
-        /// <summary>Code of the unit of measure for the volume</summary>
+        /// <summary>Code of the unit of measure for the volume. Set it to a constant prefixed with UNIT_MEASURE_VOLUME_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string totalVolumeMeasureCode { get; set; }
-        /// <summary>Code of the unit of measure for the weight</summary>
+        /// <summary>Code of the unit of measure for the weight. Set it to a constant prefixed with UNIT_MEASURE_MASS_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string totalWeightMeasureCode { get; set; }
 
@@ -674,7 +674,11 @@ namespace EcommerceStandardsDocuments
                 paymentReceipt="";
             }
 
-            if(freightCarrierCode == null){
+            if (keyPaymentTypeID == null){
+                keyPaymentTypeID = "";
+            }
+
+            if (freightCarrierCode == null){
                 freightCarrierCode="";
             }
 

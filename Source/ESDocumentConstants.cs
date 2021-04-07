@@ -72,7 +72,7 @@ namespace EcommerceStandardsDocuments
         public const int ESD_RECORD_OPERATION_IGNORE = 4;
 
         /// <summary>Contains the version that the Ecommerce Standards Documents library is currently at.</summary>
-        public const decimal ESD_DOCUMENT_VERSION = (decimal)1.3;
+        public const decimal ESD_DOCUMENT_VERSION = (decimal)1.4;
 
         /// <summary>Denotes that the location is a warehouse</summary>
         public const string LOCATION_TYPE_WAREHOUSE = "WAREHOUSE";
@@ -205,7 +205,6 @@ namespace EcommerceStandardsDocuments
         /// <summary>Price reference Type - Promotion</summary>
         public const string PRICE_REFERENCE_TYPE_PROMOTION = "P";
 
-
         /// <summary>Delivery Status - Awaiting Packaging - The ordered goods are awaiting to be packaged up for delivery</summary>
         public const string DELIVERY_STATUS_AWAITING_PACKAGING = "AWAITING_PACKAGING";
 	    /// <summary>Delivery Status - Packed - The ordered goods have been packaged up and awaiting to be loaded on transport for delivery</summary>
@@ -250,5 +249,136 @@ namespace EcommerceStandardsDocuments
         public const string CURRENCY_TYPE_CRYPTO = "CRYPTO";
         /// <summary>Currency Type - Virtual - currency that is stored and created through digital mechanisms, and may be invented and/or controlled by a single organisation or other entity.</summary>
         public const string CURRENCY_TYPE_VIRTUAL = "VIRTUAL";
+
+        /// <summary>Unit Of Measure - Length - Metre. Base unit of length in the International System of Units (SI). Consists of 100 centimetres</summary>
+        public const string UNIT_MEASURE_LENGTH_METRE = "M";
+        /// <summary>Unit Of Measure - Length - Centimetre. Metric unit. Each centimetre consists of 10 millimetres</summary>
+        public const string UNIT_MEASURE_LENGTH_CENTIMETRE = "CM";
+        /// <summary>Unit Of Measure - Length - Millimetre. Metric unit. Each millimetre consists of 1000 micrometres</summary>
+        public const string UNIT_MEASURE_LENGTH_MILLIMETRE = "MM";
+        /// <summary>Unit Of Measure - Length - Micrometre. Metric unit. Each micrometre consists of 1000 nanomentres</summary>
+        public const string UNIT_MEASURE_LENGTH_MICROMETRE = "UM";
+        /// <summary>Unit Of Measure - Length - Nanometre. Metric unit. Each nanometre consists of 1000 picometres</summary>
+        public const string UNIT_MEASURE_LENGTH_NANOMETRE = "NM";
+        /// <summary>Unit Of Measure - Length - Picometre. Metric unit. Each picometre consists of 1000 femtometres</summary>
+        public const string UNIT_MEASURE_LENGTH_PICOMETRE = "PM";
+        /// <summary>Unit Of Measure - Length - Hectometre. Metric unit. Each hectometre consists of 100 metres</summary>
+        public const string UNIT_MEASURE_LENGTH_HECTOMETRE = "HM";
+        /// <summary>Unit Of Measure - Length - Kilometre. Metric unit. Each kilometre consists of 1000 metres</summary>
+        public const string UNIT_MEASURE_LENGTH_KILOMETRE = "KM";
+        /// <summary>Unit Of Measure - Length - Thou. Imperial unit. 1000 thou's makes up an inch</summary>
+        public const string UNIT_MEASURE_LENGTH_THOU = "TH";
+        /// <summary>Unit Of Measure - Length - Inch. Imperial unit. Each inch consists of 2.54 centimetres</summary>
+        public const string UNIT_MEASURE_LENGTH_INCH = "IN";
+        /// <summary>Unit Of Measure - Length - Foot. Imperial unit. Each foot consists of 12 inches</summary>
+        public const string UNIT_MEASURE_LENGTH_FOOT = "FT";
+        /// <summary>Unit Of Measure - Length - Yard. Imperial unit. Each yard consists of 3 feet</summary>
+        public const string UNIT_MEASURE_LENGTH_YARD = "YD";
+        /// <summary>Unit Of Measure - Length - Chain. Imperial unit. Each chain consists of 22 yards.</summary>
+        public const string UNIT_MEASURE_LENGTH_CHAIN = "CH";
+        /// <summary>Unit Of Measure - Length - Furlong. Imperial unit. Each furlong consists of 10 chains</summary>
+        public const string UNIT_MEASURE_LENGTH_FURLONG = "FUR";
+        /// <summary>Unit Of Measure - Length - Mile. Imperial unit. Each mile consists of 8 furlongs</summary>
+        public const string UNIT_MEASURE_LENGTH_MILE = "MI";
+
+        /// <summary>Unit Of Measure - Mass - Kilogram. Metric unit. Base unit of length in the International System of Units (SI). Consists of 1000 milligrams</summary>
+        public const string UNIT_MEASURE_MASS_KILOGRAM = "KG";
+        /// <summary>Unit Of Measure - Mass - Milligram. Metric unit. Each milligram consists of 1000 micrograms</summary>
+        public const string UNIT_MEASURE_MASS_MILLIGRAM = "MG";
+        /// <summary>Unit Of Measure - Mass - Microgram. Metric unit. Each microgram consists of 1000 nanograms</summary>
+        public const string UNIT_MEASURE_MASS_MICROGRAM = "UG";
+        /// <summary>Unit Of Measure - Mass - Nanogram. Metric unit. Each nanogram consists of 1000 picograms</summary>
+        public const string UNIT_MEASURE_MASS_NANOGRAM = "NG";
+        /// <summary>Unit Of Measure - Mass - Picogram. Metric unit. Each picogram consists of 1000 femtograms</summary>
+        public const string UNIT_MEASURE_MASS_PICOGRAM = "PG";
+        /// <summary>Unit Of Measure - Mass - Metric Tonne. Metric unit. Less widely known as a Megagram. Each metric tonne consists of 1000 kilograms</summary>
+        public const string UNIT_MEASURE_MASS_TONNE_METRIC = "T";
+        /// <summary>Unit Of Measure - Mass - Grain. Imperial unit. 7000 grains make up a pound</summary>
+        public const string UNIT_MEASURE_MASS_GRAIN = "GR";
+        /// <summary>Unit Of Measure - Mass - Ounce. Imperial unit. Each once consists of 16 drams</summary>
+        public const string UNIT_MEASURE_MASS_OUNCE = "OZ";
+        /// <summary>Unit Of Measure - Mass - Pound. Imperial unit. Each pound consists of 16 ounces</summary>
+        public const string UNIT_MEASURE_MASS_POUND = "LB";
+        /// <summary>Unit Of Measure - Mass - Stone. Imperial unit. Each stone consists of 14 pounds</summary>
+        public const string UNIT_MEASURE_MASS_STONE = "ST";
+        /// <summary>Unit Of Measure - Mass - Quarter. Imperial unit. Each quarter consists of 28 pounds</summary>
+        public const string UNIT_MEASURE_MASS_QUARTER = "QR";
+        /// <summary>Unit Of Measure - Mass - Hundredweight (Long). Imperial unit. Each long hundredweight consists of 8 stone, 112 pounds</summary>
+        public const string UNIT_MEASURE_MASS_HUNDREDWEIGHT_LONG = "CWTL";
+        /// <summary>Unit Of Measure - Mass - Hundredweight (Short). Imperial unit. Each short hundredweight consists of 100 pounds</summary>
+        public const string UNIT_MEASURE_MASS_HUNDREDWEIGHT_SHORT = "CWTS";
+        /// <summary>Unit Of Measure - Mass - Imperial Ton (Long). Imperial unit. Each long ton consists of 2240 pounds</summary>
+        public const string UNIT_MEASURE_MASS_TON_LONG = "TONL";
+        /// <summary>Unit Of Measure - Mass - Imperial Ton (Short). Imperial unit. Each short ton consists of 2000 pounds</summary>
+        public const string UNIT_MEASURE_MASS_TON_SHORT = "TONS";
+
+        /// <summary>Unit Of Measure - Volume - Cubic Metre. Base unit of volume in the International System of Units (SI).</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_METRE = "M3";
+        /// <summary>Unit Of Measure - Volume - Cubic Centimetre. Metric unit. Each cubic centimetre consists of 1000 cubic millimetres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_CENTIMETRE = "CM3";
+        /// <summary>Unit Of Measure - Volume - Millimetre. Metric unit. Each cubic millimetre consists of 1,000,000,000 cubic micrometres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_MILLIMETRE = "MM3";
+        /// <summary>Unit Of Measure - Volume - Micrometre. Metric unit. Each cubic micrometre consists of 1000,000,000 cubic nanomentres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_MICROMETRE = "UM3";
+        /// <summary>Unit Of Measure - Volume - Nanometre. Metric unit. Each cubic nanometre consists of 1,000,000,000 cubic picometres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_NANOMETRE = "NM3";
+        /// <summary>Unit Of Measure - Volume - Picometre. Metric unit. Each cubic picometre consists of 1,000,000,000 cubic femtometres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_PICOMETRE = "PM3";
+        /// <summary>Unit Of Measure - Volume - Hectometre. Metric unit. Each hectometre consists of 1,000,000 cubic metres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_HECTOMETRE = "HM3";
+        /// <summary>Unit Of Measure - Volume - Kilometre. Metric unit. Each kilometre consists of 1,000,000,000 cubic metres</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_KILOMETRE = "KM3";
+        /// <summary>Unit Of Measure - Volume - Cubic Inch. Imperial unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_INCH = "IN3";
+        /// <summary>Unit Of Measure - Volume - Cubic Foot. Imperial unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_FOOT = "FT3";
+        /// <summary>Unit Of Measure - Volume - Cubic Yard. Imperial unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_YARD = "YD3";
+        /// <summary>Unit Of Measure - Volume - Cubic Mile. Imperial unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_CUBIC_MILE = "MI3";
+        /// <summary>Unit Of Measure - Volume - Measurement tone. Imperial unit. Also known as a shipping ton.</summary>
+        public const string UNIT_MEASURE_VOLUME_MEASUREMENT_TON = "MTON";
+
+        /// <summary>Unit Of Measure - Volume - Litre. Metric liquid unit. Each litre conists of 100 centilitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_LITRE = "L";
+        /// <summary>Unit Of Measure - Volume - Cubic Centilitre. Metric liquid unit. Each cubic centilitre consists of 1000 millilitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_CENTILITRE = "CL";
+        /// <summary>Unit Of Measure - Volume - Millilitre. Metric liquid unit. Each cubic millilitre consists of 1000 microlitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_MILLILITRE = "ML";
+        /// <summary>Unit Of Measure - Volume - Microlitre. Metric liquid unit. Each cubic microlitre consists of 1000 nanolitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_MICROLITRE = "UL";
+        /// <summary>Unit Of Measure - Volume - Nanolitre. Metric liquid unit. Each cubic nanolitre consists of 1000 picolitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_NANOLITRE = "NL";
+        /// <summary>Unit Of Measure - Volume - Picolitre. Metric liquid unit. Each cubic picolitre consists of 1000 femtolitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_PICOLITRE = "PL";
+        /// <summary>Unit Of Measure - Volume - Hectolitre. Metric liquid unit. Each hectolitre consists of 1000 litres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_HECTOLITRE = "HL";
+        /// <summary>Unit Of Measure - Volume - Kilolitre. Metric liquid unit. Each kilolitre consists of 1000 litres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_KILOLITRE = "KL";
+        /// <summary>Unit Of Measure - Volume - Megalitre. Metric liquid unit. Each kilolitre consists of 1000 kilolitres</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_MEGALITRE = "MGL";
+        /// <summary>Unit Of Measure - Volume - Gigalitre. Metric liquid unit. Each gigalitre consists of 1000 gigalitre</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_GIGALITRE = "GL";
+        /// <summary>Unit Of Measure - Volume - Fluid Ounce. Imperial liquid unit. Each fluid ounce consists of 1 imperial ounce</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_IMPERIAL_FLUID_OUNCE = "IMPFLOZ";
+        /// <summary>Unit Of Measure - Volume - Gill. Imperial liquid unit. Each gill consists of 5 imperial ounces</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_IMPERIAL_GILL = "IMPGI";
+        /// <summary>Unit Of Measure - Volume - Pint. Imperial liquid unit. Each pint consists of 20 imperial ounces</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_IMPERIAL_PINT = "IMPPT";
+        /// <summary>Unit Of Measure - Volume - Quart. Imperial liquid unit. Each quart consists of 2 imperial pints</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_IMPERIAL_QUART = "IMPQT";
+        /// <summary>Unit Of Measure - Volume - Gallon. Imperial liquid unit. Each gallon consists of 8 imperial pints</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_IMPERIAL_GALLON = "IMPGAL";
+        /// <summary>Unit Of Measure - Volume - Fluid Ounce. United States liquid unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_US_FLUID_OUNCE = "USFLOZ";
+        /// <summary>Unit Of Measure - Volume - Gill. United States liquid unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_US_GILL = "USGI";
+        /// <summary>Unit Of Measure - Volume - Pint. United States liquid unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_US_PINT = "USPT";
+        /// <summary>Unit Of Measure - Volume - Quart. United States liquid unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_US_QUART = "USQT";
+        /// <summary>Unit Of Measure - Volume - Gallon. United States liquid unit.</summary>
+        public const string UNIT_MEASURE_VOLUME_LIQUID_US_GALLON = "USGAL";
+
     }
 }

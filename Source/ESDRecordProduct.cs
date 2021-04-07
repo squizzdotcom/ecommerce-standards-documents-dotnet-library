@@ -82,6 +82,18 @@ namespace EcommerceStandardsDocuments
         /// <summary>Depth dimension of a single product unit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal depth { get; set; }
+        /// <summary>Code of the product's width measurement to define the unit of measurement. Set it to a constant prefixed with UNIT_MEASURE_LENGTH_ in the ESDocumentConstants class</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string widthUnitMeasureCode { get; set; }
+        /// <summary>Code of the product's height measurement to define the unit of measurement. Set it to a constant prefixed with UNIT_MEASURE_LENGTH_ in the ESDocumentConstants class</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string heightUnitMeasureCode { get; set; }
+        /// <summary>Code of the product's depth measurement to define the unit of measurement. Set it to a constant prefixed with UNIT_MEASURE_LENGTH_ in the ESDocumentConstants class</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string depthUnitMeasureCode { get; set; }
+        /// <summary>Code of the product's weight measurement to define the unit of measurement. Set it to a constant prefixed with UNIT_MEASURE_MASS_ in the ESDocumentConstants class</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string weightUnitMeasureCode { get; set; }
         /// <summary>Monetary value that denotes the average cost to purchase a single product unit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal averageCost { get; set; }

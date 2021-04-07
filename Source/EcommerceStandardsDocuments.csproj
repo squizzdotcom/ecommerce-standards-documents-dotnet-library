@@ -76,6 +76,7 @@
     <Compile Include="ESDocumentSurcharge.cs" />
     <Compile Include="ESDocumentType.cs" />
     <Compile Include="ESDRecordAccountPaymentSurchargeTax.cs" />
+    <Compile Include="ESDRecordCategoryTree.cs" />
     <Compile Include="ESDRecordContact.cs" />
     <Compile Include="ESDRecordCurrencyExchangeRate.cs" />
     <Compile Include="ESDRecordCustomerAccountContract.cs" />

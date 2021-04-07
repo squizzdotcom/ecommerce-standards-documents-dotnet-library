@@ -382,10 +382,10 @@ namespace EcommerceStandardsDocuments
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
         public string isProductsDelivered { get; set; }
-        /// <summary>Code of the unit of measure for the volume</summary>
+        /// <summary>Code of the unit of measure for the volume. Set it to a constant prefixed with UNIT_MEASURE_VOLUME_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string totalVolumeMeasureCode { get; set; }
-        /// <summary>Code of the unit of measure for the weight</summary>
+        /// <summary>Code of the unit of measure for the weight. Set it to a constant prefixed with UNIT_MEASURE_MASS_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string totalWeightMeasureCode { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
@@ -550,8 +550,12 @@ namespace EcommerceStandardsDocuments
             if (paymentReceipt == null){
                 paymentReceipt="";
             }
-            
-            if(instructions == null){
+
+            if (keyPaymentTypeID == null){
+                keyPaymentTypeID = "";
+            }
+
+            if (instructions == null){
                 instructions="";
             }
             

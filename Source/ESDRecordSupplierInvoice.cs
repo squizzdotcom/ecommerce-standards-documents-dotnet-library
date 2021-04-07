@@ -500,11 +500,11 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string isProductsDelivered { get; set; }
 
-        /// <summary>Code of the unit of measure for the volume</summary>
+        /// <summary>Code of the unit of measure for the volume. Set it to a constant prefixed with UNIT_MEASURE_VOLUME_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string totalVolumeMeasureCode { get; set; }
 
-        /// <summary>Code of the unit of measure for the weight</summary>
+        /// <summary>Code of the unit of measure for the weight. Set it to a constant prefixed with UNIT_MEASURE_MASS_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string totalWeightMeasureCode { get; set; }
 
