@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Attribute Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "resultStatus": 1,
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 4,
@@ -52,6 +52,24 @@ namespace EcommerceStandardsDocuments
     ///                 {
     ///                     "keyAttributeID":"PAP002-3",
     ///                     "name":"Texture",
+    ///                     "dataType":"STRING"
+    ///                 }
+    ///             ]
+    ///         },
+    ///         {
+    ///             "keyAttributeProfileID":"BD",
+    ///             "name":"Brand Details",
+    ///             "description":"Details of brands that our company sells",
+    ///             "attributes":
+    ///             [
+    ///                 {
+    ///                     "keyAttributeID":"BRAND-NAME",
+    ///                     "name":"Brand Name",
+    ///                     "dataType":"STRING"
+    ///                 },
+    ///                 {
+    ///                     "keyAttributeID":"BRAND-COUNTRY",
+    ///                     "name":"Brand Country Of Origin",
     ///                     "dataType":"STRING"
     ///                 }
     ///             ]

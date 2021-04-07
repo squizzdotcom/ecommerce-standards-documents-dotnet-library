@@ -110,5 +110,8 @@ namespace EcommerceStandardsDocuments
         /// <summary>list of products stock level records that denote the products assigned to the location, and the quantity of product stock available for each</summary>
         [DataMember(EmitDefaultValue = false)]
         public ESDRecordStockQuantity[] productStock { get; set; }
+        /// <summary> list of attributes and values associated to the location. This allows almost any kind of data to be set against the location in the form of attribute key value pairs</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public List<ESDRecordAttributeValue> attributes { get; set; }
     }
 }

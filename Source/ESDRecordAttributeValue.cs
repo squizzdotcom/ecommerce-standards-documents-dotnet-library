@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2019 Squizz PTY LTD
+/// Copyright (C) Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -25,6 +25,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the labour record that the attribute value is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
+        /// <summary>Key of the location record that the attribute value is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyLocationID { get; set; }
         /// <summary>Key of the attribute profile record that the attribute assigned to the value is set to.</summary>
         [DataMember]
         public string keyAttributeProfileID { get; set; }
