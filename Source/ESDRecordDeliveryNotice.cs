@@ -36,8 +36,16 @@ namespace EcommerceStandardsDocuments
         /// <summary>message that advises of the status of the delivery. The message could contain details specific to status of where the delivery is at</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryStatusMessage { get; set; }
-	
-	    /// <summary>Language that the delivery notice text is written in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
+
+        /// <summary>Key of the customer account record that the delivery notice is associated to. The customer indicates the entity of the goods being delivered for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCustomerAccountID { get; set; }
+
+        /// <summary>Key of the supplier account record that the delivery notice is associated to. The supplier indicates the entity of the goods being delivered from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySupplierAccountID { get; set; }
+
+        /// <summary>Language that the delivery notice text is written in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string language { get; set; }
 
@@ -76,6 +84,10 @@ namespace EcommerceStandardsDocuments
 	    /// <summary>Date that the products were delivered and received by the final receiving entity. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public long receivedDate { get; set; }
+
+        /// <summary>Date that the products were cancelled from being delivered. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long cancelledDate { get; set; }
 
         /// <summary>
         /// Either

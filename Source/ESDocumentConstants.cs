@@ -227,6 +227,10 @@ namespace EcommerceStandardsDocuments
 	    public const string DELIVERY_STATUS_LOST_IN_TRANSIT = "LOST_IN_TRANSIT";
 	    /// <summary>Delivery Status - Damaged In Transit - The ordered goods have been packaged up, and transported, however they were damaged in transit. They may have been been damaged in an accident, by an act of nature, or any other unforseen circumstance.</summary>
 	    public const string DELIVERY_STATUS_DAMAGED_IN_TRANSIT = "DAMAGED_IN_TRANSIT";
+        /// <summary>Delivery Status - Cancelled - The delivery of the ordered goods was cancelled and will no longer be delivered.</summary>
+	    public const string DELIVERY_STATUS_CANCELLED = "CANCELLED";
+        /// <summary>Delivery Status - Awaiting Receiver Pickup - The ordered goods are at a location reading to be picked up by the receiver of the goods.</summary>
+	    public const string DELIVERY_STATUS_AWAITING_RECEIVER_PICKUP = "AWAITING_RECEIVER_PICKUP";
 
         /// <summary>General Ledger Account Type - Asset - a type of general ledger account that represents the different types of economic resources owned or controlled by an entity. Common examples of asset accounts are cash in hand, cash in bank, real estate, inventory, prepaid expenses, goodwill, and accounts receivable.</summary>
         public const string GENERAL_LEDGER_ACCOUNT_TYPE_ASSET = "ASSET";

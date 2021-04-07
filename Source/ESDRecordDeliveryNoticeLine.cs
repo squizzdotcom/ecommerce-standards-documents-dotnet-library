@@ -32,6 +32,14 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keySupplierInvoiceID { get; set; }
 
+        /// <summary>Unique identifier of the sales order within the supplier's system that the delivery is associated with.</summary>
+        [DataMember]
+        public string keySalesOrderID { get; set; }
+
+        /// <summary>Unique identifier of the purchase prder within the customer's system that the delivery is associated with.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyPurchaseOrderID { get; set; }
+
         /// <summary>Code of the invoice that the delivery is associated with. The code is the human known identifier of the invoice that the delivery line is associated to</summary>
         [DataMember(EmitDefaultValue = false)]
         public string invoiceCode { get; set; }
@@ -101,6 +109,16 @@ namespace EcommerceStandardsDocuments
             if (keySupplierInvoiceID == null)
             {
                 keySupplierInvoiceID = "";
+            }
+
+            if (keySalesOrderID == null)
+            {
+                keySalesOrderID = "";
+            }
+
+            if (keyPurchaseOrderID == null)
+            {
+                keyPurchaseOrderID = "";
             }
 
             if (invoiceCode == null)
