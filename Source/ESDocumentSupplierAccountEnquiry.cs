@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2019 Squizz PTY LTD
+/// Copyright (C) Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -18,7 +18,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Supplier Account Enqury Standards document in its JSON serialised form, displaying a list of purchase orders for a supplier account
     /// <code>
     /// {
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "resultStatus": 1,
     ///     "message":"The supplier account enquiry purchase order data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -54,8 +54,8 @@ namespace EcommerceStandardsDocuments
     ///             "referenceType": "INVOICE",
     ///             "referenceNumber": "1234123",
     ///             "supplierReference": "3434343",
-    ///             "purchaseRepCode": "JD",
-    ///             "purchaseRepName": "John Doe",
+    ///             "purchaserCode": "JD",
+    ///             "purchaserName": "John Doe",
     ///             "deliveryContact": "Lee",
     ///             "deliveryOrgName": "Lee's Business Pty Ltd",
     ///             "deliveryAddress1": "22",
@@ -108,7 +108,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account enquiry purchase order detail data has been successfully obtained.",
     ///     "configs":{},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "totalDataRecords": 1,
     ///     "orderPurchaseRecords":
     ///      [

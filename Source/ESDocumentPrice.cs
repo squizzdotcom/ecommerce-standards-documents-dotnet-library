@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2019 Squizz PTY LTD
+/// Copyright (C) Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Product Pricing Ecommerce Standards document in its JSON serialised form, containing product price-level data
     /// <code>
     /// {
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "resultStatus": 1,
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
@@ -68,7 +68,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level quantity break pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,price,quantity"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -110,7 +110,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyAccountID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "totalDataRecords": 4,
     ///     "dataRecords":
     ///      [
@@ -156,7 +156,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product customer account pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceGroupID,keySellUnitID,price,quantity,referenceID,referenceType"},
     ///     "dataTransferMode": "COMPLETE",
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "totalDataRecords": 4,
     ///     "priceGroups":
     ///     {
@@ -197,7 +197,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product price-level pricing data has been successfully obtained.",
     ///     "configs":{"dataFields":"keyProductID,keyPriceLevelID,keySellUnitID,drop"},
     ///     "dataTransferMode": "INCREMENT",
-    ///     "version": 1.3,
+    ///     "version": 1.4,
     ///     "totalDataRecords": 5,
     ///     "dataRecords":
     ///      [

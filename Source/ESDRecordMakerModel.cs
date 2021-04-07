@@ -1,5 +1,5 @@
 ﻿/// <remarks>
-/// Copyright (C) 2019 Squizz PTY LTD
+/// Copyright (C) Squizz PTY LTD
 /// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 /// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 /// You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
@@ -43,7 +43,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Date that the model was created. This date may be considered an internal date only relevant to the maker completing production of the first model. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
         [DataMember(EmitDefaultValue = false)]
         public long createdDate { get; set; }
-        /// <summary> list of attributes and values associated to the model. This allows almost any kind of data to be set against the model in the from of attribute key value pairs</summary>
+        /// <summary> list of attributes and values associated to the model. This allows almost any kind of data to be set against the model in the form of attribute key value pairs</summary>
         [DataMember(EmitDefaultValue = false)]
         public List<ESDRecordAttributeValue> attributes { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
