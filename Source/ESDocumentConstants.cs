@@ -281,8 +281,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>Unit Of Measure - Length - Mile. Imperial unit. Each mile consists of 8 furlongs</summary>
         public const string UNIT_MEASURE_LENGTH_MILE = "MI";
 
-        /// <summary>Unit Of Measure - Mass - Kilogram. Metric unit. Base unit of length in the International System of Units (SI). Consists of 1000 milligrams</summary>
+        /// <summary>Unit Of Measure - Mass - Kilogram. Metric unit. Base unit of length in the International System of Units (SI). Consists of 1000 grams</summary>
         public const string UNIT_MEASURE_MASS_KILOGRAM = "KG";
+        /// <summary>Unit Of Measure - Mass - gram. Metric unit. Each gram consists of 1000 milligrams</summary>
+        public const string UNIT_MEASURE_MASS_GRAM = "G";
         /// <summary>Unit Of Measure - Mass - Milligram. Metric unit. Each milligram consists of 1000 micrograms</summary>
         public const string UNIT_MEASURE_MASS_MILLIGRAM = "MG";
         /// <summary>Unit Of Measure - Mass - Microgram. Metric unit. Each microgram consists of 1000 nanograms</summary>
