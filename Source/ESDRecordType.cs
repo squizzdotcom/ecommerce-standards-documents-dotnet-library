@@ -21,6 +21,7 @@ namespace EcommerceStandardsDocuments
         public const int ATTRIBUTE_PROFILE = 4;
         public const int ATTRIBUTE_VALUE = 5;
         public const int CATEGORY = 6;
+        public const int CATEGORY_TREE = 79;
         public const int COMBINATION_PROFILE = 7;
         public const int COMBINATION_PROFILE_FIELD = 8;
         public const int CONTACT = 9;
