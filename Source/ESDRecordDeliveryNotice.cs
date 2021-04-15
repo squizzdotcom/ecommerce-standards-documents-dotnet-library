@@ -37,13 +37,65 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string deliveryStatusMessage { get; set; }
 
-        /// <summary>Key of the customer account record that the delivery notice is associated to. The customer indicates the entity of the goods being delivered for.</summary>
+        /// <summary>Key identifier of the customer account record that the delivery notice is associated to. The customer indicates the entity of the goods being delivered for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyCustomerAccountID { get; set; }
 
-        /// <summary>Key of the supplier account record that the delivery notice is associated to. The supplier indicates the entity of the goods being delivered from.</summary>
+        /// <summary>Key identifier of the supplier account record that the delivery notice is associated to. The supplier indicates the entity of the goods being delivered from.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keySupplierAccountID { get; set; }
+
+        /// <summary>key identifier of the sales order that the delivery notice is associated to.References the sales order that the goods being delivered were ordered from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySalesOrderID { get; set; }
+
+        /// <summary>Code of the sales order that the delivery notice is associated to. The code is a human known identifier of a sales order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderCode { get; set; }
+
+        /// <summary>Number of the sales order that the delivery notice is associated to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderNumber { get; set; }
+
+        /// <summary>key identifier of the purchase order that the delivery notice is associated to. References the purchase order that the goods being delivered were requested from by the customer.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyPurchaseOrderID { get; set; }
+
+        /// <summary>Code of the purchase order that the delivery notice is associated to. The code is a human known identifier of a purchase order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderCode { get; set; }
+
+        /// <summary>Number of the purchase order that the delivery notice is associated to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderNumber { get; set; }
+
+        /// <summary>key identifier of the customer invoice that the delivery notice is associated to. References the customer invoice that the goods being delivered were confirmed from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCustomerInvoiceID { get; set; }
+
+        /// <summary>Code of the customer invoice that the delivery notice is associated to. The code is a human known identifier of a customer invoice.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerInvoiceCode { get; set; }
+
+        /// <summary>Number of the customer invoice that the delivery notice is associated to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string customerInvoiceNumber { get; set; }
+
+        /// <summary>key identifier of the supplier invoice that the delivery notice is associated to. References the supplier invoice that the goods being delivered were confirmed from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keySupplierInvoiceID { get; set; }
+
+        /// <summary>Code of the supplier invoice that the delivery notice is associated to. The code is a human known identifier of a customer invoice.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierInvoiceCode { get; set; }
+
+        /// <summary>Number of the supplier invoice that the delivery notice is associated to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string supplierInvoiceNumber { get; set; }
+
+        /// <summary>key identifier of the location that the delivery notice is associated to. References the location that the goods being located at.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyLocationID { get; set; }
 
         /// <summary>Language that the delivery notice text is written in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -185,8 +237,88 @@ namespace EcommerceStandardsDocuments
             {
                 deliveryStatusMessage = "";
             }
-		
-		    if (atGeographicLocation== null)
+
+            if (keyCustomerAccountID == null)
+            {
+                keyCustomerAccountID = "";
+            }
+
+            if (keySupplierAccountID == null)
+            {
+                keySupplierAccountID = "";
+            }
+
+            if (keySalesOrderID == null)
+            {
+                keySalesOrderID = "";
+            }
+
+            if (salesOrderCode == null)
+            {
+                salesOrderCode = "";
+            }
+
+            if (salesOrderNumber == null)
+            {
+                salesOrderNumber = "";
+            }
+
+            if (keyPurchaseOrderID == null)
+            {
+                keyPurchaseOrderID = "";
+            }
+
+            if (purchaseOrderCode == null)
+            {
+                purchaseOrderCode = "";
+            }
+
+            if (purchaseOrderNumber == null)
+            {
+                purchaseOrderNumber = "";
+            }
+
+            if (keyCustomerInvoiceID == null)
+            {
+                keyCustomerInvoiceID = "";
+            }
+
+            if (customerInvoiceCode == null)
+            {
+                customerInvoiceCode = "";
+            }
+
+            if (customerInvoiceCode == null)
+            {
+                customerInvoiceCode = "";
+            }
+
+            if (customerInvoiceNumber == null)
+            {
+                customerInvoiceNumber = "";
+            }
+
+            if (keySupplierInvoiceID == null)
+            {
+                keySupplierInvoiceID = "";
+            }
+
+            if (supplierInvoiceCode == null)
+            {
+                supplierInvoiceCode = "";
+            }
+
+            if (supplierInvoiceNumber == null)
+            {
+                supplierInvoiceNumber = "";
+            }
+
+            if (keyLocationID == null)
+            {
+                keyLocationID = "";
+            }
+
+            if (atGeographicLocation== null)
             {
                 atGeographicLocation = ESDocumentConstants.ESD_VALUE_NO;
             }
