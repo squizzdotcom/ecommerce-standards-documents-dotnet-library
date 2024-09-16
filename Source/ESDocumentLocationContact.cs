@@ -14,26 +14,27 @@ using Newtonsoft.Json;
 namespace EcommerceStandardsDocuments
 {
     /// <summary>
-    /// Ecommerce standards document that holds a list of contacts records that are associated to customer accounts. These are the people who are linked to each customer account.
+    /// Ecommerce standards document that holds a list of contacts records that are associated to locations. These are the people who are linked or can be found at the location.
     /// </summary>
     /// <example>
-    /// An example of the Customer Account Contact Ecommerce Standards document in its JSON serialised form
+    /// An example of the Location Contact Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.4,
+    ///     "version": 1.5,
     ///     "resultStatus": 1,
-    ///     "message":"The customer account contact data has been successfully obtained.",
+    ///     "message":"The location contact data has been successfully obtained.",
     ///     "totalDataRecords": 2,
     ///     "dataTransferMode": "COMPLETE",
-    ///     "configs":{"dataFields":"keyContactID,keyCustomerAccountID,contactCode,title,name1,name2,name3,email,phone1,phone2,phone3,fax,website,orgName,orgPosition,isPrimary,authCode"},
+    ///     "configs":{"dataFields":"keyContactID,keyLocationID,contactCode,title,name1,name2,name3,email,phone1,phone2,phone3,fax,website,orgName,orgPosition,isPrimary,allowMarketing,marketingCategoryCodes,authCode"},
     ///     "dataRecords":
     ///      [
     ///         {
-    ///             "keyContactID":"CON1"
+    ///             "keyContactID":"CON1",
+    ///             "keyLocationID":"2"
     ///         },
     ///         {
     ///             "keyContactID":"2",
-    ///             "keyCustomerAccountID":"222",
+    ///             "keyLocationID":"2",
     ///             "contactCode":"JD123",
     ///             "title":"Mr",
     ///             "name1":"John",
@@ -48,7 +49,7 @@ namespace EcommerceStandardsDocuments
     ///             "orgName":"Squizz Pty Ltd",
     ///             "orgPosition":"Service Centre Coordinator",
     ///             "isPrimary":"Y",
-    ///             "allowMarketing":"Y",
+    ///             "allowMarketing": "Y",
     ///             "marketingCategoryCodes": ["VIP","LATEST-NEWS-EVENTS","NEW-SALES"],
     ///             "authCode":"c0nt@ct-X@amp^le-password"
     ///         }
@@ -57,7 +58,7 @@ namespace EcommerceStandardsDocuments
     /// </code>
     /// </example>
     [DataContract]
-    public class ESDocumentCustomerAccountContact : ESDocument
+    public class ESDocumentLocationContact : ESDocument
     {
         /// <summary>List of contact records</summary>
         [JsonProperty(Order = -4)]
@@ -65,13 +66,13 @@ namespace EcommerceStandardsDocuments
         public ESDRecordContact[] dataRecords;
 
         /// <summary>Constructor</summary>
-        /// <param name="resultStatus">status of obtaining the customer account contact record data</param>
+        /// <param name="resultStatus">status of obtaining the location contact record data</param>
         /// <param name="message">message to accompany the result status</param>
         /// <param name="contactRecords">list of contact records</param>
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the contact record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
-        public ESDocumentCustomerAccountContact(int resultStatus, string message, ESDRecordContact[] contactRecords, Dictionary<string, string> configs)
+        public ESDocumentLocationContact(int resultStatus, string message, ESDRecordContact[] contactRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
             this.message = message;

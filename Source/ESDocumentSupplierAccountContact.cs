@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The supplier account contact data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 2,
-    ///     "configs":{"dataFields":"keyContactID,keySupplierAccountID,contactCode,title,name1,name2,name3,email,phone1,phone2,phone3,fax,website,orgName,orgPosition"},
+    ///     "configs":{"dataFields":"keyContactID,keySupplierAccountID,contactCode,title,name1,name2,name3,email,phone1,phone2,phone3,fax,website,orgName,orgPosition,isPrimary,authCode"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -46,14 +46,16 @@ namespace EcommerceStandardsDocuments
     ///             "fax":"+6112341234",
     ///             "website":"www.squizz.com/esd/index.html",
     ///             "orgName":"Squizz Pty Ltd",
-    ///             "orgPosition":"Service Centre Coordinator"
+    ///             "orgPosition":"Service Centre Coordinator",
+    ///             "isPrimary":"Y",
+    ///             "authCode":"exme@authP@55word"
     ///         }
     ///     ]
     /// }
     /// </code>
     /// </example>
     [DataContract]
-    class ESDocumentSupplierAccountContact : ESDocument
+    public class ESDocumentSupplierAccountContact : ESDocument
     {
         /// <summary>List of contact records</summary>
         [JsonProperty(Order = -4)]

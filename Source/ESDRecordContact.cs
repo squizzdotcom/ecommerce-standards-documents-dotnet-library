@@ -28,6 +28,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keySupplierAccountID { get; set; }
 
+        /// <summary>Key of the location record that the contact record is linked to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyLocationID { get; set; }
+
         /// <summary>Code of the contact. May or may not be a unqiue identifier.</summary>
         [DataMember]
         public string contactCode { get; set; }
@@ -79,6 +83,26 @@ namespace EcommerceStandardsDocuments
         /// <summary>Name of the employment position of the contact within the organisation.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string orgPosition { get; set; }
+
+        /// <summary>Either 'N'-No or 
+        /// 'Y'-Yes
+        /// If 'Y' then indicates that the contact is the primary person from a list of contacts.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string isPrimary { get; set; }
+
+        /// <summary>Either 'N'-No or 
+        /// 'Y'-Yes
+        /// If 'Y' then indicates that the contact is allowed to receive marketing media.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string allowMarketing { get; set; }
+
+        /// <summary>codes of marketing categories to assign the contact to, allowing them to receive marketing media for relevant categories of media</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] marketingCategoryCodes { get; set; }
+
+        /// <summary>Code used to authenticate or provide authentication for the contact.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string authCode { get; set; }
 
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
