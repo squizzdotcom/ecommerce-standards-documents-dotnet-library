@@ -6,13 +6,13 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <license>https://github.com/squizzdotcom/ecommerce-standards-documents-dotnet-library/blob/master/LICENSE</license>
+    <licenseUrl>https://github.com/squizzdotcom/ecommerce-standards-documents-dotnet-library/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/squizzdotcom/ecommerce-standards-documents-dotnet-library</projectUrl>
-    <icon>https://www.squizz.com/ui/resources/images/icons/squizz_icon_32.jpg</icon>
+    <iconUrl>https://www.squizz.com/ui/resources/images/icons/squizz_icon_32.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Release of version 1.4 of the Ecommerce Standards Documents. Documentation of the library can be found at https://www.squizz.com/esd/index.html</releaseNotes>
+    <releaseNotes>Release of version 1.5 of the Ecommerce Standards Documents. Documentation of the library can be found at https://www.squizz.com/esd/index.html</releaseNotes>
     <copyright>Copyright Squizz Pty Ltd</copyright>
-    <tags>Ecommerce Standards Documents Electronic Data Interchange EDI Online Ordering Trading Transfer Squizz</tags>
+    <tags>Ecommerce Standards Documents Electronic Data Interchange EDI Online Ordering Trading Transfer SQUIZZ Connected Commerce</tags>
   </metadata>
 </package>

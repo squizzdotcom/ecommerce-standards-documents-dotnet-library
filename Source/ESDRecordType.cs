@@ -16,6 +16,7 @@ namespace EcommerceStandardsDocuments
     public class ESDRecordType
     {
         public const int ALTERNATE_CODE = 1;
+        public const int ASSET = 80;
         public const int ATTACHMENT = 2;
         public const int ATTRIBUTE = 3;
         public const int ATTRIBUTE_PROFILE = 4;

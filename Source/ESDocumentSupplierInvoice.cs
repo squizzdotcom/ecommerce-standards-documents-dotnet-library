@@ -26,7 +26,7 @@ namespace EcommerceStandardsDocuments
     /// 		
     /// 	},
     /// 	"dataTransferMode": "COMPLETE",
-    /// 	"version": 1.4,
+    /// 	"version": 1.5,
     /// 	"totalDataRecords": 2,
     /// 	"dataRecords": [{
     /// 		"keySupplierInvoiceID": "123"

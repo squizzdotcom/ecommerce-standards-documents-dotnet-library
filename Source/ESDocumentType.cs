@@ -16,12 +16,15 @@ namespace EcommerceStandardsDocuments
     public class ESDocumentType
     {
         public const int ALTERNATE_CODE = 9;
+        public const int ASSET = 50;
+        public const int ASSET_COMPONENT = 51;
         public const int ATTACHMENT = 13;
         public const int ATTRIBUTE = 11;
         public const int CATEGORY = 8;
         public const int CURRENCY_EXCHANGE_RATE = 43;
         public const int CUSTOMER_ACCOUNT = 17;
         public const int CUSTOMER_ACCOUNT_ADDRESS = 20;
+        public const int CUSTOMER_ACCOUNT_CONTACT = 47;
         public const int CUSTOMER_ACCOUNT_CONTRACT = 19;
         public const int CUSTOMER_ACCOUNT_ENQUIRY = 29;
         public const int CUSTOMER_ACCOUNT_ENQUIRY_LINE = 30;
@@ -31,12 +34,17 @@ namespace EcommerceStandardsDocuments
         public const int DELIVERY_NOTICE = 42;
         public const int DOWNLOAD = 33;
         public const int FLAG = 21;
+        public const int GENERAL_LEDGER_ACCOUNT = 43;
         public const int IMAGE = 12;
         public const int ITEM_GROUP = 34;
         public const int ITEM_RELATION = 14;
         public const int KIT = 22;
         public const int LABOUR = 35;
         public const int LOCATION = 23;
+        public const int LOCATION_CONTACT = 49;
+        public const int MAKER = 44;
+        public const int MAKER_MODEL = 45;
+        public const int MAKER_MODEL_MAPPING = 46;
         public const int ORDER_PURCHASE = 24;
         public const int ORDER_SALE = 36;
         public const int PAYMENT_TYPE = 27;
@@ -50,6 +58,7 @@ namespace EcommerceStandardsDocuments
         public const int STOCK_QUANTITY = 10;
         public const int SUPPLIER_ACCOUNT = 18;
         public const int SUPPLIER_ACCOUNT_ADDRESS = 38;
+        public const int SUPPLIER_ACCOUNT_CONTACT = 48;
         public const int SUPPLIER_ACCOUNT_ENQUIRY = 39;
         public const int SUPPLIER_INVOICE = 40;
         public const int SURCHARGE = 26;

@@ -72,7 +72,7 @@ namespace EcommerceStandardsDocuments
         public const int ESD_RECORD_OPERATION_IGNORE = 4;
 
         /// <summary>Contains the version that the Ecommerce Standards Documents library is currently at.</summary>
-        public const decimal ESD_DOCUMENT_VERSION = (decimal)1.4;
+        public const decimal ESD_DOCUMENT_VERSION = (decimal)1.5;
 
         /// <summary>Denotes that the location is a warehouse</summary>
         public const string LOCATION_TYPE_WAREHOUSE = "WAREHOUSE";

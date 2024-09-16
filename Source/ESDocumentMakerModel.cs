@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
     /// An example of the Maker Model Ecommerce Standards document in its JSON serialised form
     /// <code>
     /// {
-    ///     "version": 1.4,
+    ///     "version": 1.5,
     ///     "resultStatus": 1,
     ///     "message":"The model data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
