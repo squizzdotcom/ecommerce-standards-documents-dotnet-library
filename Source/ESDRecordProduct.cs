@@ -52,6 +52,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Fourth description of the product. May contain any text used to describe the product.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string description4 { get; set; }
+        /// <summary>Meta title of the product. This would typically be used in the meta data of a web page or user interface that may be hidden from being viewed, but contains a label of the product that systems could utilise or be displayed in an application's header. The data in this field is typically targeted for online search engines.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string metaTitle { get; set; }
+        /// <summary>A list of words that describe the product. This would typically be used in the meta data of a web page or user interface that may be hidden from being viewed, but contains a space delimited list of keywords used by systems to index and allow for searching on the product. The data in this field is typically targeted for online search engines.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string metaKeywords { get; set; }
+        /// <summary>Meta description the product. This would typically be used in the meta data of a web page or user interface that may be hidden from being viewed, but contains a paragraph of text describing the details of a product that may be used to index, or display in search listings. The data in this field is typically targeted for online search engines.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string metaDescription { get; set; }
         /// <summary>Class of the product. A class may contain any text that can be set for multiple products as a classifier of the type of product.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string productClass { get; set; }
@@ -109,15 +118,18 @@ namespace EcommerceStandardsDocuments
         /// <summary>Label of the amount of time that it would typically take for the product to be delivered when it is in stock</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryTimeInStock { get; set; }
-        /// <summary>The amount of product units that are in stock and available for purchase.</summary>
+        /// <summary>The amount of base product units that are in stock and available for purchase.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal stockQuantity { get; set; }
-        /// <summary>The amount of product units that indicate when the product is no longer in stock.</summary>
+        /// <summary>The amount of base product units that indicate when the product is no longer in stock.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal stockNoneQuantity { get; set; }
-        /// <summary>The amount of product units that indicate when the product is low in stock.</summary>
+        /// <summary>The amount of base product units that indicate when the product is low in stock.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal stockLowQuantity { get; set; }
+        /// <summary>Date time that indicates when the product's stock units has been available or in-stock since. If the product currently has no stock available then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockAvailableSinceDate { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
         /// If 'Y' then indicates that any pricing set for the product is inclusive of tax applied to the price, based the rate of taxcode assigned to the product.</summary>

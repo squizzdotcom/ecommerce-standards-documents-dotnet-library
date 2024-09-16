@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 2,
-    ///     "configs":{"dataFields":"keyProductID,productCode,keyTaxcodeID,productSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,productClass,keySellUnitID,unit,weight,width,height,depth,averageCost,warehouse,supplier,deliveryTimeNoStock,deliveryTimeInStock,stockQuantity,stockNoneQuantity,stockLowQuantity,stockLowQuantity,isPriceTaxInclusive,isKitted,kitProductsSetPrice"},
+    ///     "configs":{"dataFields":"keyProductID,productCode,keyTaxcodeID,productSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,metaTitle,metaDescription,metaKeywords,productClass,keySellUnitID,unit,weight,width,height,depth,averageCost,warehouse,supplier,deliveryTimeNoStock,deliveryTimeInStock,stockQuantity,stockNoneQuantity,stockLowQuantity,stockLowQuantity,stockAvailableSinceDate,isPriceTaxInclusive,isKitted,kitProductsSetPrice"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -46,6 +46,9 @@ namespace EcommerceStandardsDocuments
     ///             "description2":"Paper built strong and tough by Swisho",
     ///             "description3":"Recommended to be used with dark inks.",
     ///             "description4":"",
+    ///             "metaTitle":"Swisho green coloured paper",
+    ///             "metaDescription":"Swisho green coloured paper is the ultimate green paper that stands out above the rest.",
+    ///             "metaKeywords":"Swisho green coloured paper ultimate stationery printing environment nature",
     ///             "productClass":"paper",
     ///             "unit":"REAM",
     ///             "weight": 20.1,
@@ -64,6 +67,7 @@ namespace EcommerceStandardsDocuments
     ///             "stockQuantity": 200,
     ///             "stockNoneQuantity": 0,
     ///             "stockLowQuantity": 10,
+    ///             "stockAvailableSinceDate": 1726503215904,
     ///             "isPriceTaxInclusive": "N",
     ///             "isKitted":"N",
     ///             "kitProductsSetPrice":"N",
