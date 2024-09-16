@@ -19,15 +19,21 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the product record that the alternate code is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
-        /// <summary>Key of the download record that the alternate code is assigned to.</summary>
+        /// <summary>Deprecated, use keyAssetID instead. Key of the download record that the alternate code is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
+        /// <summary>Key of the asset record that the alternate code is assigned to.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
         /// <summary>Key of the labour record that the alternate code is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
         /// <summary>Alternate code. May or may not be a unique identifier</summary>
         [DataMember]
         public string alternateCode { get; set; }
+        /// <summary>Indicates what type of code the alternate code is. see ALTERNATE_CODE_TYPE constants in the ESDocumentConstants class that contains type of code that can be set</summary>
+        [DataMember]
+        public string codeType { get; set; }
         /// <summary>Either 'N'-No or 
         /// 'Y'-Yes
         /// If 'Y' then indicates that the alternate code may be used to directly link to the product, download, or labour.</summary>

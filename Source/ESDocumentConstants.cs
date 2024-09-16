@@ -20,7 +20,7 @@ namespace EcommerceStandardsDocuments
         public const int RESULT_SUCCESS = 1;
         /// <summary>result status denoting that an error occurred when trying to obtain/process data</summary>
         public const int RESULT_ERROR = 2;
-        /// <summary>result status denoting that an unknown error occurred when trying to obtain/process data</summary>
+        /// <summary>result status denoting that an unknown or unspecified type of error occurred when trying to obtain/process data</summary>
         public const int RESULT_ERROR_UNKNOWN = 3;
         /// <summary>result status denoting that an error occurred when a connection could not be made to a data source to obtain/process data</summary>
         public const int RESULT_ERROR_DATA_SOURCE_CONNECTION_MISSING = 4;
@@ -144,8 +144,10 @@ namespace EcommerceStandardsDocuments
 
         /// <summary>Payment method - UNPAID - No payment was received as yet</summary>
         public const string PAYMENT_METHOD_UNPAID = "UNPAID";
-        /// <summary>Payment method - CREDIT - A payment was made with a credit card</summary>
+        /// <summary>Deprecated. Payment method - CREDIT - A payment was made with a credit card. Use PAYMENT_METHOD_CREDITCARD variable instead.</summary>
         public const string PAYMENT_METHOD_CREDIT = "CREDITCARD";
+        /// <summary>Payment method - CREDITCARD - A payment was made with a credit card</summary>
+        public const string PAYMENT_METHOD_CREDITCARD = "CREDITCARD";
         /// <summary>Payment method - COD - Payment will be made with cash when the goods are delivered to the delivery location</summary>
         public const string PAYMENT_METHOD_CASHONDELIVERY = "COD";
         /// <summary>Payment method - DIRECTDEPOSIT - Payment has been made with a direct bank transfer</summary>
@@ -285,7 +287,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Unit Of Measure - Length - Mile. Imperial unit. Each mile consists of 8 furlongs</summary>
         public const string UNIT_MEASURE_LENGTH_MILE = "MI";
 
-        /// <summary>Unit Of Measure - Mass - Kilogram. Metric unit. Base unit of length in the International System of Units (SI). Consists of 1000 grams</summary>
+        /// <summary>Unit Of Measure - Mass - Kilogram. Metric unit. Base unit of mass in the International System of Units (SI). Consists of 1000 grams</summary>
         public const string UNIT_MEASURE_MASS_KILOGRAM = "KG";
         /// <summary>Unit Of Measure - Mass - gram. Metric unit. Each gram consists of 1000 milligrams</summary>
         public const string UNIT_MEASURE_MASS_GRAM = "G";
@@ -305,7 +307,7 @@ namespace EcommerceStandardsDocuments
         public const string UNIT_MEASURE_MASS_GIGATONNE = "GT";
         /// <summary>Unit Of Measure - Mass - Grain. Imperial unit. 7000 grains make up a pound</summary>
         public const string UNIT_MEASURE_MASS_GRAIN = "GR";
-        /// <summary>Unit Of Measure - Mass - Ounce. Imperial unit. Each once consists of 16 drams</summary>
+        /// <summary>Unit Of Measure - Mass - Ounce. Imperial unit. Each ounce consists of 16 drams</summary>
         public const string UNIT_MEASURE_MASS_OUNCE = "OZ";
         /// <summary>Unit Of Measure - Mass - Pound. Imperial unit. Each pound consists of 16 ounces</summary>
         public const string UNIT_MEASURE_MASS_POUND = "LB";
@@ -390,5 +392,38 @@ namespace EcommerceStandardsDocuments
         /// <summary>Unit Of Measure - Volume - Gallon. United States liquid unit.</summary>
         public const string UNIT_MEASURE_VOLUME_LIQUID_US_GALLON = "USGAL";
 
+
+        /// <summary>Alternate Code Type - GTIN-14 - Global Trade Item Number 14 digits long, may also be known as a barcode in the EAN/UCC-14, SCC-14, DUN-14,[3] UPC Case Code, UPC Shipping Container Code standards</summary>
+        public const string ALTERNATE_CODE_TYPE_GTIN_14 = "GTIN_14";
+        /// <summary>Alternate Code Type - GTIN-13 - Global Trade Item Number 13 digits long, may also be known as a barcode in the EAN, EAN·UCC-13, JAN standards</summary>
+        public const string ALTERNATE_CODE_TYPE_GTIN_13 = "GTIN_13";
+        /// <summary>Alternate Code Type - GTIN-12 - Global Trade Item Number 12 digits long, may also be known as a barcode in the EAN·UCC-12, UCC-12 standards</summary>
+        public const string ALTERNATE_CODE_TYPE_GTIN_12 = "GTIN_12";
+        /// <summary>Alternate Code Type - GTIN-8 - Global Trade Item Number 8 digits long, may also be known as a barcode in the  EAN/UCC-8 standards</summary>
+        public const string ALTERNATE_CODE_TYPE_GTIN_8 = "GTIN_8";
+        /// <summary>Alternate Code Type - GS1-128 - GS1-128 barcode standard up to 48 characters long</summary>
+        public const string ALTERNATE_CODE_TYPE_GS1_128 = "GS1_128";
+        /// <summary>Alternate Code Type - MPM - Manufacturer Part Number</summary>
+        public const string ALTERNATE_CODE_TYPE_MPN = "MPN";
+        /// <summary>Alternate Code Type - UPC-A - Universal Product Code - version A - 12 digit barcode</summary>
+        public const string ALTERNATE_CODE_TYPE_UPC_A = "UPC_A";
+        /// <summary>Alternate Code Type - UPC-E - Universal Product Code - version E - 8 digit barcode</summary>
+        public const string ALTERNATE_CODE_TYPE_UPC_E = "UPC_E";
+        /// <summary>Alternate Code Type - ISBN - International Standard Book Number, a 9, 10 (ISO 2108) or 14 digit code issued by the International ISBN Agency</summary>
+        public const string ALTERNATE_CODE_TYPE_ISBN = "ISBN";
+        /// <summary>Alternate Code Type - ISMN - International Standard Music Number, 13 digit number defined by the ISO 10957 standard</summary>
+        public const string ALTERNATE_CODE_TYPE_ISMN = "ISMN";
+        /// <summary>Alternate Code Type - EAN-13 - Europlean Artical Number, 13 digit number derived by GS1</summary>
+        public const string ALTERNATE_CODE_TYPE_EAN_13 = "EAN_13";
+        /// <summary>Alternate Code Type - EAN-8 - Europlean Artical Number, 8 digit number derived by GS1</summary>
+        public const string ALTERNATE_CODE_TYPE_EAN_8 = "EAN_8";
+        /// <summary>Alternate Code Type - EAN-5 - Europlean Artical Number, 5 digit number derived by GS1</summary>
+        public const string ALTERNATE_CODE_TYPE_EAN_5 = "EAN_5";
+        /// <summary>Alternate Code Type - EAN-2 - Europlean Artical Number, 2 digit number derived by GS1</summary>
+        public const string ALTERNATE_CODE_TYPE_EAN_2 = "EAN_2";
+        /// <summary>Alternate Code Type - SUPC - Supplier Product Code - code of a supplier's product</summary>
+        public const string ALTERNATE_CODE_SUPPLIER_PRODUCT_CDOE = "SUPC";
+        /// <summary>Alternate Code Type - CUPC - Customer Product Code - code of a customer's product</summary>
+        public const string ALTERNATE_CODE_CUSTOMER_PRODUCT_CDOE = "CUPC";
     }
 }

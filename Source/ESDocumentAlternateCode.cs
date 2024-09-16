@@ -34,10 +34,16 @@ namespace EcommerceStandardsDocuments
     ///         },
     ///         {
     ///             "keyProductID":"123A",
+    ///             "alternateCode":"978-3-16-148410-0",
+    ///             "codeType":"ISBN"
+    ///         },
+    ///         {
+    ///             "keyProductID":"123A",
     ///             "alternateCode":"SWISH-1234",
     ///             "isUseCode":"N",
     ///             "isSupplierCode":"Y",
-    ///             "keySupplierAccountID":"SUP2"
+    ///             "keySupplierAccountID":"SUP2",
+    ///             "codeType":"SUPC"
     ///         },
     ///         {
     ///             "keyProductID":"1234",
@@ -45,6 +51,11 @@ namespace EcommerceStandardsDocuments
     ///             "isUseCode":"Y",
     ///             "isSupplierCode":"N",
     ///             "keyCustomerAccountID":"222"
+    ///         },
+    ///         {
+    ///             "keyProductID":"246",
+    ///             "alternateCode":"10012345678902",
+    ///             "codeType":"GTIN_14"
     ///         }
     ///     ]
     /// }
