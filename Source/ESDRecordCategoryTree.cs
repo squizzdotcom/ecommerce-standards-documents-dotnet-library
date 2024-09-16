@@ -36,6 +36,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public int ordering { get; set; }
 
+        /// <summary>Either 'N'-No or 'Y'-Yes. If 'Y' then indicates that the category tree is used for navigation of maker/model data, and grouping of products assigned to each model through the tree's catgories.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string isMakerModelCategoryTree { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]

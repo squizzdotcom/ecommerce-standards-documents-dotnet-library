@@ -26,7 +26,7 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 3,
     ///     "configs":{
-    ///         "dataFieldsCategoryTree":"keyCategoryTreeID,categoryTreeCode,name,description,ordering",
+    ///         "dataFieldsCategoryTree":"keyCategoryTreeID,categoryTreeCode,name,description,ordering,isMakerModelCategoryTree",
     ///         "dataFields":"keyCategoryID,categoryCode,keyCategoryParentID,name,description1,description2,description3,description4,metaTitle,metaKeywords,metaDescription,ordering"
     ///     },
     ///     "categoryTreeRecords":
@@ -40,7 +40,16 @@ namespace EcommerceStandardsDocuments
     ///             "categoryTreeCode":"BRANDS",
     ///             "name":"Product Brands",
     ///             "description":"View all the brands of products we sell.",
-    ///             "ordering":2
+    ///             "ordering":2,
+    ///             "isMakerModelCategoryTree": "N"
+    ///         },
+    ///         {
+    ///             "keyCategoryTreeID":"3-MAKE-MODEL",
+    ///             "categoryTreeCode":"MAKEMODEL",
+    ///             "name":"Make Model",
+    ///             "description":"Contains categories that allow products belonging to each model of a maker/manufacturer to be assigned to.",
+    ///             "ordering":3,
+    ///             "isMakerModelCategoryTree": "Y"
     ///         }
     ///     ],
     ///     "dataRecords":
@@ -148,6 +157,7 @@ namespace EcommerceStandardsDocuments
         /// <param name="configs">A list of key value pairs that contain additional information about the document.
         /// Ensure that a key "dataFields" exists that contains a comma delimited list of the category record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
         /// </param>
+        [JsonConstructor]
         public ESDocumentCategory(int resultStatus, string message, ESDRecordCategoryTree[] categoryTreeRecords, ESDRecordCategory[] categoryRecords, Dictionary<string, string> configs)
         {
             this.resultStatus = resultStatus;
