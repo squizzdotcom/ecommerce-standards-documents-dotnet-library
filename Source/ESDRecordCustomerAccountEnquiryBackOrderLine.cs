@@ -46,9 +46,12 @@ namespace EcommerceStandardsDocuments
         /// <summary>Quantity delivered for the line.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal quantityDelivered { get; set; }
-        /// <summary>Quantity back ordered for the line.</summary>
+        /// <summary>Quantity back ordered for the line. This indicates that amount in the line back have been placed onto another back order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal quantityBackordered { get; set; }
+        /// <summary>Quantity available to fullfill on the quantity ordered line. This may be used to calculate a percentage of the line ordered in the line that is now available since the back order was first raised.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal quantityAvailable { get; set; }
         /// <summary>monetary price for a single unit excluding tax amount.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal priceExTax { get; set; }

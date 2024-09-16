@@ -99,6 +99,7 @@ namespace EcommerceStandardsDocuments
     /// 		"deliveryCountryName": "Australia",
     /// 		"deliveryCountryCodeISO2": "AU",
     /// 		"deliveryCountryCodeISO3": "AUS",
+    /// 		"deliveryPurchaseOrderCode": "PO-34342-1",
     /// 		"billingDescription": "Head Office",
     /// 		"billingContact": "Mary Smith",
     /// 		"billingOrgName": "Imports Organisation",

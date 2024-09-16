@@ -266,6 +266,10 @@ namespace EcommerceStandardsDocuments
 		[DataMember(EmitDefaultValue = false)]
         public string deliveryCountryCodeISO3 { get; set; }
 
+        /// <summary>Code of the purchase order to include in the delivery information, that is contains the code of the purchase order relevant to the delivery receiver</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryPurchaseOrderCode { get; set; }
+
         /// <summary>Description of the address associated with the billing of the invoice.</summary>
 		[DataMember(EmitDefaultValue = false)]
         public string billingDescription { get; set; }
@@ -861,7 +865,12 @@ namespace EcommerceStandardsDocuments
             {
                 deliveryCountryCodeISO3 = "";
             }
-         
+
+            if (deliveryPurchaseOrderCode == null)
+            {
+                deliveryPurchaseOrderCode = "";
+            }
+
             if (billingDescription == null)
             {
                 billingDescription = "";

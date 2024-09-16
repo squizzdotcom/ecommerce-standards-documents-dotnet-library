@@ -38,6 +38,7 @@ namespace EcommerceStandardsDocuments
     /// 		"deliveryStatusMessage": "The ordered goods have left the warehouse and are in transit.",
     /// 		"keyCustomerAccountID": "222",
     /// 		"keySupplierAccountID": "",
+    /// 		"deliveryPurchaseOrderCode": "PO-34342-1",
     /// 		"language": "EN_AU",
     /// 		"packedDate": 1448130083084,
     /// 		"loadedDate": 1449131083084,

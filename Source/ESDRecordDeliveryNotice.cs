@@ -97,6 +97,10 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
 
+        /// <summary>Code of the purchase order to include in the delivery information, that is contains the code of the purchase order relevant to the delivery receiver</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryPurchaseOrderCode { get; set; }
+
         /// <summary>Language that the delivery notice text is written in. Set it to a constant prefixed with LANG_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string language { get; set; }
@@ -316,6 +320,11 @@ namespace EcommerceStandardsDocuments
             if (keyLocationID == null)
             {
                 keyLocationID = "";
+            }
+
+            if (deliveryPurchaseOrderCode == null)
+            {
+                deliveryPurchaseOrderCode = "";
             }
 
             if (atGeographicLocation== null)

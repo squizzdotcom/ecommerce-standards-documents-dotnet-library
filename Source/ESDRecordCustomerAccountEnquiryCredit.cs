@@ -100,6 +100,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Post code at the delivery address.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string deliveryPostcode { get; set; }
+        /// <summary>Code of the purchase order to include in the delivery information, that is contains the code of the purchase order relevant to the delivery receiver</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string deliveryPurchaseOrderCode { get; set; }
         /// <summary>Name of the contact person at the address associated with the billing of the credit.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string billingContact { get; set; }
