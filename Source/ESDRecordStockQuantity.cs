@@ -25,27 +25,45 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the labour record that the stock level quantity is set for</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
-        /// <summary>Unit quantity of stock available to be purchased</summary>
+        /// <summary>Base unit quantity of stock available to be purchased</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyAvailable { get; set; }
-        /// <summary>Unit quantity of stock on hand at its location</summary>
+        /// <summary>Base unit quantity of stock on hand at its location(s)</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyOnHand { get; set; }
-        /// <summary>Unit quantity of stock that has been ordered by a purchaser</summary>
+        /// <summary>Base unit quantity of stock that has been ordered by purchaser(s)</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyOrdered { get; set; }
-        /// <summary>Unit quantity of stock that is the maximum amount that can be ordered by a purchaser</summary>
+        /// <summary>Base unit quantity of stock that is the maximum amount that can be ordered by purchaser(s)</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyOrderable { get; set; }
-        /// <summary>Unit quantity of stock that has been back ordered from a supplier</summary>
+        /// <summary>Base unit quantity of stock that has been back ordered from supplier(s)</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyBackordered { get; set; }
-        /// <summary>Unit quantity of stock that has been reserved for given purchasers</summary>
+        /// <summary>Base unit quantity of stock that has been reserved for given purchasers</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyReserved { get; set; }
-        /// <summary>Unit quantity of stock that has been placed at an external location (consigned)</summary>
+        /// <summary>Base unit quantity of stock that has been placed at an external location (consigned)</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal qtyConsigned { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been available or in-stock since. If the product currently has no stock available then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockAvailableSinceDate { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been on hand at its location since. If the product currently has no stock on hand then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockOnHandSinceDate { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been on order by purchaser(s) since. If the product currently has no stock on order then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockOrderedSinceDate { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been on back order from supplier(s). If the product currently has no stock on back order then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockBackorderedSinceDate { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been reserved by purchaser(s). If the product currently has no stock reserved then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockReservedSinceDate { get; set; }
+        /// <summary>Date time that indicates when the product's stock has been on consignment for. If the product currently has no stock consigned then ignore setting. Date is in the form of a number in milliseconds since the 01-01-1970 12:00am Epoch in UTC time-zone</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public long stockConsignedSinceDate { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
