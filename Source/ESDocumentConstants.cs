@@ -106,7 +106,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>Order Line Type - Product</summary>
         public const string ORDER_LINE_TYPE_PRODUCT = "PRODUCT";
         /// <summary>Order Line Type - Download</summary>
+        [Obsolete("ORDER_LINE_TYPE_DOWNLOAD is deprecated, please use ORDER_LINE_TYPE_ASSET instead.")]
         public const string ORDER_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
+        /// <summary>Order Line Type - Asset</summary>
+        public const string ORDER_LINE_TYPE_ASSET = "ASSET";
         /// <summary>Order Line Type - Labour</summary>
         public const string ORDER_LINE_TYPE_LABOUR = "LABOUR";
 
@@ -115,7 +118,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>Invoice Line Type - Product - indicates that a physical or non-physical product has been sold or purchased within an invoice line.</summary>
         public const string INVOICE_LINE_TYPE_PRODUCT = "PRODUCT";
         /// <summary>Invoice Line Type - Download - indicates that a digital file or asset has been sold or purchased within an invoice line.</summary>
+        [Obsolete("INVOICE_LINE_TYPE_DOWNLOAD is deprecated, please use INVOICE_LINE_TYPE_ASSET instead.")]
         public const string INVOICE_LINE_TYPE_DOWNLOAD = "DOWNLOAD";
+        /// <summary>Invoice Line Type - Asset - indicates that a asset has been sold or purchased within an invoice line.</summary>
+        public const string INVOICE_LINE_TYPE_ASSET = "ASSET";
         /// <summary>Invoice Line Type - Labour - indicates that labour or work effort has been sold or purchased within in an invoice line.</summary>
         public const string INVOICE_LINE_TYPE_LABOUR = "LABOUR";
         /// <summary>Invoice Line Type - Miscellaneous - indicates that a non-specified sale or purchase has been made within an invoice line. Use this if no product/download/labour has been sold or purchased.</summary>

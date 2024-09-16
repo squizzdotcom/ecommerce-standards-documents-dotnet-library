@@ -19,7 +19,8 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the product record that the attribute value is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
-        /// <summary>Key of the download record that the attribute value is set for.</summary>
+        /// <summary>Deprecated, use keyAssetID instead. Key of the download record that the attribute value is set for.</summary>
+        [Obsolete("keyDownloadID is deprecated, please use keyAssetID instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Key of the labour record that the attribute value is set for.</summary>
@@ -28,6 +29,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the location record that the attribute value is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLocationID { get; set; }
+        /// <summary>Key of the asset record that the attribute value is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
         /// <summary>Key of the attribute profile record that the attribute assigned to the value is set to.</summary>
         [DataMember]
         public string keyAttributeProfileID { get; set; }

@@ -208,22 +208,44 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string weightUnitMeasureCode { get; set; }
 
-        // download fields
+        // deprecated download fields, use assets data fields instead, since a download is a digital kind of asset
         /// <summary>Key of the download record associated to the line. Only relevent when the lineType has been set to download</summary>
+        [Obsolete("keyDownloadID is deprecated, please use keyAssetID instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Code the download in the line.</summary>
+        [Obsolete("downloadCode is deprecated, please use assetName instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string downloadCode { get; set; }
         /// <summary>name the download in the line.</summary>
+        [Obsolete("downloadName is deprecated, please use assetCode instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string downloadName { get; set; }
         /// <summary>description the download in the line.</summary>
+        [Obsolete("downloadDescription is deprecated, please use assetDescription instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string downloadDescription { get; set; }
         /// <summary>code of the download in the purchase order associated to the sales order</summary>
+        [Obsolete("salesOrderDownloadCode is deprecated, please use salesOrderAssetCode instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string salesOrderDownloadCode { get; set; }
+
+        // asset fields
+        /// <summary>Key of the asset record associated to the line. Only relevent when the lineType has been set to asset</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
+        /// <summary>Code the asset in the line.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string assetCode { get; set; }
+        /// <summary>name the asset in the line.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string assetName { get; set; }
+        /// <summary>description the asset in the line.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string assetDescription { get; set; }
+        /// <summary>code of the asset in the purchase order associated to the sales order</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string salesOrderAssetCode { get; set; }
 
         // labour fields
         /// <summary>Key of the labour record associated to the line. Only relevent when the lineType has been set to labour</summary>
@@ -426,6 +448,26 @@ namespace EcommerceStandardsDocuments
 
             if (salesOrderDownloadCode == null){
                 salesOrderDownloadCode = "";
+            }
+
+            if (assetCode == null){
+                assetCode = "";
+            }
+
+            if (keyAssetID == null){
+                keyAssetID = "";
+            }
+
+            if (assetName == null){
+                assetName = "";
+            }
+
+            if (assetDescription == null){
+                assetDescription = "";
+            }
+
+            if (salesOrderAssetCode == null){
+                salesOrderAssetCode = "";
             }
 
             if (labourCode == null){

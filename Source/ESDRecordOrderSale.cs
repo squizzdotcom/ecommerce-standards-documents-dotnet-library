@@ -864,6 +864,12 @@ namespace EcommerceStandardsDocuments
                     recordLine.description = lines[i].downloadDescription;
                     recordLine.referenceLineItemCode = lines[i].purchaseOrderDownloadCode;
                 }
+                if (lines[i].lineType.ToUpper() == ESDocumentConstants.ORDER_LINE_TYPE_ASSET.ToUpper())
+                {
+                    recordLine.lineItemCode = lines[i].assetCode;
+                    recordLine.description = lines[i].assetDescription;
+                    recordLine.referenceLineItemCode = lines[i].purchaseOrderAssetCode;
+                }
                 else if (lines[i].lineType.ToUpper() == ESDocumentConstants.ORDER_LINE_TYPE_LABOUR.ToUpper())
                 {
                     recordLine.lineItemCode = lines[i].labourCode;

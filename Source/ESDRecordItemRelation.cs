@@ -20,17 +20,24 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
         /// <summary>Key of the download record</summary>
+        [Obsolete("keyDownloadID is deprecated, please use keyAssetID instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Key of the labour record</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
+        /// <summary>Key of the asset record</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
         /// <summary>Key of the product record that is related</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyRelatedProductID { get; set; }
         /// <summary>Key of the download record that is related</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyRelatedDownloadID { get; set; }
+        /// <summary>Key of the asset record that is related</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyRelatedAssetID { get; set; }
         /// <summary>Key of the labour record that is related</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyRelatedLabourID { get; set; }

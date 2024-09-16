@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the product record that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
-        /// <summary>Key of the download record that the image is set for.</summary>
+        /// <summary>Deprecated, use keyAssetID instead. Key of the download record that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
         /// <summary>Key of the labour record that the image is set for.</summary>
@@ -40,6 +40,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the maker/manufacturer that creates or assembles models and products that the image is set for.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyMakerID { get; set; }
+        /// <summary>Key of the asset that the image is set for.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
         /// <summary>Full file path to locate the image, including the image file name and extension. The file path may be a URL, or could be a path to the file in a local machine, or network file store.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string imageFullFilePath { get; set; }

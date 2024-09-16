@@ -28,13 +28,18 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }
 
-        /// <summary>Key of the Labour record that the flag is assigned to.</summary>
+        /// <summary>Key of the Labour record that the maker model mapping is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyLabourID { get; set; }
 
-        /// <summary>Key of the Download record that the flag is assigned to.</summary>
+        /// <summary>Key of the Download record that the maker model mapping is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyDownloadID { get; set; }
+
+        /// <summary>Key of the Asset record that the maker model mapping is assigned to.</summary>
+        [Obsolete("keyDownloadID is deprecated, please use keyAssetID instead.")]
+        [DataMember(EmitDefaultValue = false)]
+        public string keyAssetID { get; set; }
 
         /// <summary>Quantity of the product assigned to the model for the given category. The default is 1 if the quantity has not been set.</summary>
         [DataMember(EmitDefaultValue = false)]

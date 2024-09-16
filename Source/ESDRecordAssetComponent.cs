@@ -12,25 +12,33 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards record for associating a child product with a given combination of fields and values</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single relationship between an asset belonging to another parent asset. This allows an asset to be made of many component assets to make a single collective larger asset/resource</summary>
     [DataContract]
-    public class ESDRecordProductCombination
+    public class ESDRecordAssetComponent
     {
-        /// <summary>Key of the product record that the child product is assigned to</summary>
+        /// <summary>Key of the asset record.</summary>
         [DataMember]
-        public string keyProductID { get; set; }
-        /// <summary>Key of the product combination profile record that the combination is linked to</summary>
-        [DataMember]
-        public string keyComboProfileID { get; set; }
+        public string keyAssetID { get; set; }
+
+        /// <summary>Hey of the category record, that is used to denote the category that the child asset is associated to for a given parent asset</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCategoryID { get; set; }
+
+        /// <summary>Key of the asset record  that is the child asset that belongs to, or is a component of the parent asset.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyChildAssetID { get; set; }
+
+        /// <summary> list of attributes and values associated to the child asset for the particular category.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public List<ESDRecordAttributeValue> attributes { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
         public int drop { get; set; }
+
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
-        /// <summary>List of combination field and values that maps the product to the combination. Each inner array must be 2 items in size, with the first item storing the keyComboProfileFieldID, and the 2nd the fieldValueID. It's the collection of different fields and values assigned to the child product that allows it to be separately be found, from other child products assigned to the same parent product.</summary>
-        [DataMember]
-        public string[][] fieldValueCombinations {get; set;}
     }
 }

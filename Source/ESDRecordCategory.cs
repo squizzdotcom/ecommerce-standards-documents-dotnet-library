@@ -82,8 +82,13 @@ namespace EcommerceStandardsDocuments
         public string[] keyProductIDs { get; set; }
 
         /// <summary>List of Key Download IDs, that link any number of Download records to the category.</summary>
+        [Obsolete("keyDownloadIDs is deprecated, please use keyAssetIDs instead.")]
         [DataMember(EmitDefaultValue = false)]
         public string[] keyDownloadIDs { get; set; }
+
+        /// <summary>List of Key Asset IDs, that link any number of Asset records to the category.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] keyAssetIDs { get; set; }
 
         /// <summary>List of Key Labour IDs, that link any number of Labour records to the category.</summary>
         [DataMember(EmitDefaultValue = false)]
