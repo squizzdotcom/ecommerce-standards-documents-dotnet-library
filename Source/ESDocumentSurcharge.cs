@@ -49,6 +49,62 @@ namespace EcommerceStandardsDocuments
     ///             "surchargeLabel": "Web Minimum Order Surcharge",
     ///             "description": "Cost to handle orders when an order's total price is under the allowed minimum.",
     ///             "surchargeType": "MINORDER"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"a89b",
+    ///             "surchargeCode": "IMP_TARIFF",
+    ///             "surchargeLabel": "Import Tariff Surcharge",
+    ///             "description": "Cost to import products into the country from international locations.",
+    ///             "surchargeType": "TARIFF"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"a893423121",
+    ///             "surchargeCode": "FUEL_ENGERGY",
+    ///             "surchargeLabel": "Fuel/Energy Surcharge",
+    ///             "description": "Cost to pay for fuel/energy to move and deliver ordered goods.",
+    ///             "surchargeType": "FUEL"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"82352AB",
+    ///             "surchargeCode": "SC_INSURANCE",
+    ///             "surchargeLabel": "Insurance Surcharge",
+    ///             "description": "Cost to insure ordered goods and services.",
+    ///             "surchargeType": "INSURANCE"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"1825222",
+    ///             "surchargeCode": "BOOKING_FEE",
+    ///             "surchargeLabel": "Booking Fee",
+    ///             "description": "Cost make a reservation for goods and services.",
+    ///             "surchargeType": "BOOKING"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"37372325",
+    ///             "surchargeCode": "SURGE_FEE",
+    ///             "surchargeLabel": "Surcharge/Demand Fee",
+    ///             "description": "Cost to order goods and services at peak time.",
+    ///             "surchargeType": "SURGE"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"a89b",
+    ///             "surchargeCode": "IMP_TARIFF",
+    ///             "surchargeLabel": "Holiday/Weekend Surcharge",
+    ///             "description": "Cost to order goods and services outside normal business hours, such as weekends and holidays.",
+    ///             "surchargeType": "HOLIDAY"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"a89b",
+    ///             "surchargeCode": "LATE_PAY_SUR",
+    ///             "surchargeLabel": "Lay Payment Surcharge",
+    ///             "description": "Cost to pay for ordered goods and services past the due payment date.",
+    ///             "surchargeType": "LATE_PAYMENT"
+    ///         },
+    ///         {
+    ///             "keySurchargeID":"a83423423423",
+    ///             "surchargeCode": "PAYROLL_TAX",
+    ///             "surchargeLabel": "Payroll Tax Surcharge",
+    ///             "description": "Government surcharge that covers payroll tax when earning over 10,000,000 gross per year.",
+    ///             "surchargeType": "OTHER"
     ///         }
     ///     ]
     /// }

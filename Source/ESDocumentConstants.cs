@@ -139,13 +139,27 @@ namespace EcommerceStandardsDocuments
         /// <summary>Entity Set Price - price set by an employee</summary>
         public const string ENTITY_SET_PRICE_EMPLOYEE = "EMPLOYEE";
 
-        /// <summary>Surcharge Type - Freight</summary>
+        /// <summary>Surcharge Type - Freight -  cost to deliver goods</summary>
         public const string SURCHARGE_TYPE_FREIGHT = "FREIGHT";
-        /// <summary>Surcharge Type - Credit Card</summary>
+        /// <summary>Surcharge Type - Credit Card - cost to pay using a credit card</summary>
         public const string SURCHARGE_TYPE_CREDIT_CARD = "CREDITCARD";
-        /// <summary>Surcharge Type - Minimum Order Total</summary>
+        /// <summary>Surcharge Type - Minimum Order Total - cost for under the minimum total amount on a single order</summary>
         public const string SURCHARGE_TYPE_MIN_ORDER = "MINORDER";
-        /// <summary>Surcharge Type - Other</summary>
+        /// <summary>Surcharge Type - Tarriff - cost to cover government import tarriffs</summary>
+        public const string SURCHARGE_TYPE_TARIFF = "TARIFF";
+        /// <summary>Surcharge Type - Fuel - cost of fuel to move/deliver goods/services</summary>
+        public const string SURCHARGE_TYPE_FUEL = "FUEL";
+        /// <summary>Surcharge Type - Insurance - cost to insure ordered goods and services</summary>
+        public const string SURCHARGE_TYPE_INSURANCE = "INSURANCE";
+        /// <summary>Surcharge Type - Booking - cost to book/reserve ordered goods and services</summary>
+        public const string SURCHARGE_TYPE_BOOKING = "BOOKING";
+        /// <summary>Surcharge Type - Surge - cost for ordering goods and services that are in high demand</summary>
+        public const string SURCHARGE_TYPE_SURGE = "SURGE";
+        /// <summary>Surcharge Type - Holiday - cost for ordering goods and services at times of a holiday</summary>
+        public const string SURCHARGE_TYPE_HOLIDAY = "HOLIDAY";
+        /// <summary>Surcharge Type - Late Payment - cost for delaying payment of ordered goods and services</summary>
+        public const string SURCHARGE_TYPE_LATE_PAYMENT = "LATE_PAYMENT";
+        /// <summary>Surcharge Type - Other - miscellaneous costs</summary>
         public const string SURCHARGE_TYPE_OTHER = "OTHER";
 
         /// <summary>Payment method - UNPAID - No payment was received as yet</summary>
