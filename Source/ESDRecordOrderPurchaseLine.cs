@@ -98,6 +98,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's ordered before discounting.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal priceTotalUndiscountedTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of the line's unit, excluding tax. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPExTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of the line's unit before any discounting was applied, inclusive of tax. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPIncTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of tax applied the line's unit on the RRP price. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPTax { get; set; }
         /// <summary>
         /// Either
         /// <list type="bullet">

@@ -29,12 +29,6 @@ namespace EcommerceStandardsDocuments
         /// <summary>Type of line set in the order. Set it to a constant prefixed with ORDER_LINE_TYPE_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string lineType { get; set; }
-        /// <summary>Code of the line in the purchase order associated to the sales order.</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string purchaseOrderLineCode { get; set; }
-        /// <summary>number of the line in the purchase order associated to the sales order.</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string purchaseOrderLineNumber { get; set; }
         /// <summary>Code of the location that order line is assigned to.  This location may override the default location assigned to the order that specifies where the products are picked/packed/delivered/managed from.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationCode { get; set; }
@@ -98,6 +92,15 @@ namespace EcommerceStandardsDocuments
         /// <summary>Total monetary price of the tax applied over the total quantity of unit's ordered before discounting.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal priceTotalUndiscountedTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of the line's unit, excluding tax. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPExTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of the line's unit before any discounting was applied, inclusive of tax. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPIncTax { get; set; }
+        /// <summary>Recommended retail price (RRP) monetary price of tax applied the line's unit on the RRP price. May also be known as the Manufacturers Suggested Retail Price (MSRP).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal priceRRPTax { get; set; }
         /// <summary>
         /// Either
         /// <list type="bullet">
@@ -204,6 +207,36 @@ namespace EcommerceStandardsDocuments
         /// <summary>Code of the product's weight measurement to define the unit of measurement. Set it to a constant prefixed with UNIT_MEASURE_MASS_ in the ESDocumentConstants class</summary>
         [DataMember(EmitDefaultValue = false)]
         public string weightUnitMeasureCode { get; set; }
+        /// <summary>Code of the line in the purchase order associated to the sales order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderLineCode { get; set; }
+        /// <summary>number of the line in the purchase order associated to the sales order.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderLineNumber { get; set; }
+        /// <summary>Key of the purchase unit that the line is assigned to in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderKeyPurchaseUnitID { get; set; }
+        /// <summary>Name of the unit set for the line in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string purchaseOrderUnitName { get; set; }
+        /// <summary>Monetary price of the line's unit, excluding tax that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceExTax { get; set; }
+        /// <summary>Monetary price of the line's unit, including tax that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceIncTax { get; set; }
+        /// <summary>Monetary price of the tax applied to the line's unit that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceTax { get; set; }
+        /// <summary>Total monetary price of the quantity of unit's ordered, excluding tax that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceTotalExTax { get; set; }
+        /// <summary>Total monetary price of the quantity of unit's ordered, including tax that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceTotalIncTax { get; set; }
+        /// <summary>Total monetary price of the tax applied over the total quantity of unit's ordered that appeared in the original purchase order line that the sales order line was derived from.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal purchaseOrderPriceTotalTax { get; set; }
 
         // deprecated download fields, use assets data fields instead, since a download is a digital kind of asset
         /// <summary>Key of the download record associated to the line. Only relevent when the lineType has been set to download</summary>
@@ -398,6 +431,13 @@ namespace EcommerceStandardsDocuments
 
             if (purchaseOrderLineNumber == null){
                 purchaseOrderLineNumber = "";
+            }
+
+            if (purchaseOrderKeyPurchaseUnitID == null){
+                purchaseOrderKeyPurchaseUnitID = "";
+            }
+            if (purchaseOrderUnitName == null){
+                purchaseOrderUnitName = "";
             }
 
             if (locationCode == null){
