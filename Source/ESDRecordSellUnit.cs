@@ -48,6 +48,10 @@ namespace EcommerceStandardsDocuments
         /// <summary>minimum quantity of the sell unit that can be ordered. If not set then the default would be 1.</summary>
         [DataMember(EmitDefaultValue = false)]
         public decimal minOrderQuantity { get; set; }
+		
+        /// <summary>maximum quantity of the sell unit that can be ordered. If not set then the default would be -1 (unlimited).</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public decimal maxOrderQuantity { get; set; }
 
         /// <summary>quantity of the sell unit that can be incrementally ordered. Only sell unit quantities that evenly divide by this number should be orderable. If not set then the default would be 1.</summary>
         [DataMember(EmitDefaultValue = false)]
