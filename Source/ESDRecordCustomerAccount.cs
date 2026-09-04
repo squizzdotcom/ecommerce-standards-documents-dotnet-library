@@ -169,6 +169,14 @@ namespace EcommerceStandardsDocuments
         [DataMember(EmitDefaultValue = false)]
         public string keyGLAccountID { get; set; }
 
+        /// <summary>A list of addresses associated to the customer account, such as billing address, delivery addresses.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordCustomerAccountAddress[] addresses { get; set; }
+
+        /// <summary>A list of contacts associated to the customer account, indicating the people who are associated to the customer account.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public ESDRecordContact[] contacts { get; set; }
+
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
