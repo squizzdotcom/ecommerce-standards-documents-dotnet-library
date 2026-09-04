@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The customer account data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 3,
-    ///     "configs":{"dataFields":"keyCustomerAccountID,keyPriceLevelID,customerAccountCode,accountName,contactName,orgName,authorityNumbers,authorityNumberLabels,authorityNumberTypes,email,accountClass,paymentTypes,territory,discount,shippingMethod,isOnHold,isOutsideBalance,isOutsideTerms,onHoldAction,outTermsAction,outCreditAction,balance,limit,termsType,termsDescription,termsValue1,termsValue2"},
+    ///     "configs":{"dataFields":"keyCustomerAccountID,keyPriceLevelID,keyCustomerAccountParentID,customerAccountCode,accountName,contactName,orgName,authorityNumbers,authorityNumberLabels,authorityNumberTypes,email,accountClass,paymentTypes,territory,discount,shippingMethod,isOnHold,isOutsideBalance,isOutsideTerms,onHoldAction,outTermsAction,outCreditAction,balance,limit,termsType,termsDescription,termsValue1,termsValue2"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -68,6 +68,7 @@ namespace EcommerceStandardsDocuments
     ///         {
     ///             "keyCustomerAccountID":"10",
     ///             "keyPriceLevelID":"PL001",
+    ///             "keyCustomerAccountParentID":"222",
     ///             "customerAccountCode":"CUSTOMER002",
     ///             "accountName":"ESD Industries",
     ///             "contactName":"Joey Joe Joe",

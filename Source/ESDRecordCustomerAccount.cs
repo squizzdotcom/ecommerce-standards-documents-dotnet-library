@@ -23,6 +23,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the Price Level record that the customer account is assigned to. The price level record may control the price-level pricing available to the account.</summary>
         [DataMember]
         public string keyPriceLevelID { get; set; }
+        /// <summary>Key of the customer account record that it is assigned to in a hierarchical data structure.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyCustomerAccountParentID { get; set; }
 
         /// <summary>Code that allows the account to be identified with. May or may not be unique.</summary>
         [DataMember]
