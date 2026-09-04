@@ -25,6 +25,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the Taxcode record that the asset is assigned to. The taxcode may control the amount of tax applied to the asset.</summary>
         [DataMember]
         public string keyTaxcodeID { get; set; }
+        /// <summary>Key of the Tax Category record that the asset is assigned to. This tax category represents a collection of taxcodes that are applied to the asset's monetary pricing, as opposed to a single taxcode</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] keyTaxCategoryID { get; set; }
         /// <summary>Key of the Product record that the asset is represented by and linked to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string keyProductID { get; set; }

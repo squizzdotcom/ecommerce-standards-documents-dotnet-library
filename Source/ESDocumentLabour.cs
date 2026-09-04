@@ -23,7 +23,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The labour data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 2,
-    ///     "configs":{"dataFields":"keyLabourID,labourCode,keyTaxcodeID,labourSearchCode,brand,name,description1,description2,description3,description4,labourClass,averageCost,supplier,labourQuantity,labourNoneQuantity,labourLowQuantity,isPriceTaxInclusive"},
+    ///     "configs":{"dataFields":"keyLabourID,labourCode,keyTaxcodeID,keyTaxCategoryID,labourSearchCode,brand,name,description1,description2,description3,description4,labourClass,averageCost,supplier,labourQuantity,labourNoneQuantity,labourLowQuantity,isPriceTaxInclusive"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -35,6 +35,7 @@ namespace EcommerceStandardsDocuments
     ///             "keyLabourID":"LAB2",
     ///             "labourCode":"Labour 2",
     ///             "keyTaxcodeID":"GST",
+    ///             "keyTaxCategoryID":"TAXABLE-456",
     ///             "labourSearchCode":"Installation Labour",
     ///             "brand":"Joey's Labour",
     ///             "name":"Installation Labour",

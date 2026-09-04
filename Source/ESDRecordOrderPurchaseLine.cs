@@ -35,6 +35,16 @@ namespace EcommerceStandardsDocuments
         /// <summary>number of the line in the sales order associated to the purchase order.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string salesOrderLineNumber { get; set; }
+        /// <summary>Key identifier of the tax categry that order line is assigned to. The key uniquely identifies the tax category that describes the collection of taxes applied to the line's pricing. Note that business systems may not have a concept of a tax category, and instead look at the tax records assigned to the line instead</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyTaxCategoryID { get; set; }
+        /// <summary>Code of the tax categry that order line is assigned to. The code may be a human know identifier of a tax category that describes the collection of taxes applied to the line's pricing.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string taxCategoryCode { get; set; }
+        /// <summary>Name of the tax category that the order line is assigned to. Indicating the name of the tax category that describes the collection of taxes applied to the line's pricing.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string taxCategoryName { get; set; }
+        /// <summary>Type of line set in the order. Set it to a constant prefixed with ORDER_LINE_TYPE_ in the ESDocumentConstants class</summary>
         /// <summary>Code of the location that order line is assigned to.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string locationCode { get; set; }

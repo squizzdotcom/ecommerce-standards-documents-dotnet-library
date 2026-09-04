@@ -22,7 +22,7 @@ namespace EcommerceStandardsDocuments
     ///  {
     ///     "resultStatus":"1",
     ///     "message":"The asset data has been successfully obtained.",
-    ///     "configs":{"dataFields":"keyAssetID,assetCode,keyTaxcodeID,assetSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,assetClass,keySellUnitID,unit,createdDate,destroyedDate,weight,width,height,depth,widthUnitMeasureCode,heightUnitMeasureCode,depthUnitMeasureCode,weightUnitMeasureCode,isPriceTaxInclusive"},
+    ///     "configs":{"dataFields":"keyAssetID,assetCode,keyTaxcodeID,keyTaxCategoryID,assetSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,assetClass,keySellUnitID,unit,createdDate,destroyedDate,weight,width,height,depth,widthUnitMeasureCode,heightUnitMeasureCode,depthUnitMeasureCode,weightUnitMeasureCode,isPriceTaxInclusive"},
     ///     "dataTransferMode": "COMPLETE",
     ///     "version": 1.5,
     ///     "totalDataRecords": 2,
@@ -37,6 +37,7 @@ namespace EcommerceStandardsDocuments
     ///             "keyAssetID":"1234",
     ///             "assetCode":"ASSET-001",
     ///             "keyTaxcodeID":"GST",
+    ///             "keyTaxCategoryID":"TAXABLE-456",
     ///             "assetSearchCode":"Green-Recycled-Paper-Swisho",
     ///             "barcode":"03423404230",
     ///             "barcodeInner":"234234",

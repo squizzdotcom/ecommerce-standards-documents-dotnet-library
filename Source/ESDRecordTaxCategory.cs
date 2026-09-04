@@ -12,25 +12,22 @@ using System.Runtime.Serialization;
 
 namespace EcommerceStandardsDocuments
 {
-    /// <summary>Ecommerce Standards Record that holds data for a single taxcode. Each taxcode defines a type of tax that can be calculated for any relevant monetary price.</summary>
+    /// <summary>Ecommerce Standards Record that holds data for a single tax category. Each tax category definies a single collection of tax codes that can be calculated for any relevant monetary price.</summary>
     [DataContract]
-    public class ESDRecordTaxcode
+    public class ESDRecordTaxCategory
     {
-        /// <summary>Key of the taxcode record to be uniquely identified and linked to.</summary>
+        /// <summary>Key of the tax category record to be uniquely identified and linked to.</summary>
         [DataMember]
-        public string keyTaxcodeID { get; set; }
-        /// <summary>Taxcode.  May or may not be a unique identifier</summary>
+        public string keyTaxCategoryID { get; set; }
+        /// <summary>Tax Category Code. Human known identifier of the tax category. May or may not be a unique identifier</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string taxcode { get; set; }
-        /// <summary>Label of the taxcode</summary>
+        public string taxCategoryCode { get; set; }
+        /// <summary>name of the tax category</summary>
         [DataMember(EmitDefaultValue = false)]
-        public string taxcodeLabel { get; set; }
-        /// <summary>Text to describe the taxcode</summary>
+        public string name { get; set; }
+        /// <summary>Text to describe the tax category</summary>
         [DataMember(EmitDefaultValue = false)]
         public string description { get; set; }
-        /// <summary>Numeric amount as a percentage rate that the taxcode applies to. Eg. if set to 10, then a 10% tax will be applied on top of a price.</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public decimal taxcodePercentageRate { get; set; }
         /// <summary>Data Record OPeration. Denotes an operation that may need to be performed on the record when it is being processed. 
         /// Set null, or set it to one of the ESD_RECORD_OPERATION constants in the ESDocumentConstants class to allow the record to be inserted, updated, deleted, or ignored.</summary>
         [DataMember(EmitDefaultValue = false)]
@@ -38,9 +35,5 @@ namespace EcommerceStandardsDocuments
         /// <summary>Stores an identifier that is relevant only to the system referencing and storing the record for its own needs.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string internalID { get; set; }
-
-        /// <summary>Stores a list of key tax category IDs that denote different tax categories that a tax may belong to</summary>
-        [DataMember(EmitDefaultValue = false)]
-        public string[] keyTaxCategoryIDs { get; set; }
     }
 }

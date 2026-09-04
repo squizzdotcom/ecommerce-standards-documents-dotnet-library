@@ -25,6 +25,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the Taxcode record that the labour is assigned to. The taxcode may control the amount of tax applied to the labour.</summary>
         [DataMember]
         public string keyTaxcodeID { get; set; }
+        /// <summary>Key of the Tax Category record that the labour is assigned to. This tax category represents a collection of taxcodes that are applied to the labour's monetary pricing, as opposed to a single taxcode</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] keyTaxCategoryID { get; set; }
         /// <summary>Code that allows the labour to searched on. This search code may or may not be unique, and would typically contain key words that allows the labour to found.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string labourSearchCode { get; set; }

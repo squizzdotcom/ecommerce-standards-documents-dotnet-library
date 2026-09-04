@@ -27,8 +27,16 @@ namespace EcommerceStandardsDocuments
         /// <summary>Type of line in the invoice. Set it to a constant prefixed with INVOICE_LINE_TYPE_ in the ESDocumentConstants class</summary>
         [DataMember]
         public string lineType { get; set; }
-
-	    /// <summary>Code of the line in the original purchase order associated to the supplier's invoice line</summary>
+        /// <summary>Key identifier of the tax categry that order line is assigned to. The key uniquely identifies the tax category that describes the collection of taxes applied to the line's pricing. Note that business systems may not have a concept of a tax category, and instead look at the tax records assigned to the line instead</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string keyTaxCategoryID { get; set; }
+        /// <summary>Code of the tax categry that order line is assigned to. The code may be a human know identifier of a tax category that describes the collection of taxes applied to the line's pricing.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string taxCategoryCode { get; set; }
+        /// <summary>Name of the tax category that the order line is assigned to. Indicating the name of the tax category that describes the collection of taxes applied to the line's pricing.</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string taxCategoryName { get; set; }
+        /// <summary>Code of the line in the original purchase order associated to the supplier's invoice line</summary>
         [DataMember(EmitDefaultValue = false)]
         public string purchaseOrderLineCode { get; set; }
 

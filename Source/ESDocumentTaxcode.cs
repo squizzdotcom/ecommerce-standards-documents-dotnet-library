@@ -24,6 +24,22 @@ namespace EcommerceStandardsDocuments
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 4,
     ///     "configs":{"dataFields":"keyTaxcodeID,taxcode,taxcodeLabel,description,taxcodePercentageRate"},
+    ///     "taxCategoryRecords": 
+    ///     [
+    ///         {"keyTaxCategoryID":"TAX-CAT123"},
+    ///         {
+    ///             "keyTaxCategoryID":"TAX-CAT124",
+    ///             "taxCategoryCode":"CAT124",
+    ///             "name":"Victoria State Taxes",
+    ///             "description":"Denotes a collection of taxes that apply to goods and services sold within Victoria."
+    ///         },
+    ///         {
+    ///             "keyTaxCategoryID":"TAXABLE-456",
+    ///             "taxCategoryCode":"TAXABLE",
+    ///             "name":"Taxable Goods and Services",
+    ///             "description":"A collection of taxes that apply to goods and services being sold."
+    ///         }
+    ///     ],
     ///     "dataRecords":
     ///      [
     ///         {
@@ -34,7 +50,8 @@ namespace EcommerceStandardsDocuments
     ///             "taxcode": "GST",
     ///             "taxcodeLabel":"Goods And Services Tax",
     ///             "description": "Australian Goods And Services Tax",
-    ///             "taxcodePercentageRate": 10
+    ///             "taxcodePercentageRate": 10,
+    ///             "keyTaxCategoryIDs": ["TAX-CAT124", "129"]
     ///         },
     ///         {
     ///             "keyTaxcodeID":"765",
@@ -55,8 +72,13 @@ namespace EcommerceStandardsDocuments
     [DataContract]
     public class ESDocumentTaxcode : ESDocument
     {
-        /// <summary>List of taxcode records</summary>
+        /// <summary>List of tax category records</summary>
         [JsonProperty(Order = -4)]
+        [DataMember]
+        public ESDRecordTaxCategory[] taxCategoryRecords;
+
+        /// <summary>List of taxcode records</summary>
+        [JsonProperty(Order = -3)]
         [DataMember]
         public ESDRecordTaxcode[] dataRecords;
 
@@ -90,6 +112,28 @@ namespace EcommerceStandardsDocuments
             this.dataRecords = taxcodeRecords;
             this.configs = configs;
             if (taxcodeRecords != null){
+                this.totalDataRecords = taxcodeRecords.Length;
+            }
+        }
+
+        /// <summary>Constructor</summary>
+        /// <param name="resultStatus">status of obtaining the taxcode data</param>
+        /// <param name="message">message to accompany the result status</param>
+        /// <param name="taxcodeRecords">list of taxcode records</param>
+        /// <param name="taxCategoryRecords">list of tax category records</param>
+        /// <param name="configs">A list of key value pairs that contain additional information about the document.
+        /// Ensure that a key "dataFields" exists that contains a comma delimited list of the taxcode record properties that have data set. This advises systems processing the data which properties should be read and have defaults set if not included in each record.
+        /// </param>
+        public ESDocumentTaxcode(int resultStatus, string message, ESDRecordTaxcode[] taxcodeRecords, ESDRecordTaxCategory[] taxCategoryRecords, Dictionary<string, string> configs)
+        {
+            this.resultStatus = resultStatus;
+            this.message = message;
+            this.dataRecords = taxcodeRecords;
+            this.configs = configs;
+            this.taxCategoryRecords = taxCategoryRecords;
+
+            if (taxcodeRecords != null)
+            {
                 this.totalDataRecords = taxcodeRecords.Length;
             }
         }

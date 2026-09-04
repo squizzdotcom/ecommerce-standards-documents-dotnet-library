@@ -25,7 +25,7 @@ namespace EcommerceStandardsDocuments
     ///     "message":"The product data has been successfully obtained.",
     ///     "dataTransferMode": "COMPLETE",
     ///     "totalDataRecords": 2,
-    ///     "configs":{"dataFields":"keyProductID,productCode,keyTaxcodeID,productSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,metaTitle,metaDescription,metaKeywords,productClass,keySellUnitID,unit,weight,width,height,depth,averageCost,warehouse,supplier,deliveryTimeNoStock,deliveryTimeInStock,stockQuantity,stockNoneQuantity,stockLowQuantity,stockLowQuantity,stockAvailableSinceDate,isPriceTaxInclusive,isKitted,kitProductsSetPrice"},
+    ///     "configs":{"dataFields":"keyProductID,productCode,keyTaxcodeID,keyTaxCategoryID,productSearchCode,barcode,barcodeInner,brand,name,description1,description2,description3,description4,metaTitle,metaDescription,metaKeywords,productClass,keySellUnitID,unit,weight,width,height,depth,averageCost,warehouse,supplier,deliveryTimeNoStock,deliveryTimeInStock,stockQuantity,stockNoneQuantity,stockLowQuantity,stockLowQuantity,stockAvailableSinceDate,isPriceTaxInclusive,isKitted,kitProductsSetPrice"},
     ///     "dataRecords":
     ///      [
     ///         {
@@ -37,6 +37,7 @@ namespace EcommerceStandardsDocuments
     ///             "keyProductID":"1234",
     ///             "productCode":"PROD-001",
     ///             "keyTaxcodeID":"GST",
+    ///             "keyTaxCategoryID":"TAXABLE-456",
     ///             "productSearchCode":"Green-Recycled-Paper-Swisho",
     ///             "barcode":"03423404230",
     ///             "barcodeInner":"234234",

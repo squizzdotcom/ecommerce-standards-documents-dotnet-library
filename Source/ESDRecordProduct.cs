@@ -25,6 +25,9 @@ namespace EcommerceStandardsDocuments
         /// <summary>Key of the Taxcode record that the product is assigned to. The taxcode may control the amount of tax applied to the product.</summary>
         [DataMember]
         public string keyTaxcodeID { get; set; }
+        /// <summary>Key of the Tax Category record that the product is assigned to. This tax category represents a collection of taxcodes that are applied to the product's monetary pricing</summary>
+        [DataMember(EmitDefaultValue = false)]
+        public string[] keyTaxCategoryID { get; set; }
         /// <summary>Code that allows the product to searched on. This search code may or may not be unique, and would typically contain key words that allows the product to found.</summary>
         [DataMember(EmitDefaultValue = false)]
         public string productSearchCode { get; set; }

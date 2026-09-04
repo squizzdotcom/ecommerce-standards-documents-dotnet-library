@@ -142,6 +142,7 @@
     <Compile Include="ESDRecordSupplierInvoice.cs" />
     <Compile Include="ESDRecordSupplierInvoiceLine.cs" />
     <Compile Include="ESDRecordSurcharge.cs" />
+    <Compile Include="ESDRecordTaxCategory.cs" />
     <Compile Include="ESDRecordType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ESDRecordCustomerAccountEnquiryProductPrice.cs" />
